@@ -1,0 +1,25 @@
+# Visual Studio user and workspace files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# Restored NuGet packages
+[Pp]ackages/
+*.nupkg
+
+# Test and tooling output
+TestResults/
+.coverage
+*.coverage
+*.coveragexml
+
