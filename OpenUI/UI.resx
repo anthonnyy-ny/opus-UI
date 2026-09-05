@@ -117,4 +117,76 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="borderlessForm.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="stationAProcess.DefaultText" xml:space="preserve">
+    <value>#51 - Wet Active Align L1 L2
+#52 - Shift on cure offset
+#53 - UV Process Snap
+#54 - Get PD Value After Curing
+      #1 - Get PD Value [FINISH]
+      #2 - [Scan] L2 Line X
+      #3 - Get PD Value
+      #4 - [Scan] L2 Line Z
+      #5 - Get PD Value
+      #6 - [Scan] L2 Line Y
+      #7 - Get PD Value
+      #8 - Check line scan stop condition 1
+      #9 - Check line scan stop condition 2
+      #10 - [Scan] L2 Line X final
+      #11 - Get PD Value
+      #12 - [Scan] L2 Line Z final
+#55 - Release L1 and move rear PUT
+#56 - Get PD Value After Release
+#57 - Move L2 lens to safe position
+#58 - Close SOA0 Config
+#59 - Pick Up SS_L1 On Top Tray
+#60 - All station Servo on
+#61 - Set SOA1 Config
+#62 - Vision Align SOA1 iCSM
+#63 - Vision Align-L1 Lens
+#64 - Active Align-L1 Lens
+#65 - Move L2 to teach position
+#66 - Active Align-L2 Lens
+#67 - Active Align concurrent-L1 L2
+#68 - Epoxy Dispense L1
+#69 - Wet Active Align L1 L2</value>
+  </data>
+  <data name="calibrationProcess.DefaultText" xml:space="preserve">
+    <value>CALIBRATION
+#1 - Station A Needle Calibration
+#2 - Station B Needle Calibration
+#3 - Station A Dispensing Calibration
+#4 - Station B Dispensing Calibration
+#5 - Station A Laser and Jig
+#6 - Station B Laser and Jig</value>
+  </data>
+  <data name="programLog.DefaultText" xml:space="preserve">
+    <value>[2026/08/31 15:55:35:007] Initial Temperature Control Right DUT...
+[2026/08/31 15:55:35:114] Init TEC station B control Failure
+[2026/08/31 15:55:35:228] Set laser temperature Failure
+[2026/08/31 15:55:35:338] TEC Station B control not connected
+[2026/08/31 15:55:35:553] Initial Station A SSH Communication...
+[2026/08/31 15:55:35:658] System.Net.Sockets.SocketException
+  at Renci.SshNet.SocketAbstraction.ConnectCore()
+  at Renci.SshNet.Connection.ConnectorBase.SocketConnect()
+  at Renci.SshNet.Session.Connect()
+  at Octopus_Nova.FormNova.Initial_Device() line 1027
+[2026/08/31 15:55:38:658] Initial Station B SSH Communication...
+[2026/08/31 15:55:41:712] Initial DAQ...
+[2026/08/31 15:55:41:847] Initialize DAQ failed: device unavailable
+[2026/08/31 15:55:43:936] Initial Barcode Reader...
+[2026/08/31 15:55:43:998] Test Pin Failure
+[2026/08/31 15:55:44:030] Initial Keyence Laser Meter...
+[2026/08/31 15:55:44:078] Initial Laser Meter Failure
+[2026/08/31 15:55:44:108] Initial Vacuum Control... Finish
+[2026/08/31 15:58:02:123] System initialization ready
+[2026/08/31 16:33:16:943] [Start Process] get pd noise on A
+[2026/08/31 16:33:16:968] Record Noise, Station A, Gear: 256
+[2026/08/31 16:33:35:856] [End Process] Finish Successfully.
+[2026/08/31 16:34:01:115] Move stage to safe position
+[2026/08/31 16:34:02:281] Vision alignment completed
+[2026/08/31 16:34:03:440] Process waiting for next unit.</value>
+  </data>
 </root>
