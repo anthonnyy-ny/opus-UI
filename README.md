@@ -37,13 +37,7 @@ Supporters
 
 Tools
 ---
-1- png to ico 转换图片格式
-	https://cloudconvert.com/png-to-ico
-2- BarCode生成器
-	https://barcode.tec-it.com/en
-3- draw.io 画流程图
-	https://app.diagrams.net/
-4- gemini notebook 查技术文档摘要
+1- gemini notebook 查技术文档摘要
 	https://notebook.google.com/
 
 
