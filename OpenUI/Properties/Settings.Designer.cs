@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OpenUI.Properties
+namespace opusViewerPro.Properties
 {
 
 

@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
 
-namespace OpenUI
+namespace opusViewerPro
 {
     partial class UI
     {

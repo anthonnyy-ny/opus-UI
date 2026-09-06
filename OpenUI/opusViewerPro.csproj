@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{A57D50D1-B9C8-4EDF-9899-CEA6998C16AF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>OpenUI</RootNamespace>
+    <RootNamespace>opusViewerPro</RootNamespace>
     <AssemblyName>OpenUI</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

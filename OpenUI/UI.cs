@@ -1,6 +1,6 @@
 using System.Windows.Forms;
 
-namespace OpenUI
+namespace opusViewerPro
 {
     public partial class UI : Form
     {
