@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,8 +16,8 @@ namespace opusViewerPro
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new MainForm());
-            Application.Run(new UI());
+            Application.Run(new MainForm());
+            // 原有 UI 表單仍保留，可改回 new UI()。
         }
     }
 }
