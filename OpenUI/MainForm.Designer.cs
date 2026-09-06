@@ -1,4 +1,4 @@
-﻿namespace OpenUI
+﻿namespace opusViewerPro
 {
     partial class MainForm
     {
