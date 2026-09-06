@@ -36,8 +36,7 @@ Obsidian Extensions
 ---
 1- Excalidraw
 2- draw.io
-3- Copilot
-4- Git
+3- Git
 
 
 Supporters
