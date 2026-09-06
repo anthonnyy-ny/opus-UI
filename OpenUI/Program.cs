@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OpenUI
+namespace opusViewerPro
 {
     internal static class Program
     {
