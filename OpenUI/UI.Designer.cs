@@ -7,6 +7,16 @@ namespace OpenUI
 {
     partial class UI
     {
+        private TableLayoutPanel processSplit;
+        private TableLayoutPanel processLeft;
+        private TableLayoutPanel processRight;
+        private FlowLayoutPanel transportButtons;
+        private FlowLayoutPanel feedButtons;
+        private Guna2HtmlLabel startCaption;
+        private Guna2HtmlLabel stopCaption;
+        private Guna2HtmlLabel pauseCaption;
+        private Guna2Button calibrationHeader;
+        private Guna2Button stationBProcessHeader;
         private IContainer components = null;
         private Guna2BorderlessForm borderlessForm;
         private Guna2ControlBox closeControlBox;
@@ -50,7 +60,7 @@ namespace OpenUI
         private Guna2Panel pdPreview;
         private Guna2DataGridView stationATrayPreview;
         private Guna2Button stationAProcessHeader;
-        private Guna2TextBox stationAProcess;
+        private TreeView stationAProcess;
         private Guna2Button centerTitle;
         private Guna2Button laserValue;
         private Guna2Button centerStationBTitle;
@@ -73,7 +83,7 @@ namespace OpenUI
         private Guna2Button trayBottomLabel;
         private Guna2Button topCameraHeader;
         private Guna2Panel topCamera;
-        private Guna2TextBox measureItems;
+        private Guna2DataGridView measureItems;
         private TableLayoutPanel bTrayLayout;
         private Guna2Button bTrayHeader;
         private Guna2DataGridView bTrayTop;
@@ -93,12 +103,12 @@ namespace OpenUI
         private Guna2CheckBox showMessageCheck;
         private Guna2Button stopFeedAButton;
         private Guna2Button stopFeedBButton;
-        private Guna2Button startButton;
-        private Guna2Button stopButton;
-        private Guna2Button pauseButton;
+        private Guna2CircleButton startButton;
+        private Guna2CircleButton stopButton;
+        private Guna2CircleButton pauseButton;
         private TableLayoutPanel centerBottomLayout;
-        private Guna2TextBox calibrationProcess;
-        private Guna2TextBox stationBProcess;
+        private TreeView calibrationProcess;
+        private TreeView stationBProcess;
         private Guna2HtmlLabel stationBTitle;
         private Guna2HtmlLabel stationBNote;
         private FlowLayoutPanel stationBStatus;
@@ -125,6 +135,16 @@ namespace OpenUI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.processSplit = new System.Windows.Forms.TableLayoutPanel();
+            this.processLeft = new System.Windows.Forms.TableLayoutPanel();
+            this.processRight = new System.Windows.Forms.TableLayoutPanel();
+            this.transportButtons = new System.Windows.Forms.FlowLayoutPanel();
+            this.feedButtons = new System.Windows.Forms.FlowLayoutPanel();
+            this.startCaption = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.stopCaption = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pauseCaption = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.calibrationHeader = new Guna.UI2.WinForms.Guna2Button();
+            this.stationBProcessHeader = new Guna.UI2.WinForms.Guna2Button();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI));
@@ -188,7 +208,7 @@ namespace OpenUI
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stationAProcessHeader = new Guna.UI2.WinForms.Guna2Button();
-            this.stationAProcess = new Guna.UI2.WinForms.Guna2TextBox();
+            this.stationAProcess = new System.Windows.Forms.TreeView();
             this.centerCard = new Guna.UI2.WinForms.Guna2Panel();
             this.centerLayout = new System.Windows.Forms.TableLayoutPanel();
             this.centerTitle = new Guna.UI2.WinForms.Guna2Button();
@@ -231,7 +251,7 @@ namespace OpenUI
             this.topCameraLayout = new System.Windows.Forms.TableLayoutPanel();
             this.topCameraHeader = new Guna.UI2.WinForms.Guna2Button();
             this.topCamera = new Guna.UI2.WinForms.Guna2Panel();
-            this.measureItems = new Guna.UI2.WinForms.Guna2TextBox();
+            this.measureItems = new Guna.UI2.WinForms.Guna2DataGridView();
             this.bTrayLayout = new System.Windows.Forms.TableLayoutPanel();
             this.bTrayHeader = new Guna.UI2.WinForms.Guna2Button();
             this.bTrayTopLabel = new Guna.UI2.WinForms.Guna2Button();
@@ -268,15 +288,15 @@ namespace OpenUI
             this.currentFlowLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.currentFlowValue = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.metricLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.startButton = new Guna.UI2.WinForms.Guna2Button();
-            this.stopButton = new Guna.UI2.WinForms.Guna2Button();
-            this.pauseButton = new Guna.UI2.WinForms.Guna2Button();
+            this.startButton = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.stopButton = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.pauseButton = new Guna.UI2.WinForms.Guna2CircleButton();
             this.showMessageCheck = new Guna.UI2.WinForms.Guna2CheckBox();
             this.stopFeedAButton = new Guna.UI2.WinForms.Guna2Button();
             this.stopFeedBButton = new Guna.UI2.WinForms.Guna2Button();
             this.centerBottomLayout = new System.Windows.Forms.TableLayoutPanel();
-            this.calibrationProcess = new Guna.UI2.WinForms.Guna2TextBox();
-            this.stationBProcess = new Guna.UI2.WinForms.Guna2TextBox();
+            this.calibrationProcess = new System.Windows.Forms.TreeView();
+            this.stationBProcess = new System.Windows.Forms.TreeView();
             this.stationBCard = new Guna.UI2.WinForms.Guna2Panel();
             this.stationBLayout = new System.Windows.Forms.TableLayoutPanel();
             this.programLog = new Guna.UI2.WinForms.Guna2TextBox();
@@ -333,10 +353,10 @@ namespace OpenUI
             this.closeControlBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.closeControlBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(135)))), ((int)(((byte)(148)))));
             this.closeControlBox.IconColor = System.Drawing.Color.White;
-            this.closeControlBox.Location = new System.Drawing.Point(1072, 0);
+            this.closeControlBox.Location = new System.Drawing.Point(536, 0);
             this.closeControlBox.Margin = new System.Windows.Forms.Padding(0);
             this.closeControlBox.Name = "closeControlBox";
-            this.closeControlBox.Size = new System.Drawing.Size(68, 56);
+            this.closeControlBox.Size = new System.Drawing.Size(34, 28);
             this.closeControlBox.TabIndex = 0;
             // 
             // maximizeControlBox
@@ -345,10 +365,10 @@ namespace OpenUI
             this.maximizeControlBox.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
             this.maximizeControlBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(135)))), ((int)(((byte)(148)))));
             this.maximizeControlBox.IconColor = System.Drawing.Color.White;
-            this.maximizeControlBox.Location = new System.Drawing.Point(1004, 0);
+            this.maximizeControlBox.Location = new System.Drawing.Point(502, 0);
             this.maximizeControlBox.Margin = new System.Windows.Forms.Padding(0);
             this.maximizeControlBox.Name = "maximizeControlBox";
-            this.maximizeControlBox.Size = new System.Drawing.Size(68, 56);
+            this.maximizeControlBox.Size = new System.Drawing.Size(34, 28);
             this.maximizeControlBox.TabIndex = 1;
             // 
             // minimizeControlBox
@@ -357,10 +377,10 @@ namespace OpenUI
             this.minimizeControlBox.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.minimizeControlBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(135)))), ((int)(((byte)(148)))));
             this.minimizeControlBox.IconColor = System.Drawing.Color.White;
-            this.minimizeControlBox.Location = new System.Drawing.Point(936, 0);
+            this.minimizeControlBox.Location = new System.Drawing.Point(468, 0);
             this.minimizeControlBox.Margin = new System.Windows.Forms.Padding(0);
             this.minimizeControlBox.Name = "minimizeControlBox";
-            this.minimizeControlBox.Size = new System.Drawing.Size(68, 56);
+            this.minimizeControlBox.Size = new System.Drawing.Size(34, 28);
             this.minimizeControlBox.TabIndex = 2;
             // 
             // rootLayout
@@ -374,18 +394,18 @@ namespace OpenUI
             this.rootLayout.Margin = new System.Windows.Forms.Padding(0);
             this.rootLayout.Name = "rootLayout";
             this.rootLayout.RowCount = 3;
-            this.rootLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 124F));
+            this.rootLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
             this.rootLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.rootLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.rootLayout.Size = new System.Drawing.Size(2910, 1598);
+            this.rootLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.rootLayout.Size = new System.Drawing.Size(1455, 799);
             this.rootLayout.TabIndex = 0;
             // 
             // headerLayout
             // 
             this.headerLayout.ColumnCount = 3;
-            this.headerLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 950F));
+            this.headerLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 475F));
             this.headerLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.headerLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1140F));
+            this.headerLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 570F));
             this.headerLayout.Controls.Add(this.identityLayout, 0, 0);
             this.headerLayout.Controls.Add(this.loginLabel, 1, 0);
             this.headerLayout.Controls.Add(this.headerActions, 2, 0);
@@ -393,14 +413,14 @@ namespace OpenUI
             this.headerLayout.Controls.Add(this.systemLabel, 1, 1);
             this.headerLayout.Controls.Add(this.logTabsLayout, 2, 1);
             this.headerLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.headerLayout.Location = new System.Drawing.Point(6, 6);
-            this.headerLayout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.headerLayout.Location = new System.Drawing.Point(3, 3);
+            this.headerLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.headerLayout.Name = "headerLayout";
-            this.headerLayout.Padding = new System.Windows.Forms.Padding(16, 8, 16, 4);
+            this.headerLayout.Padding = new System.Windows.Forms.Padding(8, 4, 8, 2);
             this.headerLayout.RowCount = 2;
-            this.headerLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 68F));
+            this.headerLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
             this.headerLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.headerLayout.Size = new System.Drawing.Size(2898, 112);
+            this.headerLayout.Size = new System.Drawing.Size(1449, 56);
             this.headerLayout.TabIndex = 0;
             // 
             // identityLayout
@@ -409,10 +429,10 @@ namespace OpenUI
             this.identityLayout.Controls.Add(this.modelLabel);
             this.identityLayout.Controls.Add(this.versionLabel);
             this.identityLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.identityLayout.Location = new System.Drawing.Point(16, 8);
+            this.identityLayout.Location = new System.Drawing.Point(8, 4);
             this.identityLayout.Margin = new System.Windows.Forms.Padding(0);
             this.identityLayout.Name = "identityLayout";
-            this.identityLayout.Size = new System.Drawing.Size(950, 68);
+            this.identityLayout.Size = new System.Drawing.Size(475, 34);
             this.identityLayout.TabIndex = 0;
             this.identityLayout.WrapContents = false;
             // 
@@ -421,10 +441,10 @@ namespace OpenUI
             this.brandLabel.BackColor = System.Drawing.Color.Transparent;
             this.brandLabel.Font = new System.Drawing.Font("Segoe UI", 19F, System.Drawing.FontStyle.Bold);
             this.brandLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
-            this.brandLabel.Location = new System.Drawing.Point(0, 2);
-            this.brandLabel.Margin = new System.Windows.Forms.Padding(0, 2, 20, 0);
+            this.brandLabel.Location = new System.Drawing.Point(0, 1);
+            this.brandLabel.Margin = new System.Windows.Forms.Padding(0, 1, 10, 0);
             this.brandLabel.Name = "brandLabel";
-            this.brandLabel.Size = new System.Drawing.Size(185, 70);
+            this.brandLabel.Size = new System.Drawing.Size(92, 35);
             this.brandLabel.TabIndex = 0;
             this.brandLabel.Text = "oToPUs";
             // 
@@ -432,10 +452,10 @@ namespace OpenUI
             // 
             this.modelLabel.BackColor = System.Drawing.Color.Transparent;
             this.modelLabel.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.modelLabel.Location = new System.Drawing.Point(225, 18);
-            this.modelLabel.Margin = new System.Windows.Forms.Padding(20, 18, 24, 0);
+            this.modelLabel.Location = new System.Drawing.Point(112, 9);
+            this.modelLabel.Margin = new System.Windows.Forms.Padding(10, 9, 12, 0);
             this.modelLabel.Name = "modelLabel";
-            this.modelLabel.Size = new System.Drawing.Size(143, 39);
+            this.modelLabel.Size = new System.Drawing.Size(72, 20);
             this.modelLabel.TabIndex = 1;
             this.modelLabel.Text = "Nova AA-2";
             // 
@@ -443,10 +463,10 @@ namespace OpenUI
             // 
             this.versionLabel.BackColor = System.Drawing.Color.Transparent;
             this.versionLabel.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
-            this.versionLabel.Location = new System.Drawing.Point(392, 8);
-            this.versionLabel.Margin = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.versionLabel.Location = new System.Drawing.Point(196, 4);
+            this.versionLabel.Margin = new System.Windows.Forms.Padding(0, 4, 0, 0);
             this.versionLabel.Name = "versionLabel";
-            this.versionLabel.Size = new System.Drawing.Size(322, 27);
+            this.versionLabel.Size = new System.Drawing.Size(161, 14);
             this.versionLabel.TabIndex = 2;
             this.versionLabel.Text = "Ver. 1.1.0.7   Release Date: 2026/8/31";
             // 
@@ -456,10 +476,10 @@ namespace OpenUI
             this.loginLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.loginLabel.Font = new System.Drawing.Font("Segoe UI", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.loginLabel.ForeColor = System.Drawing.Color.Maroon;
-            this.loginLabel.Location = new System.Drawing.Point(972, 14);
-            this.loginLabel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.loginLabel.Location = new System.Drawing.Point(486, 7);
+            this.loginLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.loginLabel.Name = "loginLabel";
-            this.loginLabel.Size = new System.Drawing.Size(764, 56);
+            this.loginLabel.Size = new System.Drawing.Size(382, 28);
             this.loginLabel.TabIndex = 1;
             this.loginLabel.Text = "Login Level : Operator<br>License expiration date : 12/31/2026";
             this.loginLabel.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -474,10 +494,10 @@ namespace OpenUI
             this.headerActions.Controls.Add(this.clearDispButton);
             this.headerActions.Dock = System.Windows.Forms.DockStyle.Fill;
             this.headerActions.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.headerActions.Location = new System.Drawing.Point(1742, 8);
+            this.headerActions.Location = new System.Drawing.Point(871, 4);
             this.headerActions.Margin = new System.Windows.Forms.Padding(0);
             this.headerActions.Name = "headerActions";
-            this.headerActions.Size = new System.Drawing.Size(1140, 68);
+            this.headerActions.Size = new System.Drawing.Size(570, 34);
             this.headerActions.TabIndex = 2;
             this.headerActions.WrapContents = false;
             // 
@@ -489,10 +509,10 @@ namespace OpenUI
             this.openLogButton.FillColor = System.Drawing.Color.White;
             this.openLogButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.openLogButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(58)))), ((int)(((byte)(65)))));
-            this.openLogButton.Location = new System.Drawing.Point(750, 10);
-            this.openLogButton.Margin = new System.Windows.Forms.Padding(6, 10, 6, 0);
+            this.openLogButton.Location = new System.Drawing.Point(375, 5);
+            this.openLogButton.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
             this.openLogButton.Name = "openLogButton";
-            this.openLogButton.Size = new System.Drawing.Size(180, 50);
+            this.openLogButton.Size = new System.Drawing.Size(90, 25);
             this.openLogButton.TabIndex = 3;
             this.openLogButton.Text = "Open log File";
             // 
@@ -504,10 +524,10 @@ namespace OpenUI
             this.clearLoadButton.FillColor = System.Drawing.Color.White;
             this.clearLoadButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.clearLoadButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(58)))), ((int)(((byte)(65)))));
-            this.clearLoadButton.Location = new System.Drawing.Point(402, 10);
-            this.clearLoadButton.Margin = new System.Windows.Forms.Padding(6, 10, 6, 0);
+            this.clearLoadButton.Location = new System.Drawing.Point(201, 5);
+            this.clearLoadButton.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
             this.clearLoadButton.Name = "clearLoadButton";
-            this.clearLoadButton.Size = new System.Drawing.Size(336, 50);
+            this.clearLoadButton.Size = new System.Drawing.Size(168, 25);
             this.clearLoadButton.TabIndex = 4;
             this.clearLoadButton.Text = "Clear Loadcell Running Status";
             // 
@@ -519,10 +539,10 @@ namespace OpenUI
             this.clearDispButton.FillColor = System.Drawing.Color.White;
             this.clearDispButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.clearDispButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(58)))), ((int)(((byte)(65)))));
-            this.clearDispButton.Location = new System.Drawing.Point(74, 10);
-            this.clearDispButton.Margin = new System.Windows.Forms.Padding(6, 10, 6, 0);
+            this.clearDispButton.Location = new System.Drawing.Point(37, 5);
+            this.clearDispButton.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
             this.clearDispButton.Name = "clearDispButton";
-            this.clearDispButton.Size = new System.Drawing.Size(316, 50);
+            this.clearDispButton.Size = new System.Drawing.Size(158, 25);
             this.clearDispButton.TabIndex = 5;
             this.clearDispButton.Text = "Clear Disp. Running Status";
             // 
@@ -530,10 +550,10 @@ namespace OpenUI
             // 
             this.menuLayout.Controls.Add(this.menuLabel);
             this.menuLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.menuLayout.Location = new System.Drawing.Point(16, 76);
+            this.menuLayout.Location = new System.Drawing.Point(8, 38);
             this.menuLayout.Margin = new System.Windows.Forms.Padding(0);
             this.menuLayout.Name = "menuLayout";
-            this.menuLayout.Size = new System.Drawing.Size(950, 32);
+            this.menuLayout.Size = new System.Drawing.Size(475, 16);
             this.menuLayout.TabIndex = 3;
             this.menuLayout.WrapContents = false;
             // 
@@ -541,10 +561,10 @@ namespace OpenUI
             // 
             this.menuLabel.BackColor = System.Drawing.Color.Transparent;
             this.menuLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.menuLabel.Location = new System.Drawing.Point(10, 14);
-            this.menuLabel.Margin = new System.Windows.Forms.Padding(10, 14, 0, 0);
+            this.menuLabel.Location = new System.Drawing.Point(5, 7);
+            this.menuLabel.Margin = new System.Windows.Forms.Padding(5, 7, 0, 0);
             this.menuLabel.Name = "menuLabel";
-            this.menuLabel.Size = new System.Drawing.Size(401, 34);
+            this.menuLabel.Size = new System.Drawing.Size(200, 17);
             this.menuLabel.TabIndex = 0;
             this.menuLabel.Text = "LOGIN       CONFIG       EDITOR       SHOW LOG";
             // 
@@ -554,10 +574,10 @@ namespace OpenUI
             this.systemLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.systemLabel.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.systemLabel.ForeColor = System.Drawing.Color.Gray;
-            this.systemLabel.Location = new System.Drawing.Point(972, 82);
-            this.systemLabel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.systemLabel.Location = new System.Drawing.Point(486, 41);
+            this.systemLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.systemLabel.Name = "systemLabel";
-            this.systemLabel.Size = new System.Drawing.Size(764, 20);
+            this.systemLabel.Size = new System.Drawing.Size(382, 10);
             this.systemLabel.TabIndex = 4;
             this.systemLabel.Text = "●  ●  ●      EMG       CDA       LEFT       RIGHT";
             this.systemLabel.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -570,10 +590,10 @@ namespace OpenUI
             this.logTabsLayout.Controls.Add(this.programLogTab, 0, 0);
             this.logTabsLayout.Controls.Add(this.otherInfoTab, 1, 0);
             this.logTabsLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.logTabsLayout.Location = new System.Drawing.Point(1748, 82);
-            this.logTabsLayout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.logTabsLayout.Location = new System.Drawing.Point(874, 41);
+            this.logTabsLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.logTabsLayout.Name = "logTabsLayout";
-            this.logTabsLayout.Size = new System.Drawing.Size(1128, 20);
+            this.logTabsLayout.Size = new System.Drawing.Size(564, 10);
             this.logTabsLayout.TabIndex = 5;
             // 
             // programLogTab
@@ -582,10 +602,10 @@ namespace OpenUI
             this.programLogTab.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.programLogTab.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.programLogTab.ForeColor = System.Drawing.Color.Black;
-            this.programLogTab.Location = new System.Drawing.Point(6, 6);
-            this.programLogTab.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.programLogTab.Location = new System.Drawing.Point(3, 3);
+            this.programLogTab.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.programLogTab.Name = "programLogTab";
-            this.programLogTab.Size = new System.Drawing.Size(552, 90);
+            this.programLogTab.Size = new System.Drawing.Size(276, 45);
             this.programLogTab.TabIndex = 0;
             this.programLogTab.Text = "Program Log";
             // 
@@ -595,10 +615,10 @@ namespace OpenUI
             this.otherInfoTab.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.otherInfoTab.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.otherInfoTab.ForeColor = System.Drawing.Color.Silver;
-            this.otherInfoTab.Location = new System.Drawing.Point(570, 6);
-            this.otherInfoTab.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.otherInfoTab.Location = new System.Drawing.Point(285, 3);
+            this.otherInfoTab.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.otherInfoTab.Name = "otherInfoTab";
-            this.otherInfoTab.Size = new System.Drawing.Size(552, 90);
+            this.otherInfoTab.Size = new System.Drawing.Size(276, 45);
             this.otherInfoTab.TabIndex = 1;
             this.otherInfoTab.Text = "Other Information";
             // 
@@ -612,26 +632,26 @@ namespace OpenUI
             this.bodyLayout.Controls.Add(this.centerCard, 1, 0);
             this.bodyLayout.Controls.Add(this.stationBCard, 2, 0);
             this.bodyLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bodyLayout.Location = new System.Drawing.Point(6, 130);
-            this.bodyLayout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.bodyLayout.Location = new System.Drawing.Point(3, 65);
+            this.bodyLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.bodyLayout.Name = "bodyLayout";
-            this.bodyLayout.Padding = new System.Windows.Forms.Padding(16, 0, 16, 0);
-            this.bodyLayout.Size = new System.Drawing.Size(2898, 1422);
+            this.bodyLayout.Padding = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.bodyLayout.Size = new System.Drawing.Size(1449, 711);
             this.bodyLayout.TabIndex = 1;
             // 
             // stationACard
             // 
             this.stationACard.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(207)))), ((int)(((byte)(215)))));
-            this.stationACard.BorderRadius = 4;
+            this.stationACard.BorderRadius = 0;
             this.stationACard.BorderThickness = 1;
             this.stationACard.Controls.Add(this.stationALayout);
             this.stationACard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stationACard.FillColor = System.Drawing.Color.White;
-            this.stationACard.Location = new System.Drawing.Point(16, 0);
-            this.stationACard.Margin = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            this.stationACard.Location = new System.Drawing.Point(8, 0);
+            this.stationACard.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.stationACard.Name = "stationACard";
-            this.stationACard.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.stationACard.Size = new System.Drawing.Size(677, 1422);
+            this.stationACard.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.stationACard.Size = new System.Drawing.Size(338, 711);
             this.stationACard.TabIndex = 0;
             // 
             // stationALayout
@@ -648,17 +668,17 @@ namespace OpenUI
             this.stationALayout.Controls.Add(this.stationAProcessHeader, 0, 4);
             this.stationALayout.Controls.Add(this.stationAProcess, 0, 5);
             this.stationALayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stationALayout.Location = new System.Drawing.Point(4, 4);
-            this.stationALayout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.stationALayout.Location = new System.Drawing.Point(2, 2);
+            this.stationALayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.stationALayout.Name = "stationALayout";
             this.stationALayout.RowCount = 6;
-            this.stationALayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
-            this.stationALayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 96F));
-            this.stationALayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.stationALayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 68F));
-            this.stationALayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.stationALayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.stationALayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
+            this.stationALayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.stationALayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.stationALayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.stationALayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.stationALayout.Size = new System.Drawing.Size(669, 1414);
+            this.stationALayout.Size = new System.Drawing.Size(334, 707);
             this.stationALayout.TabIndex = 0;
             // 
             // stationATitle
@@ -667,10 +687,10 @@ namespace OpenUI
             this.stationATitle.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(164)))), ((int)(((byte)(231)))));
             this.stationATitle.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Italic);
             this.stationATitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(65)))), ((int)(((byte)(112)))));
-            this.stationATitle.Location = new System.Drawing.Point(6, 6);
-            this.stationATitle.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.stationATitle.Location = new System.Drawing.Point(3, 3);
+            this.stationATitle.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.stationATitle.Name = "stationATitle";
-            this.stationATitle.Size = new System.Drawing.Size(322, 44);
+            this.stationATitle.Size = new System.Drawing.Size(161, 22);
             this.stationATitle.TabIndex = 0;
             this.stationATitle.Text = "STATION A";
             // 
@@ -680,10 +700,10 @@ namespace OpenUI
             this.stationANote.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.stationANote.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
             this.stationANote.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(55)))), ((int)(((byte)(65)))));
-            this.stationANote.Location = new System.Drawing.Point(340, 6);
-            this.stationANote.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.stationANote.Location = new System.Drawing.Point(170, 3);
+            this.stationANote.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.stationANote.Name = "stationANote";
-            this.stationANote.Size = new System.Drawing.Size(323, 44);
+            this.stationANote.Size = new System.Drawing.Size(162, 22);
             this.stationANote.TabIndex = 1;
             this.stationANote.Text = "No iCSM";
             // 
@@ -696,10 +716,10 @@ namespace OpenUI
             this.stationAStatus.Controls.Add(this.statusA4);
             this.stationAStatus.Controls.Add(this.statusA5);
             this.stationAStatus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stationAStatus.Location = new System.Drawing.Point(0, 56);
+            this.stationAStatus.Location = new System.Drawing.Point(0, 28);
             this.stationAStatus.Margin = new System.Windows.Forms.Padding(0);
             this.stationAStatus.Name = "stationAStatus";
-            this.stationAStatus.Size = new System.Drawing.Size(669, 96);
+            this.stationAStatus.Size = new System.Drawing.Size(334, 48);
             this.stationAStatus.TabIndex = 2;
             // 
             // statusA1
@@ -708,10 +728,10 @@ namespace OpenUI
             this.statusA1.FillColor = System.Drawing.Color.Transparent;
             this.statusA1.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.statusA1.ForeColor = System.Drawing.Color.LimeGreen;
-            this.statusA1.Location = new System.Drawing.Point(6, 6);
-            this.statusA1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.statusA1.Location = new System.Drawing.Point(3, 3);
+            this.statusA1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.statusA1.Name = "statusA1";
-            this.statusA1.Size = new System.Drawing.Size(156, 37);
+            this.statusA1.Size = new System.Drawing.Size(78, 18);
             this.statusA1.TabIndex = 0;
             this.statusA1.Text = "●  SS L1_LS L1";
             // 
@@ -721,10 +741,10 @@ namespace OpenUI
             this.statusA2.FillColor = System.Drawing.Color.Transparent;
             this.statusA2.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.statusA2.ForeColor = System.Drawing.Color.LimeGreen;
-            this.statusA2.Location = new System.Drawing.Point(174, 6);
-            this.statusA2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.statusA2.Location = new System.Drawing.Point(87, 3);
+            this.statusA2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.statusA2.Name = "statusA2";
-            this.statusA2.Size = new System.Drawing.Size(168, 37);
+            this.statusA2.Size = new System.Drawing.Size(84, 18);
             this.statusA2.TabIndex = 1;
             this.statusA2.Text = "●  Left Vacuum";
             // 
@@ -734,10 +754,10 @@ namespace OpenUI
             this.statusA3.FillColor = System.Drawing.Color.Transparent;
             this.statusA3.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.statusA3.ForeColor = System.Drawing.Color.LimeGreen;
-            this.statusA3.Location = new System.Drawing.Point(354, 6);
-            this.statusA3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.statusA3.Location = new System.Drawing.Point(177, 3);
+            this.statusA3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.statusA3.Name = "statusA3";
-            this.statusA3.Size = new System.Drawing.Size(181, 37);
+            this.statusA3.Size = new System.Drawing.Size(90, 18);
             this.statusA3.TabIndex = 2;
             this.statusA3.Text = "●  Right Vacuum";
             // 
@@ -747,10 +767,10 @@ namespace OpenUI
             this.statusA4.FillColor = System.Drawing.Color.Transparent;
             this.statusA4.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.statusA4.ForeColor = System.Drawing.Color.LimeGreen;
-            this.statusA4.Location = new System.Drawing.Point(6, 55);
-            this.statusA4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.statusA4.Location = new System.Drawing.Point(3, 28);
+            this.statusA4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.statusA4.Name = "statusA4";
-            this.statusA4.Size = new System.Drawing.Size(168, 37);
+            this.statusA4.Size = new System.Drawing.Size(84, 18);
             this.statusA4.TabIndex = 3;
             this.statusA4.Text = "●  Front Curing";
             // 
@@ -760,10 +780,10 @@ namespace OpenUI
             this.statusA5.FillColor = System.Drawing.Color.Transparent;
             this.statusA5.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.statusA5.ForeColor = System.Drawing.Color.LimeGreen;
-            this.statusA5.Location = new System.Drawing.Point(186, 55);
-            this.statusA5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.statusA5.Location = new System.Drawing.Point(93, 28);
+            this.statusA5.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.statusA5.Name = "statusA5";
-            this.statusA5.Size = new System.Drawing.Size(160, 37);
+            this.statusA5.Size = new System.Drawing.Size(80, 18);
             this.statusA5.TabIndex = 4;
             this.statusA5.Text = "●  Rear Curing";
             // 
@@ -776,10 +796,10 @@ namespace OpenUI
             this.pdChartButton.FillColor = System.Drawing.Color.White;
             this.pdChartButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.pdChartButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(75)))), ((int)(((byte)(90)))));
-            this.pdChartButton.Location = new System.Drawing.Point(6, 158);
-            this.pdChartButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pdChartButton.Location = new System.Drawing.Point(3, 79);
+            this.pdChartButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.pdChartButton.Name = "pdChartButton";
-            this.pdChartButton.Size = new System.Drawing.Size(322, 48);
+            this.pdChartButton.Size = new System.Drawing.Size(161, 24);
             this.pdChartButton.TabIndex = 3;
             this.pdChartButton.Text = "PD CHART       ▼";
             // 
@@ -792,10 +812,10 @@ namespace OpenUI
             this.lensTrayButton.FillColor = System.Drawing.Color.White;
             this.lensTrayButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lensTrayButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(164)))), ((int)(((byte)(231)))));
-            this.lensTrayButton.Location = new System.Drawing.Point(340, 158);
-            this.lensTrayButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lensTrayButton.Location = new System.Drawing.Point(170, 79);
+            this.lensTrayButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.lensTrayButton.Name = "lensTrayButton";
-            this.lensTrayButton.Size = new System.Drawing.Size(323, 48);
+            this.lensTrayButton.Size = new System.Drawing.Size(162, 24);
             this.lensTrayButton.TabIndex = 4;
             this.lensTrayButton.Text = "A LENS TRAY       ↻";
             // 
@@ -808,10 +828,10 @@ namespace OpenUI
             this.stationAPreviewLayout.Controls.Add(this.pdPreview, 0, 0);
             this.stationAPreviewLayout.Controls.Add(this.stationATrayPreview, 1, 0);
             this.stationAPreviewLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stationAPreviewLayout.Location = new System.Drawing.Point(6, 218);
-            this.stationAPreviewLayout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.stationAPreviewLayout.Location = new System.Drawing.Point(3, 109);
+            this.stationAPreviewLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.stationAPreviewLayout.Name = "stationAPreviewLayout";
-            this.stationAPreviewLayout.Size = new System.Drawing.Size(657, 56);
+            this.stationAPreviewLayout.Size = new System.Drawing.Size(328, 28);
             this.stationAPreviewLayout.TabIndex = 5;
             // 
             // pdPreview
@@ -820,10 +840,10 @@ namespace OpenUI
             this.pdPreview.BorderThickness = 1;
             this.pdPreview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pdPreview.FillColor = System.Drawing.Color.White;
-            this.pdPreview.Location = new System.Drawing.Point(4, 4);
-            this.pdPreview.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pdPreview.Location = new System.Drawing.Point(2, 2);
+            this.pdPreview.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pdPreview.Name = "pdPreview";
-            this.pdPreview.Size = new System.Drawing.Size(320, 304);
+            this.pdPreview.Size = new System.Drawing.Size(160, 152);
             this.pdPreview.TabIndex = 0;
             // 
             // stationATrayPreview
@@ -858,12 +878,17 @@ namespace OpenUI
             this.stationATrayPreview.DefaultCellStyle = dataGridViewCellStyle2;
             this.stationATrayPreview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stationATrayPreview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.stationATrayPreview.Location = new System.Drawing.Point(334, 6);
-            this.stationATrayPreview.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.stationATrayPreview.Location = new System.Drawing.Point(167, 3);
+            this.stationATrayPreview.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.stationATrayPreview.ReadOnly = true;
+            this.stationATrayPreview.AllowUserToAddRows = false;
+            this.stationATrayPreview.RowTemplate.Height = 18;
+            this.stationATrayPreview.RowCount = 1;
+            this.stationATrayPreview.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.stationATrayPreview.Name = "stationATrayPreview";
             this.stationATrayPreview.RowHeadersVisible = false;
             this.stationATrayPreview.RowHeadersWidth = 82;
-            this.stationATrayPreview.Size = new System.Drawing.Size(317, 300);
+            this.stationATrayPreview.Size = new System.Drawing.Size(158, 150);
             this.stationATrayPreview.TabIndex = 1;
             this.stationATrayPreview.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
             this.stationATrayPreview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
@@ -911,56 +936,70 @@ namespace OpenUI
             this.stationAProcessHeader.FillColor = System.Drawing.Color.White;
             this.stationAProcessHeader.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.stationAProcessHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(92)))), ((int)(((byte)(110)))));
-            this.stationAProcessHeader.Location = new System.Drawing.Point(6, 286);
-            this.stationAProcessHeader.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.stationAProcessHeader.Location = new System.Drawing.Point(3, 143);
+            this.stationAProcessHeader.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.stationAProcessHeader.Name = "stationAProcessHeader";
-            this.stationAProcessHeader.Size = new System.Drawing.Size(657, 48);
+            this.stationAProcessHeader.Size = new System.Drawing.Size(328, 24);
             this.stationAProcessHeader.TabIndex = 6;
             this.stationAProcessHeader.Text = "↕   Station A Process  [Process Station A 20260713]";
             this.stationAProcessHeader.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // stationAProcess
             // 
-            this.stationAProcess.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(188)))), ((int)(((byte)(200)))));
-            this.stationAProcess.BorderRadius = 3;
             this.stationALayout.SetColumnSpan(this.stationAProcess, 2);
-            this.stationAProcess.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.stationAProcess.DefaultText = resources.GetString("stationAProcess.DefaultText");
+            this.stationAProcess.Cursor = System.Windows.Forms.Cursors.Default;
             this.stationAProcess.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stationAProcess.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.stationAProcess.Location = new System.Drawing.Point(6, 346);
-            this.stationAProcess.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.stationAProcess.Multiline = true;
+            this.stationAProcess.Location = new System.Drawing.Point(3, 173);
+            this.stationAProcess.Margin = new System.Windows.Forms.Padding(2);
+            this.stationAProcess.ItemHeight = 22;
+            this.stationAProcess.ShowLines = false;
+            this.stationAProcess.HideSelection = false;
+            this.stationAProcess.Nodes.AddRange(new System.Windows.Forms.TreeNode[] { new System.Windows.Forms.TreeNode("#51 - Wet Active Align L1 L2"),
+                new System.Windows.Forms.TreeNode("#52 - Shift on cure offset"),
+                new System.Windows.Forms.TreeNode("#53 - UV Process Snap"),
+                new System.Windows.Forms.TreeNode("#54 - Get PD Value After Curing", new System.Windows.Forms.TreeNode[] { new System.Windows.Forms.TreeNode("#1 - Get PD Value [FINISH]"), new System.Windows.Forms.TreeNode("#2 - [Scan] L2 Line X"), new System.Windows.Forms.TreeNode("#3 - Get PD Value"), new System.Windows.Forms.TreeNode("#4 - [Scan] L2 Line Z"), new System.Windows.Forms.TreeNode("#5 - Get PD Value"), new System.Windows.Forms.TreeNode("#6 - [Scan] L2 Line Y"), new System.Windows.Forms.TreeNode("#7 - Get PD Value"), new System.Windows.Forms.TreeNode("#8 - Check line scan stop condition 1"), new System.Windows.Forms.TreeNode("#9 - Check line scan stop condition 2"), new System.Windows.Forms.TreeNode("#10 - [Scan] L2 Line X final"), new System.Windows.Forms.TreeNode("#11 - Get PD Value"), new System.Windows.Forms.TreeNode("#12 - [Scan] L2 Line Z final") }),
+                new System.Windows.Forms.TreeNode("#55 - Release L1 and move rear PUT"),
+                new System.Windows.Forms.TreeNode("#56 - Get PD Value After Release"),
+                new System.Windows.Forms.TreeNode("#57 - Move L2 lens to safe position"),
+                new System.Windows.Forms.TreeNode("#58 - Close SOA0 Config"),
+                new System.Windows.Forms.TreeNode("#59 - Pick Up SS_L1 On Top Tray"),
+                new System.Windows.Forms.TreeNode("#60 - All station Servo on"),
+                new System.Windows.Forms.TreeNode("#61 - Set SOA1 Config"),
+                new System.Windows.Forms.TreeNode("#62 - Vision Align SOA1 iCSM"),
+                new System.Windows.Forms.TreeNode("#63 - Vision Align-L1 Lens"),
+                new System.Windows.Forms.TreeNode("#64 - Active Align-L1 Lens"),
+                new System.Windows.Forms.TreeNode("#65 - Move L2 to teach position"),
+                new System.Windows.Forms.TreeNode("#66 - Active Align-L2 Lens"),
+                new System.Windows.Forms.TreeNode("#67 - Active Align concurrent-L1 L2"),
+                new System.Windows.Forms.TreeNode("#68 - Epoxy Dispense L1"),
+                new System.Windows.Forms.TreeNode("#69 - Wet Active Align L1 L2") });
             this.stationAProcess.Name = "stationAProcess";
-            this.stationAProcess.PlaceholderText = "";
-            this.stationAProcess.ReadOnly = true;
-            this.stationAProcess.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.stationAProcess.SelectedText = "";
-            this.stationAProcess.Size = new System.Drawing.Size(657, 1062);
+            this.stationAProcess.Size = new System.Drawing.Size(328, 531);
             this.stationAProcess.TabIndex = 7;
             // 
             // centerCard
             // 
             this.centerCard.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(207)))), ((int)(((byte)(215)))));
-            this.centerCard.BorderRadius = 4;
+            this.centerCard.BorderRadius = 0;
             this.centerCard.BorderThickness = 1;
             this.centerCard.Controls.Add(this.centerLayout);
             this.centerCard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.centerCard.FillColor = System.Drawing.Color.White;
-            this.centerCard.Location = new System.Drawing.Point(703, 0);
-            this.centerCard.Margin = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            this.centerCard.Location = new System.Drawing.Point(352, 0);
+            this.centerCard.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.centerCard.Name = "centerCard";
-            this.centerCard.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.centerCard.Size = new System.Drawing.Size(1308, 1422);
+            this.centerCard.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.centerCard.Size = new System.Drawing.Size(654, 711);
             this.centerCard.TabIndex = 1;
             // 
             // centerLayout
             // 
             this.centerLayout.ColumnCount = 4;
             this.centerLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26F));
-            this.centerLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18F));
+            this.centerLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.centerLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26F));
-            this.centerLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.centerLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.centerLayout.Controls.Add(this.centerTitle, 0, 0);
             this.centerLayout.Controls.Add(this.laserValue, 1, 0);
             this.centerLayout.Controls.Add(this.centerStationBTitle, 2, 0);
@@ -971,16 +1010,16 @@ namespace OpenUI
             this.centerLayout.Controls.Add(this.processInfoPanel, 0, 3);
             this.centerLayout.Controls.Add(this.centerBottomLayout, 0, 4);
             this.centerLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.centerLayout.Location = new System.Drawing.Point(4, 4);
-            this.centerLayout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.centerLayout.Location = new System.Drawing.Point(2, 2);
+            this.centerLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.centerLayout.Name = "centerLayout";
             this.centerLayout.RowCount = 5;
-            this.centerLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
-            this.centerLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 96F));
-            this.centerLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62F));
-            this.centerLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 252F));
-            this.centerLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38F));
-            this.centerLayout.Size = new System.Drawing.Size(1300, 1414);
+            this.centerLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.centerLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
+            this.centerLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 69F));
+            this.centerLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 146F));
+            this.centerLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31F));
+            this.centerLayout.Size = new System.Drawing.Size(650, 707);
             this.centerLayout.TabIndex = 0;
             // 
             // centerTitle
@@ -989,10 +1028,10 @@ namespace OpenUI
             this.centerTitle.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(164)))), ((int)(((byte)(231)))));
             this.centerTitle.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Italic);
             this.centerTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(65)))), ((int)(((byte)(112)))));
-            this.centerTitle.Location = new System.Drawing.Point(6, 6);
-            this.centerTitle.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.centerTitle.Location = new System.Drawing.Point(3, 3);
+            this.centerTitle.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.centerTitle.Name = "centerTitle";
-            this.centerTitle.Size = new System.Drawing.Size(326, 44);
+            this.centerTitle.Size = new System.Drawing.Size(163, 22);
             this.centerTitle.TabIndex = 0;
             this.centerTitle.Text = "CENTER";
             // 
@@ -1002,10 +1041,10 @@ namespace OpenUI
             this.laserValue.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.laserValue.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.laserValue.ForeColor = System.Drawing.Color.Green;
-            this.laserValue.Location = new System.Drawing.Point(344, 6);
-            this.laserValue.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.laserValue.Location = new System.Drawing.Point(172, 3);
+            this.laserValue.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.laserValue.Name = "laserValue";
-            this.laserValue.Size = new System.Drawing.Size(222, 44);
+            this.laserValue.Size = new System.Drawing.Size(111, 22);
             this.laserValue.TabIndex = 1;
             this.laserValue.Text = "Laser : 0.0000";
             this.laserValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1016,10 +1055,10 @@ namespace OpenUI
             this.centerStationBTitle.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(164)))), ((int)(((byte)(231)))));
             this.centerStationBTitle.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Italic);
             this.centerStationBTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(65)))), ((int)(((byte)(112)))));
-            this.centerStationBTitle.Location = new System.Drawing.Point(578, 6);
-            this.centerStationBTitle.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.centerStationBTitle.Location = new System.Drawing.Point(289, 3);
+            this.centerStationBTitle.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.centerStationBTitle.Name = "centerStationBTitle";
-            this.centerStationBTitle.Size = new System.Drawing.Size(326, 44);
+            this.centerStationBTitle.Size = new System.Drawing.Size(163, 22);
             this.centerStationBTitle.TabIndex = 2;
             this.centerStationBTitle.Text = "STATION B";
             // 
@@ -1029,10 +1068,10 @@ namespace OpenUI
             this.centerStationBNote.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.centerStationBNote.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
             this.centerStationBNote.ForeColor = System.Drawing.Color.White;
-            this.centerStationBNote.Location = new System.Drawing.Point(916, 6);
-            this.centerStationBNote.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.centerStationBNote.Location = new System.Drawing.Point(458, 3);
+            this.centerStationBNote.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.centerStationBNote.Name = "centerStationBNote";
-            this.centerStationBNote.Size = new System.Drawing.Size(378, 44);
+            this.centerStationBNote.Size = new System.Drawing.Size(189, 22);
             this.centerStationBNote.TabIndex = 3;
             this.centerStationBNote.Text = "No iCSM";
             // 
@@ -1044,10 +1083,10 @@ namespace OpenUI
             this.centerStatus.Controls.Add(this.centerStatus3);
             this.centerStatus.Controls.Add(this.centerStatus4);
             this.centerStatus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.centerStatus.Location = new System.Drawing.Point(0, 56);
+            this.centerStatus.Location = new System.Drawing.Point(0, 28);
             this.centerStatus.Margin = new System.Windows.Forms.Padding(0);
             this.centerStatus.Name = "centerStatus";
-            this.centerStatus.Size = new System.Drawing.Size(572, 96);
+            this.centerStatus.Size = new System.Drawing.Size(286, 48);
             this.centerStatus.TabIndex = 4;
             // 
             // centerStatus1
@@ -1056,10 +1095,10 @@ namespace OpenUI
             this.centerStatus1.FillColor = System.Drawing.Color.Transparent;
             this.centerStatus1.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.centerStatus1.ForeColor = System.Drawing.Color.LimeGreen;
-            this.centerStatus1.Location = new System.Drawing.Point(6, 6);
-            this.centerStatus1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.centerStatus1.Location = new System.Drawing.Point(3, 3);
+            this.centerStatus1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.centerStatus1.Name = "centerStatus1";
-            this.centerStatus1.Size = new System.Drawing.Size(181, 37);
+            this.centerStatus1.Size = new System.Drawing.Size(90, 18);
             this.centerStatus1.TabIndex = 0;
             this.centerStatus1.Text = "●  Gripper Down";
             // 
@@ -1069,10 +1108,10 @@ namespace OpenUI
             this.centerStatus2.FillColor = System.Drawing.Color.Transparent;
             this.centerStatus2.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.centerStatus2.ForeColor = System.Drawing.Color.LimeGreen;
-            this.centerStatus2.Location = new System.Drawing.Point(199, 6);
-            this.centerStatus2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.centerStatus2.Location = new System.Drawing.Point(100, 3);
+            this.centerStatus2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.centerStatus2.Name = "centerStatus2";
-            this.centerStatus2.Size = new System.Drawing.Size(176, 37);
+            this.centerStatus2.Size = new System.Drawing.Size(88, 18);
             this.centerStatus2.TabIndex = 1;
             this.centerStatus2.Text = "●  Gripper Close";
             // 
@@ -1082,10 +1121,10 @@ namespace OpenUI
             this.centerStatus3.FillColor = System.Drawing.Color.Transparent;
             this.centerStatus3.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.centerStatus3.ForeColor = System.Drawing.Color.LimeGreen;
-            this.centerStatus3.Location = new System.Drawing.Point(6, 55);
-            this.centerStatus3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.centerStatus3.Location = new System.Drawing.Point(3, 28);
+            this.centerStatus3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.centerStatus3.Name = "centerStatus3";
-            this.centerStatus3.Size = new System.Drawing.Size(202, 37);
+            this.centerStatus3.Size = new System.Drawing.Size(101, 18);
             this.centerStatus3.TabIndex = 2;
             this.centerStatus3.Text = "●  A Stage Vacuum";
             // 
@@ -1095,10 +1134,10 @@ namespace OpenUI
             this.centerStatus4.FillColor = System.Drawing.Color.Transparent;
             this.centerStatus4.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.centerStatus4.ForeColor = System.Drawing.Color.LimeGreen;
-            this.centerStatus4.Location = new System.Drawing.Point(220, 55);
-            this.centerStatus4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.centerStatus4.Location = new System.Drawing.Point(110, 28);
+            this.centerStatus4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.centerStatus4.Name = "centerStatus4";
-            this.centerStatus4.Size = new System.Drawing.Size(201, 37);
+            this.centerStatus4.Size = new System.Drawing.Size(100, 18);
             this.centerStatus4.TabIndex = 3;
             this.centerStatus4.Text = "●  B Stage Vacuum";
             // 
@@ -1111,10 +1150,10 @@ namespace OpenUI
             this.stationBStatus.Controls.Add(this.statusB4);
             this.stationBStatus.Controls.Add(this.statusB5);
             this.stationBStatus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stationBStatus.Location = new System.Drawing.Point(572, 56);
+            this.stationBStatus.Location = new System.Drawing.Point(286, 28);
             this.stationBStatus.Margin = new System.Windows.Forms.Padding(0);
             this.stationBStatus.Name = "stationBStatus";
-            this.stationBStatus.Size = new System.Drawing.Size(728, 96);
+            this.stationBStatus.Size = new System.Drawing.Size(364, 48);
             this.stationBStatus.TabIndex = 5;
             // 
             // statusB1
@@ -1123,10 +1162,10 @@ namespace OpenUI
             this.statusB1.FillColor = System.Drawing.Color.Transparent;
             this.statusB1.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.statusB1.ForeColor = System.Drawing.Color.LimeGreen;
-            this.statusB1.Location = new System.Drawing.Point(6, 6);
-            this.statusB1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.statusB1.Location = new System.Drawing.Point(3, 3);
+            this.statusB1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.statusB1.Name = "statusB1";
-            this.statusB1.Size = new System.Drawing.Size(104, 37);
+            this.statusB1.Size = new System.Drawing.Size(52, 18);
             this.statusB1.TabIndex = 0;
             this.statusB1.Text = "●  SS_L2";
             // 
@@ -1136,10 +1175,10 @@ namespace OpenUI
             this.statusB2.FillColor = System.Drawing.Color.Transparent;
             this.statusB2.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.statusB2.ForeColor = System.Drawing.Color.LimeGreen;
-            this.statusB2.Location = new System.Drawing.Point(122, 6);
-            this.statusB2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.statusB2.Location = new System.Drawing.Point(61, 3);
+            this.statusB2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.statusB2.Name = "statusB2";
-            this.statusB2.Size = new System.Drawing.Size(103, 37);
+            this.statusB2.Size = new System.Drawing.Size(52, 18);
             this.statusB2.TabIndex = 1;
             this.statusB2.Text = "●  LS_L2";
             // 
@@ -1149,10 +1188,10 @@ namespace OpenUI
             this.statusB3.FillColor = System.Drawing.Color.Transparent;
             this.statusB3.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.statusB3.ForeColor = System.Drawing.Color.LimeGreen;
-            this.statusB3.Location = new System.Drawing.Point(237, 6);
-            this.statusB3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.statusB3.Location = new System.Drawing.Point(118, 3);
+            this.statusB3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.statusB3.Name = "statusB3";
-            this.statusB3.Size = new System.Drawing.Size(168, 37);
+            this.statusB3.Size = new System.Drawing.Size(84, 18);
             this.statusB3.TabIndex = 2;
             this.statusB3.Text = "●  Left Vacuum";
             // 
@@ -1162,10 +1201,10 @@ namespace OpenUI
             this.statusB4.FillColor = System.Drawing.Color.Transparent;
             this.statusB4.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.statusB4.ForeColor = System.Drawing.Color.LimeGreen;
-            this.statusB4.Location = new System.Drawing.Point(417, 6);
-            this.statusB4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.statusB4.Location = new System.Drawing.Point(208, 3);
+            this.statusB4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.statusB4.Name = "statusB4";
-            this.statusB4.Size = new System.Drawing.Size(181, 37);
+            this.statusB4.Size = new System.Drawing.Size(90, 18);
             this.statusB4.TabIndex = 3;
             this.statusB4.Text = "●  Right Vacuum";
             // 
@@ -1175,10 +1214,10 @@ namespace OpenUI
             this.statusB5.FillColor = System.Drawing.Color.Transparent;
             this.statusB5.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.statusB5.ForeColor = System.Drawing.Color.LimeGreen;
-            this.statusB5.Location = new System.Drawing.Point(6, 55);
-            this.statusB5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.statusB5.Location = new System.Drawing.Point(3, 28);
+            this.statusB5.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.statusB5.Name = "statusB5";
-            this.statusB5.Size = new System.Drawing.Size(168, 37);
+            this.statusB5.Size = new System.Drawing.Size(84, 18);
             this.statusB5.TabIndex = 4;
             this.statusB5.Text = "●  Front Curing";
             // 
@@ -1187,18 +1226,18 @@ namespace OpenUI
             this.visionLayout.ColumnCount = 4;
             this.centerLayout.SetColumnSpan(this.visionLayout, 4);
             this.visionLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26F));
-            this.visionLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18F));
+            this.visionLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.visionLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26F));
-            this.visionLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.visionLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.visionLayout.Controls.Add(this.centerCameraLayout, 0, 0);
             this.visionLayout.Controls.Add(this.trayLayout, 1, 0);
             this.visionLayout.Controls.Add(this.topCameraLayout, 2, 0);
             this.visionLayout.Controls.Add(this.bTrayLayout, 3, 0);
             this.visionLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.visionLayout.Location = new System.Drawing.Point(6, 158);
-            this.visionLayout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.visionLayout.Location = new System.Drawing.Point(3, 79);
+            this.visionLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.visionLayout.Name = "visionLayout";
-            this.visionLayout.Size = new System.Drawing.Size(1288, 614);
+            this.visionLayout.Size = new System.Drawing.Size(644, 307);
             this.visionLayout.TabIndex = 6;
             // 
             // centerCameraLayout
@@ -1206,13 +1245,14 @@ namespace OpenUI
             this.centerCameraLayout.Controls.Add(this.centerCameraHeader, 0, 0);
             this.centerCameraLayout.Controls.Add(this.centerCamera, 0, 1);
             this.centerCameraLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.centerCameraLayout.Location = new System.Drawing.Point(6, 6);
-            this.centerCameraLayout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.centerCameraLayout.Location = new System.Drawing.Point(3, 3);
+            this.centerCameraLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.centerCameraLayout.Name = "centerCameraLayout";
-            this.centerCameraLayout.RowCount = 2;
-            this.centerCameraLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
-            this.centerCameraLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.centerCameraLayout.Size = new System.Drawing.Size(322, 602);
+            this.centerCameraLayout.RowCount = 3;
+            this.centerCameraLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.centerCameraLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.centerCameraLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.centerCameraLayout.Size = new System.Drawing.Size(161, 301);
             this.centerCameraLayout.TabIndex = 0;
             // 
             // centerCameraHeader
@@ -1223,22 +1263,22 @@ namespace OpenUI
             this.centerCameraHeader.FillColor = System.Drawing.Color.White;
             this.centerCameraHeader.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.centerCameraHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(75)))), ((int)(((byte)(90)))));
-            this.centerCameraHeader.Location = new System.Drawing.Point(6, 6);
-            this.centerCameraHeader.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.centerCameraHeader.Location = new System.Drawing.Point(3, 3);
+            this.centerCameraHeader.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.centerCameraHeader.Name = "centerCameraHeader";
-            this.centerCameraHeader.Size = new System.Drawing.Size(404, 58);
+            this.centerCameraHeader.Size = new System.Drawing.Size(202, 29);
             this.centerCameraHeader.TabIndex = 0;
             this.centerCameraHeader.Text = "CENTER CAMERA       ▼";
             // 
             // centerCamera
             // 
-            this.centerCamera.BorderRadius = 4;
+            this.centerCamera.BorderRadius = 0;
             this.centerCamera.Dock = System.Windows.Forms.DockStyle.Fill;
             this.centerCamera.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
-            this.centerCamera.Location = new System.Drawing.Point(8, 78);
-            this.centerCamera.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.centerCamera.Location = new System.Drawing.Point(4, 39);
+            this.centerCamera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.centerCamera.Name = "centerCamera";
-            this.centerCamera.Size = new System.Drawing.Size(400, 516);
+            this.centerCamera.Size = new System.Drawing.Size(200, 258);
             this.centerCamera.TabIndex = 1;
             // 
             // trayLayout
@@ -1249,16 +1289,16 @@ namespace OpenUI
             this.trayLayout.Controls.Add(this.trayBottomLabel, 0, 3);
             this.trayLayout.Controls.Add(this.trayBottom, 0, 4);
             this.trayLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trayLayout.Location = new System.Drawing.Point(340, 6);
-            this.trayLayout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.trayLayout.Location = new System.Drawing.Point(170, 3);
+            this.trayLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.trayLayout.Name = "trayLayout";
             this.trayLayout.RowCount = 5;
-            this.trayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
-            this.trayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.trayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.trayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
             this.trayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.trayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.trayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
             this.trayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.trayLayout.Size = new System.Drawing.Size(219, 602);
+            this.trayLayout.Size = new System.Drawing.Size(110, 301);
             this.trayLayout.TabIndex = 1;
             // 
             // trayHeader
@@ -1269,10 +1309,10 @@ namespace OpenUI
             this.trayHeader.FillColor = System.Drawing.Color.White;
             this.trayHeader.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.trayHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(164)))), ((int)(((byte)(231)))));
-            this.trayHeader.Location = new System.Drawing.Point(6, 6);
-            this.trayHeader.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.trayHeader.Location = new System.Drawing.Point(3, 3);
+            this.trayHeader.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.trayHeader.Name = "trayHeader";
-            this.trayHeader.Size = new System.Drawing.Size(480, 58);
+            this.trayHeader.Size = new System.Drawing.Size(240, 29);
             this.trayHeader.TabIndex = 0;
             this.trayHeader.Text = "iCSM TRAY       ↻";
             // 
@@ -1282,10 +1322,10 @@ namespace OpenUI
             this.trayTopLabel.FillColor = System.Drawing.Color.White;
             this.trayTopLabel.Font = new System.Drawing.Font("Segoe UI", 7F);
             this.trayTopLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.trayTopLabel.Location = new System.Drawing.Point(6, 76);
-            this.trayTopLabel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.trayTopLabel.Location = new System.Drawing.Point(3, 38);
+            this.trayTopLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.trayTopLabel.Name = "trayTopLabel";
-            this.trayTopLabel.Size = new System.Drawing.Size(480, 24);
+            this.trayTopLabel.Size = new System.Drawing.Size(240, 12);
             this.trayTopLabel.TabIndex = 1;
             this.trayTopLabel.Text = "iCSM TOP";
             // 
@@ -1324,14 +1364,19 @@ namespace OpenUI
             this.trayTop.DefaultCellStyle = dataGridViewCellStyle5;
             this.trayTop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.trayTop.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(214)))), ((int)(((byte)(239)))));
-            this.trayTop.Location = new System.Drawing.Point(6, 112);
-            this.trayTop.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.trayTop.Location = new System.Drawing.Point(3, 56);
+            this.trayTop.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.trayTop.ReadOnly = true;
+            this.trayTop.AllowUserToAddRows = false;
+            this.trayTop.RowTemplate.Height = 42;
+            this.trayTop.RowCount = 4;
+            this.trayTop.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.trayTop.Name = "trayTop";
             this.trayTop.RowHeadersVisible = false;
             this.trayTop.RowHeadersWidth = 82;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.trayTop.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.trayTop.Size = new System.Drawing.Size(480, 218);
+            this.trayTop.Size = new System.Drawing.Size(240, 109);
             this.trayTop.TabIndex = 2;
             this.trayTop.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.trayTop.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
@@ -1378,10 +1423,10 @@ namespace OpenUI
             this.trayBottomLabel.FillColor = System.Drawing.Color.White;
             this.trayBottomLabel.Font = new System.Drawing.Font("Segoe UI", 7F);
             this.trayBottomLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.trayBottomLabel.Location = new System.Drawing.Point(6, 342);
-            this.trayBottomLabel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.trayBottomLabel.Location = new System.Drawing.Point(3, 171);
+            this.trayBottomLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.trayBottomLabel.Name = "trayBottomLabel";
-            this.trayBottomLabel.Size = new System.Drawing.Size(480, 24);
+            this.trayBottomLabel.Size = new System.Drawing.Size(240, 12);
             this.trayBottomLabel.TabIndex = 3;
             this.trayBottomLabel.Text = "iCSM BOTTOM";
             // 
@@ -1420,14 +1465,19 @@ namespace OpenUI
             this.trayBottom.DefaultCellStyle = dataGridViewCellStyle9;
             this.trayBottom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.trayBottom.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(214)))), ((int)(((byte)(239)))));
-            this.trayBottom.Location = new System.Drawing.Point(6, 378);
-            this.trayBottom.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.trayBottom.Location = new System.Drawing.Point(3, 189);
+            this.trayBottom.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.trayBottom.ReadOnly = true;
+            this.trayBottom.AllowUserToAddRows = false;
+            this.trayBottom.RowTemplate.Height = 42;
+            this.trayBottom.RowCount = 4;
+            this.trayBottom.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.trayBottom.Name = "trayBottom";
             this.trayBottom.RowHeadersVisible = false;
             this.trayBottom.RowHeadersWidth = 82;
             dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.trayBottom.RowsDefaultCellStyle = dataGridViewCellStyle10;
-            this.trayBottom.Size = new System.Drawing.Size(480, 218);
+            this.trayBottom.Size = new System.Drawing.Size(240, 109);
             this.trayBottom.TabIndex = 4;
             this.trayBottom.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.trayBottom.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
@@ -1474,14 +1524,14 @@ namespace OpenUI
             this.topCameraLayout.Controls.Add(this.topCamera, 0, 1);
             this.topCameraLayout.Controls.Add(this.measureItems, 0, 2);
             this.topCameraLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.topCameraLayout.Location = new System.Drawing.Point(571, 6);
-            this.topCameraLayout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.topCameraLayout.Location = new System.Drawing.Point(286, 3);
+            this.topCameraLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.topCameraLayout.Name = "topCameraLayout";
             this.topCameraLayout.RowCount = 3;
-            this.topCameraLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
-            this.topCameraLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 58F));
-            this.topCameraLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42F));
-            this.topCameraLayout.Size = new System.Drawing.Size(322, 602);
+            this.topCameraLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.topCameraLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.topCameraLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.topCameraLayout.Size = new System.Drawing.Size(161, 301);
             this.topCameraLayout.TabIndex = 2;
             // 
             // topCameraHeader
@@ -1492,40 +1542,49 @@ namespace OpenUI
             this.topCameraHeader.FillColor = System.Drawing.Color.White;
             this.topCameraHeader.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.topCameraHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(75)))), ((int)(((byte)(90)))));
-            this.topCameraHeader.Location = new System.Drawing.Point(6, 6);
-            this.topCameraHeader.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.topCameraHeader.Location = new System.Drawing.Point(3, 3);
+            this.topCameraHeader.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.topCameraHeader.Name = "topCameraHeader";
-            this.topCameraHeader.Size = new System.Drawing.Size(636, 58);
+            this.topCameraHeader.Size = new System.Drawing.Size(318, 29);
             this.topCameraHeader.TabIndex = 0;
             this.topCameraHeader.Text = "TOP VISION CAMERA       ▼";
             // 
             // topCamera
             // 
-            this.topCamera.BorderRadius = 4;
+            this.topCamera.BorderRadius = 0;
             this.topCamera.Dock = System.Windows.Forms.DockStyle.Fill;
             this.topCamera.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
-            this.topCamera.Location = new System.Drawing.Point(8, 78);
-            this.topCamera.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.topCamera.Location = new System.Drawing.Point(4, 39);
+            this.topCamera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.topCamera.Name = "topCamera";
-            this.topCamera.Size = new System.Drawing.Size(632, 292);
+            this.topCamera.Size = new System.Drawing.Size(316, 146);
             this.topCamera.TabIndex = 1;
             // 
             // measureItems
             // 
-            this.measureItems.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(188)))), ((int)(((byte)(200)))));
             this.measureItems.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.measureItems.DefaultText = "Measure Items                 Result\r\nBarcode\r\nLaser B Max\r\nLaser A Max\r\nSOA0 Max" +
-    "\r\nSOA1 Max\r\nSOA2 Max";
-            this.measureItems.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.measureItems.Dock = System.Windows.Forms.DockStyle.Fill;
             this.measureItems.Font = new System.Drawing.Font("Segoe UI", 7.5F);
-            this.measureItems.Location = new System.Drawing.Point(5, 479);
-            this.measureItems.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.measureItems.Multiline = true;
+            this.measureItems.Location = new System.Drawing.Point(2, 240);
+            this.measureItems.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.measureItems.ColumnCount = 2;
+            this.measureItems.Columns[0].HeaderText = "Measure Items";
+            this.measureItems.Columns[1].HeaderText = "Result";
+            this.measureItems.RowHeadersVisible = false;
+            this.measureItems.AllowUserToAddRows = false;
+            this.measureItems.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.measureItems.BackgroundColor = System.Drawing.Color.White;
+            this.measureItems.ColumnHeadersHeight = 20;
+            this.measureItems.RowTemplate.Height = 22;
+            this.measureItems.Rows.Add("Barcode", "");
+            this.measureItems.Rows.Add("Laser B Max", "");
+            this.measureItems.Rows.Add("Laser A Max", "");
+            this.measureItems.Rows.Add("SOA0 Max", "");
+            this.measureItems.Rows.Add("SOA1 Max", "");
+            this.measureItems.Rows.Add("SOA2 Max", "");
             this.measureItems.Name = "measureItems";
-            this.measureItems.PlaceholderText = "";
             this.measureItems.ReadOnly = true;
-            this.measureItems.SelectedText = "";
-            this.measureItems.Size = new System.Drawing.Size(638, 118);
+            this.measureItems.Size = new System.Drawing.Size(319, 59);
             this.measureItems.TabIndex = 2;
             // 
             // bTrayLayout
@@ -1536,16 +1595,16 @@ namespace OpenUI
             this.bTrayLayout.Controls.Add(this.bTrayBottomLabel, 0, 3);
             this.bTrayLayout.Controls.Add(this.bTrayBottom, 0, 4);
             this.bTrayLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bTrayLayout.Location = new System.Drawing.Point(905, 6);
-            this.bTrayLayout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.bTrayLayout.Location = new System.Drawing.Point(452, 3);
+            this.bTrayLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.bTrayLayout.Name = "bTrayLayout";
             this.bTrayLayout.RowCount = 5;
-            this.bTrayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
-            this.bTrayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.bTrayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.bTrayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
             this.bTrayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.bTrayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.bTrayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
             this.bTrayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.bTrayLayout.Size = new System.Drawing.Size(377, 602);
+            this.bTrayLayout.Size = new System.Drawing.Size(188, 301);
             this.bTrayLayout.TabIndex = 3;
             // 
             // bTrayHeader
@@ -1556,10 +1615,10 @@ namespace OpenUI
             this.bTrayHeader.FillColor = System.Drawing.Color.White;
             this.bTrayHeader.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bTrayHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(164)))), ((int)(((byte)(231)))));
-            this.bTrayHeader.Location = new System.Drawing.Point(6, 6);
-            this.bTrayHeader.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.bTrayHeader.Location = new System.Drawing.Point(3, 3);
+            this.bTrayHeader.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.bTrayHeader.Name = "bTrayHeader";
-            this.bTrayHeader.Size = new System.Drawing.Size(480, 58);
+            this.bTrayHeader.Size = new System.Drawing.Size(240, 29);
             this.bTrayHeader.TabIndex = 0;
             this.bTrayHeader.Text = "B LENS TRAY       ↻";
             // 
@@ -1569,10 +1628,10 @@ namespace OpenUI
             this.bTrayTopLabel.FillColor = System.Drawing.Color.White;
             this.bTrayTopLabel.Font = new System.Drawing.Font("Segoe UI", 7F);
             this.bTrayTopLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(85)))), ((int)(((byte)(45)))));
-            this.bTrayTopLabel.Location = new System.Drawing.Point(6, 76);
-            this.bTrayTopLabel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.bTrayTopLabel.Location = new System.Drawing.Point(3, 38);
+            this.bTrayTopLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.bTrayTopLabel.Name = "bTrayTopLabel";
-            this.bTrayTopLabel.Size = new System.Drawing.Size(480, 24);
+            this.bTrayTopLabel.Size = new System.Drawing.Size(240, 12);
             this.bTrayTopLabel.TabIndex = 1;
             this.bTrayTopLabel.Text = "SS L2";
             // 
@@ -1615,14 +1674,19 @@ namespace OpenUI
             this.bTrayTop.DefaultCellStyle = dataGridViewCellStyle13;
             this.bTrayTop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bTrayTop.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(214)))), ((int)(((byte)(239)))));
-            this.bTrayTop.Location = new System.Drawing.Point(6, 112);
-            this.bTrayTop.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.bTrayTop.Location = new System.Drawing.Point(3, 56);
+            this.bTrayTop.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bTrayTop.ReadOnly = true;
+            this.bTrayTop.AllowUserToAddRows = false;
+            this.bTrayTop.RowTemplate.Height = 17;
+            this.bTrayTop.RowCount = 10;
+            this.bTrayTop.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.bTrayTop.Name = "bTrayTop";
             this.bTrayTop.RowHeadersVisible = false;
             this.bTrayTop.RowHeadersWidth = 82;
             dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.bTrayTop.RowsDefaultCellStyle = dataGridViewCellStyle14;
-            this.bTrayTop.Size = new System.Drawing.Size(480, 218);
+            this.bTrayTop.Size = new System.Drawing.Size(240, 109);
             this.bTrayTop.TabIndex = 2;
             this.bTrayTop.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.bTrayTop.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
@@ -1689,10 +1753,10 @@ namespace OpenUI
             this.bTrayBottomLabel.FillColor = System.Drawing.Color.White;
             this.bTrayBottomLabel.Font = new System.Drawing.Font("Segoe UI", 7F);
             this.bTrayBottomLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(85)))), ((int)(((byte)(45)))));
-            this.bTrayBottomLabel.Location = new System.Drawing.Point(6, 342);
-            this.bTrayBottomLabel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.bTrayBottomLabel.Location = new System.Drawing.Point(3, 171);
+            this.bTrayBottomLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.bTrayBottomLabel.Name = "bTrayBottomLabel";
-            this.bTrayBottomLabel.Size = new System.Drawing.Size(480, 24);
+            this.bTrayBottomLabel.Size = new System.Drawing.Size(240, 12);
             this.bTrayBottomLabel.TabIndex = 3;
             this.bTrayBottomLabel.Text = "LS L2";
             // 
@@ -1735,14 +1799,19 @@ namespace OpenUI
             this.bTrayBottom.DefaultCellStyle = dataGridViewCellStyle17;
             this.bTrayBottom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bTrayBottom.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(214)))), ((int)(((byte)(239)))));
-            this.bTrayBottom.Location = new System.Drawing.Point(6, 378);
-            this.bTrayBottom.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.bTrayBottom.Location = new System.Drawing.Point(3, 189);
+            this.bTrayBottom.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bTrayBottom.ReadOnly = true;
+            this.bTrayBottom.AllowUserToAddRows = false;
+            this.bTrayBottom.RowTemplate.Height = 17;
+            this.bTrayBottom.RowCount = 10;
+            this.bTrayBottom.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.bTrayBottom.Name = "bTrayBottom";
             this.bTrayBottom.RowHeadersVisible = false;
             this.bTrayBottom.RowHeadersWidth = 82;
             dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.bTrayBottom.RowsDefaultCellStyle = dataGridViewCellStyle18;
-            this.bTrayBottom.Size = new System.Drawing.Size(480, 218);
+            this.bTrayBottom.Size = new System.Drawing.Size(240, 109);
             this.bTrayBottom.TabIndex = 4;
             this.bTrayBottom.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.bTrayBottom.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
@@ -1808,37 +1877,23 @@ namespace OpenUI
             this.processInfoPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(205)))), ((int)(((byte)(215)))));
             this.processInfoPanel.BorderThickness = 1;
             this.centerLayout.SetColumnSpan(this.processInfoPanel, 4);
-            this.processInfoPanel.Controls.Add(this.processInfoTitle);
-            this.processInfoPanel.Controls.Add(this.totalTimeLabel);
-            this.processInfoPanel.Controls.Add(this.totalTimeValue);
-            this.processInfoPanel.Controls.Add(this.processInfoRightTitle);
-            this.processInfoPanel.Controls.Add(this.rightTimeLabel);
-            this.processInfoPanel.Controls.Add(this.rightTimeValue);
-            this.processInfoPanel.Controls.Add(this.currentFlowLabel);
-            this.processInfoPanel.Controls.Add(this.currentFlowValue);
-            this.processInfoPanel.Controls.Add(this.metricLabel);
-            this.processInfoPanel.Controls.Add(this.startButton);
-            this.processInfoPanel.Controls.Add(this.stopButton);
-            this.processInfoPanel.Controls.Add(this.pauseButton);
-            this.processInfoPanel.Controls.Add(this.showMessageCheck);
-            this.processInfoPanel.Controls.Add(this.stopFeedAButton);
-            this.processInfoPanel.Controls.Add(this.stopFeedBButton);
+            this.processInfoPanel.Controls.Add(this.processSplit);
             this.processInfoPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.processInfoPanel.FillColor = System.Drawing.Color.White;
-            this.processInfoPanel.Location = new System.Drawing.Point(6, 784);
-            this.processInfoPanel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.processInfoPanel.Location = new System.Drawing.Point(3, 392);
+            this.processInfoPanel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.processInfoPanel.Name = "processInfoPanel";
-            this.processInfoPanel.Size = new System.Drawing.Size(1288, 240);
+            this.processInfoPanel.Size = new System.Drawing.Size(644, 120);
             this.processInfoPanel.TabIndex = 7;
             // 
             // processInfoTitle
             // 
             this.processInfoTitle.BackColor = System.Drawing.Color.Transparent;
             this.processInfoTitle.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Italic);
-            this.processInfoTitle.Location = new System.Drawing.Point(16, 14);
-            this.processInfoTitle.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.processInfoTitle.Location = new System.Drawing.Point(8, 0);
+            this.processInfoTitle.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.processInfoTitle.Name = "processInfoTitle";
-            this.processInfoTitle.Size = new System.Drawing.Size(200, 42);
+            this.processInfoTitle.Size = new System.Drawing.Size(100, 21);
             this.processInfoTitle.TabIndex = 0;
             this.processInfoTitle.Text = "PROCESS INFO.";
             // 
@@ -1846,10 +1901,10 @@ namespace OpenUI
             // 
             this.totalTimeLabel.BackColor = System.Drawing.Color.Transparent;
             this.totalTimeLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
-            this.totalTimeLabel.Location = new System.Drawing.Point(16, 68);
-            this.totalTimeLabel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.totalTimeLabel.Location = new System.Drawing.Point(8, 28);
+            this.totalTimeLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.totalTimeLabel.Name = "totalTimeLabel";
-            this.totalTimeLabel.Size = new System.Drawing.Size(216, 34);
+            this.totalTimeLabel.Size = new System.Drawing.Size(108, 17);
             this.totalTimeLabel.TabIndex = 1;
             this.totalTimeLabel.Text = "Auto Run Proc. Time";
             // 
@@ -1858,10 +1913,10 @@ namespace OpenUI
             this.totalTimeValue.AutoSize = false;
             this.totalTimeValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(176)))), ((int)(((byte)(0)))));
             this.totalTimeValue.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
-            this.totalTimeValue.Location = new System.Drawing.Point(250, 64);
-            this.totalTimeValue.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.totalTimeValue.Location = new System.Drawing.Point(170, 26);
+            this.totalTimeValue.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.totalTimeValue.Name = "totalTimeValue";
-            this.totalTimeValue.Size = new System.Drawing.Size(390, 48);
+            this.totalTimeValue.Size = new System.Drawing.Size(280, 22);
             this.totalTimeValue.TabIndex = 2;
             this.totalTimeValue.Text = "000.00 sec.";
             this.totalTimeValue.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
@@ -1870,10 +1925,10 @@ namespace OpenUI
             // 
             this.processInfoRightTitle.BackColor = System.Drawing.Color.Transparent;
             this.processInfoRightTitle.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Italic);
-            this.processInfoRightTitle.Location = new System.Drawing.Point(660, 14);
-            this.processInfoRightTitle.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.processInfoRightTitle.Location = new System.Drawing.Point(475, 0);
+            this.processInfoRightTitle.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.processInfoRightTitle.Name = "processInfoRightTitle";
-            this.processInfoRightTitle.Size = new System.Drawing.Size(200, 42);
+            this.processInfoRightTitle.Size = new System.Drawing.Size(100, 21);
             this.processInfoRightTitle.TabIndex = 3;
             this.processInfoRightTitle.Text = "PROCESS INFO.";
             // 
@@ -1881,10 +1936,10 @@ namespace OpenUI
             // 
             this.rightTimeLabel.BackColor = System.Drawing.Color.Transparent;
             this.rightTimeLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
-            this.rightTimeLabel.Location = new System.Drawing.Point(660, 68);
-            this.rightTimeLabel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.rightTimeLabel.Location = new System.Drawing.Point(475, 28);
+            this.rightTimeLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.rightTimeLabel.Name = "rightTimeLabel";
-            this.rightTimeLabel.Size = new System.Drawing.Size(173, 34);
+            this.rightTimeLabel.Size = new System.Drawing.Size(86, 17);
             this.rightTimeLabel.TabIndex = 4;
             this.rightTimeLabel.Text = "Total Proc. Time";
             // 
@@ -1893,10 +1948,10 @@ namespace OpenUI
             this.rightTimeValue.AutoSize = false;
             this.rightTimeValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(176)))), ((int)(((byte)(0)))));
             this.rightTimeValue.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
-            this.rightTimeValue.Location = new System.Drawing.Point(870, 64);
-            this.rightTimeValue.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.rightTimeValue.Location = new System.Drawing.Point(610, 26);
+            this.rightTimeValue.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.rightTimeValue.Name = "rightTimeValue";
-            this.rightTimeValue.Size = new System.Drawing.Size(400, 48);
+            this.rightTimeValue.Size = new System.Drawing.Size(390, 22);
             this.rightTimeValue.TabIndex = 5;
             this.rightTimeValue.Text = "000.00 sec.";
             this.rightTimeValue.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
@@ -1905,10 +1960,10 @@ namespace OpenUI
             // 
             this.currentFlowLabel.BackColor = System.Drawing.Color.Transparent;
             this.currentFlowLabel.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Italic);
-            this.currentFlowLabel.Location = new System.Drawing.Point(660, 122);
-            this.currentFlowLabel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.currentFlowLabel.Location = new System.Drawing.Point(475, 54);
+            this.currentFlowLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.currentFlowLabel.Name = "currentFlowLabel";
-            this.currentFlowLabel.Size = new System.Drawing.Size(87, 32);
+            this.currentFlowLabel.Size = new System.Drawing.Size(44, 16);
             this.currentFlowLabel.TabIndex = 6;
             this.currentFlowLabel.Text = "Cur. Flow";
             // 
@@ -1916,10 +1971,10 @@ namespace OpenUI
             // 
             this.currentFlowValue.AutoSize = false;
             this.currentFlowValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.currentFlowValue.Location = new System.Drawing.Point(800, 118);
-            this.currentFlowValue.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.currentFlowValue.Location = new System.Drawing.Point(555, 52);
+            this.currentFlowValue.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.currentFlowValue.Name = "currentFlowValue";
-            this.currentFlowValue.Size = new System.Drawing.Size(470, 44);
+            this.currentFlowValue.Size = new System.Drawing.Size(445, 20);
             this.currentFlowValue.TabIndex = 7;
             this.currentFlowValue.Text = "Process Name";
             this.currentFlowValue.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
@@ -1929,67 +1984,64 @@ namespace OpenUI
             this.metricLabel.BackColor = System.Drawing.Color.Transparent;
             this.metricLabel.Font = new System.Drawing.Font("Segoe UI", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.metricLabel.ForeColor = System.Drawing.Color.Red;
-            this.metricLabel.Location = new System.Drawing.Point(660, 184);
-            this.metricLabel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.metricLabel.Location = new System.Drawing.Point(490, 112);
+            this.metricLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.metricLabel.Name = "metricLabel";
-            this.metricLabel.Size = new System.Drawing.Size(352, 32);
+            this.metricLabel.Size = new System.Drawing.Size(176, 16);
             this.metricLabel.TabIndex = 8;
             this.metricLabel.Text = "Socket :  0.00       SOA :  0.00       Laser :  0.00";
             // 
             // startButton
             // 
             this.startButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(165)))), ((int)(((byte)(230)))));
-            this.startButton.BorderRadius = 16;
             this.startButton.BorderThickness = 1;
             this.startButton.FillColor = System.Drawing.Color.White;
             this.startButton.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.startButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(165)))), ((int)(((byte)(230)))));
-            this.startButton.Location = new System.Drawing.Point(16, 144);
-            this.startButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.startButton.Location = new System.Drawing.Point(42, 62);
+            this.startButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(190, 68);
+            this.startButton.Size = new System.Drawing.Size(36, 36);
             this.startButton.TabIndex = 9;
-            this.startButton.Text = "▶  START";
+            this.startButton.Text = "▶";
             // 
             // stopButton
             // 
             this.stopButton.BorderColor = System.Drawing.Color.Gray;
-            this.stopButton.BorderRadius = 16;
             this.stopButton.BorderThickness = 1;
             this.stopButton.FillColor = System.Drawing.Color.White;
             this.stopButton.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.stopButton.ForeColor = System.Drawing.Color.Gray;
-            this.stopButton.Location = new System.Drawing.Point(220, 144);
-            this.stopButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.stopButton.Location = new System.Drawing.Point(192, 62);
+            this.stopButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.stopButton.Name = "stopButton";
-            this.stopButton.Size = new System.Drawing.Size(190, 68);
+            this.stopButton.Size = new System.Drawing.Size(36, 36);
             this.stopButton.TabIndex = 10;
-            this.stopButton.Text = "■  STOP";
+            this.stopButton.Text = "■";
             // 
             // pauseButton
             // 
             this.pauseButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(165)))), ((int)(((byte)(230)))));
-            this.pauseButton.BorderRadius = 16;
             this.pauseButton.BorderThickness = 1;
             this.pauseButton.FillColor = System.Drawing.Color.White;
             this.pauseButton.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.pauseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(165)))), ((int)(((byte)(230)))));
-            this.pauseButton.Location = new System.Drawing.Point(424, 144);
-            this.pauseButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pauseButton.Location = new System.Drawing.Point(342, 62);
+            this.pauseButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.pauseButton.Name = "pauseButton";
-            this.pauseButton.Size = new System.Drawing.Size(190, 68);
+            this.pauseButton.Size = new System.Drawing.Size(36, 36);
             this.pauseButton.TabIndex = 11;
-            this.pauseButton.Text = "Ⅱ  PAUSE";
+            this.pauseButton.Text = "Ⅱ";
             // 
             // showMessageCheck
             // 
             this.showMessageCheck.CheckedState.BorderRadius = 0;
             this.showMessageCheck.CheckedState.BorderThickness = 0;
             this.showMessageCheck.Font = new System.Drawing.Font("Segoe UI", 7F);
-            this.showMessageCheck.Location = new System.Drawing.Point(16, 216);
-            this.showMessageCheck.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.showMessageCheck.Location = new System.Drawing.Point(8, 104);
+            this.showMessageCheck.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.showMessageCheck.Name = "showMessageCheck";
-            this.showMessageCheck.Size = new System.Drawing.Size(208, 48);
+            this.showMessageCheck.Size = new System.Drawing.Size(450, 18);
             this.showMessageCheck.TabIndex = 12;
             this.showMessageCheck.Text = "Show Message When Start Station On Auto Run";
             this.showMessageCheck.UncheckedState.BorderRadius = 0;
@@ -2000,10 +2052,10 @@ namespace OpenUI
             this.stopFeedAButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.stopFeedAButton.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.stopFeedAButton.ForeColor = System.Drawing.Color.Gray;
-            this.stopFeedAButton.Location = new System.Drawing.Point(370, 212);
-            this.stopFeedAButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.stopFeedAButton.Location = new System.Drawing.Point(8, 124);
+            this.stopFeedAButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.stopFeedAButton.Name = "stopFeedAButton";
-            this.stopFeedAButton.Size = new System.Drawing.Size(350, 40);
+            this.stopFeedAButton.Size = new System.Drawing.Size(220, 22);
             this.stopFeedAButton.TabIndex = 13;
             this.stopFeedAButton.Text = "STOP FEEDING STATION A";
             // 
@@ -2012,10 +2064,10 @@ namespace OpenUI
             this.stopFeedBButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.stopFeedBButton.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.stopFeedBButton.ForeColor = System.Drawing.Color.Gray;
-            this.stopFeedBButton.Location = new System.Drawing.Point(730, 212);
-            this.stopFeedBButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.stopFeedBButton.Location = new System.Drawing.Point(238, 124);
+            this.stopFeedBButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.stopFeedBButton.Name = "stopFeedBButton";
-            this.stopFeedBButton.Size = new System.Drawing.Size(350, 40);
+            this.stopFeedBButton.Size = new System.Drawing.Size(220, 22);
             this.stopFeedBButton.TabIndex = 14;
             this.stopFeedBButton.Text = "STOP FEEDING STATION B";
             // 
@@ -2025,64 +2077,70 @@ namespace OpenUI
             this.centerLayout.SetColumnSpan(this.centerBottomLayout, 4);
             this.centerBottomLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46F));
             this.centerBottomLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54F));
-            this.centerBottomLayout.Controls.Add(this.calibrationProcess, 0, 0);
-            this.centerBottomLayout.Controls.Add(this.stationBProcess, 1, 0);
+            this.centerBottomLayout.Controls.Add(this.calibrationProcess, 0, 1);
+            this.centerBottomLayout.Controls.Add(this.stationBProcess, 1, 1);
             this.centerBottomLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.centerBottomLayout.Location = new System.Drawing.Point(6, 1036);
-            this.centerBottomLayout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.centerBottomLayout.Location = new System.Drawing.Point(3, 518);
+            this.centerBottomLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.centerBottomLayout.Name = "centerBottomLayout";
-            this.centerBottomLayout.Size = new System.Drawing.Size(1288, 372);
+            this.centerBottomLayout.Size = new System.Drawing.Size(644, 186);
             this.centerBottomLayout.TabIndex = 8;
             // 
             // calibrationProcess
             // 
-            this.calibrationProcess.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(164)))), ((int)(((byte)(231)))));
-            this.calibrationProcess.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.calibrationProcess.DefaultText = resources.GetString("calibrationProcess.DefaultText");
+            this.calibrationProcess.Cursor = System.Windows.Forms.Cursors.Default;
             this.calibrationProcess.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.calibrationProcess.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.calibrationProcess.Location = new System.Drawing.Point(12, 12);
-            this.calibrationProcess.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
-            this.calibrationProcess.Multiline = true;
+            this.calibrationProcess.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.calibrationProcess.Location = new System.Drawing.Point(6, 6);
+            this.calibrationProcess.Margin = new System.Windows.Forms.Padding(2);
+            this.calibrationProcess.ItemHeight = 22;
+            this.calibrationProcess.ShowLines = false;
+            this.calibrationProcess.HideSelection = false;
+            this.calibrationProcess.Nodes.AddRange(new System.Windows.Forms.TreeNode[] { new System.Windows.Forms.TreeNode("#1 - Station A Needle Calibration"),
+                new System.Windows.Forms.TreeNode("#2 - Station B Needle Calibration"),
+                new System.Windows.Forms.TreeNode("#3 - Station A Dispensing Calibration"),
+                new System.Windows.Forms.TreeNode("#4 - Station B Dispensing Calibration"),
+                new System.Windows.Forms.TreeNode("#5 - Station A Laser and Jig"),
+                new System.Windows.Forms.TreeNode("#6 - Station B Laser and Jig") });
             this.calibrationProcess.Name = "calibrationProcess";
-            this.calibrationProcess.PlaceholderText = "";
-            this.calibrationProcess.ReadOnly = true;
-            this.calibrationProcess.SelectedText = "";
-            this.calibrationProcess.Size = new System.Drawing.Size(568, 348);
+            this.calibrationProcess.Size = new System.Drawing.Size(284, 174);
             this.calibrationProcess.TabIndex = 0;
             // 
             // stationBProcess
             // 
-            this.stationBProcess.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(164)))), ((int)(((byte)(231)))));
-            this.stationBProcess.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.stationBProcess.DefaultText = "STATION B PROCESS  [ATLAS L2 30-07-2026]\r\n#1 - Start Process\r\n#2 - Block pin heig" +
-    "ht measurement\r\n#3 - Servo on\r\n#4 - Reset AA Counter\r\n#5 - Set Laser B Config\r\n#" +
-    "6 - Vision Align Laser B iCSM";
+            this.stationBProcess.Cursor = System.Windows.Forms.Cursors.Default;
             this.stationBProcess.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stationBProcess.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.stationBProcess.Location = new System.Drawing.Point(604, 12);
-            this.stationBProcess.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
-            this.stationBProcess.Multiline = true;
+            this.stationBProcess.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.stationBProcess.Location = new System.Drawing.Point(302, 6);
+            this.stationBProcess.Margin = new System.Windows.Forms.Padding(2);
+            this.stationBProcess.ItemHeight = 22;
+            this.stationBProcess.ShowLines = false;
+            this.stationBProcess.HideSelection = false;
+            this.stationBProcess.Nodes.AddRange(new System.Windows.Forms.TreeNode[] { new System.Windows.Forms.TreeNode("#1 - [Station B] Start Process"),
+                new System.Windows.Forms.TreeNode("#2 - [Station B] Block pin height measurement"),
+                new System.Windows.Forms.TreeNode("#3 - [Station B] Servo on"),
+                new System.Windows.Forms.TreeNode("#4 - [Station B - Laser B] Reset AA Counter Global Variable"),
+                new System.Windows.Forms.TreeNode("#5 - [Station B - Laser B] Set Laser B Config"),
+                new System.Windows.Forms.TreeNode("#6 - [Station B] Vision Align Laser B iCSM"),
+                new System.Windows.Forms.TreeNode("#7 - [Station B] Skip channel"),
+                new System.Windows.Forms.TreeNode("#8 - [Station B] Pick Up L2 On Top Tray") });
             this.stationBProcess.Name = "stationBProcess";
-            this.stationBProcess.PlaceholderText = "";
-            this.stationBProcess.ReadOnly = true;
-            this.stationBProcess.SelectedText = "";
-            this.stationBProcess.Size = new System.Drawing.Size(672, 348);
+            this.stationBProcess.Size = new System.Drawing.Size(336, 174);
             this.stationBProcess.TabIndex = 1;
             // 
             // stationBCard
             // 
             this.stationBCard.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(207)))), ((int)(((byte)(215)))));
-            this.stationBCard.BorderRadius = 4;
+            this.stationBCard.BorderRadius = 0;
             this.stationBCard.BorderThickness = 1;
             this.stationBCard.Controls.Add(this.stationBLayout);
             this.stationBCard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stationBCard.FillColor = System.Drawing.Color.White;
-            this.stationBCard.Location = new System.Drawing.Point(2021, 0);
+            this.stationBCard.Location = new System.Drawing.Point(1010, 0);
             this.stationBCard.Margin = new System.Windows.Forms.Padding(0);
             this.stationBCard.Name = "stationBCard";
-            this.stationBCard.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.stationBCard.Size = new System.Drawing.Size(861, 1422);
+            this.stationBCard.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.stationBCard.Size = new System.Drawing.Size(430, 711);
             this.stationBCard.TabIndex = 2;
             // 
             // stationBLayout
@@ -2091,33 +2149,33 @@ namespace OpenUI
             this.stationBLayout.Controls.Add(this.programLog, 0, 0);
             this.stationBLayout.Controls.Add(this.loadCellLayout, 0, 1);
             this.stationBLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stationBLayout.Location = new System.Drawing.Point(4, 4);
-            this.stationBLayout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.stationBLayout.Location = new System.Drawing.Point(2, 2);
+            this.stationBLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.stationBLayout.Name = "stationBLayout";
             this.stationBLayout.RowCount = 2;
             this.stationBLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.stationBLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 188F));
-            this.stationBLayout.Size = new System.Drawing.Size(853, 1414);
+            this.stationBLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 94F));
+            this.stationBLayout.Size = new System.Drawing.Size(426, 707);
             this.stationBLayout.TabIndex = 0;
             // 
             // programLog
             // 
             this.programLog.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(188)))), ((int)(((byte)(200)))));
-            this.programLog.BorderRadius = 4;
+            this.programLog.BorderRadius = 0;
             this.programLog.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.programLog.DefaultText = resources.GetString("programLog.DefaultText");
             this.programLog.Dock = System.Windows.Forms.DockStyle.Fill;
             this.programLog.Font = new System.Drawing.Font("Consolas", 7.3F);
             this.programLog.ForeColor = System.Drawing.Color.Green;
-            this.programLog.Location = new System.Drawing.Point(5, 4);
-            this.programLog.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.programLog.Location = new System.Drawing.Point(2, 2);
+            this.programLog.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.programLog.Multiline = true;
             this.programLog.Name = "programLog";
             this.programLog.PlaceholderText = "";
             this.programLog.ReadOnly = true;
             this.programLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.programLog.SelectedText = "";
-            this.programLog.Size = new System.Drawing.Size(843, 1218);
+            this.programLog.Size = new System.Drawing.Size(422, 609);
             this.programLog.TabIndex = 0;
             // 
             // loadCellLayout
@@ -2133,13 +2191,13 @@ namespace OpenUI
             this.loadCellLayout.Controls.Add(this.loadCell4, 0, 1);
             this.loadCellLayout.Controls.Add(this.emergencyStop, 3, 0);
             this.loadCellLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.loadCellLayout.Location = new System.Drawing.Point(6, 1232);
-            this.loadCellLayout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.loadCellLayout.Location = new System.Drawing.Point(3, 616);
+            this.loadCellLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.loadCellLayout.Name = "loadCellLayout";
             this.loadCellLayout.RowCount = 2;
             this.loadCellLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.loadCellLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.loadCellLayout.Size = new System.Drawing.Size(841, 176);
+            this.loadCellLayout.Size = new System.Drawing.Size(420, 88);
             this.loadCellLayout.TabIndex = 1;
             // 
             // loadCell1
@@ -2149,10 +2207,10 @@ namespace OpenUI
             this.loadCell1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
             this.loadCell1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.loadCell1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(58)))), ((int)(((byte)(66)))));
-            this.loadCell1.Location = new System.Drawing.Point(6, 6);
-            this.loadCell1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.loadCell1.Location = new System.Drawing.Point(3, 3);
+            this.loadCell1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.loadCell1.Name = "loadCell1";
-            this.loadCell1.Size = new System.Drawing.Size(215, 76);
+            this.loadCell1.Size = new System.Drawing.Size(108, 38);
             this.loadCell1.TabIndex = 0;
             this.loadCell1.Text = "Load Cell: 000.000";
             // 
@@ -2163,10 +2221,10 @@ namespace OpenUI
             this.loadCell2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
             this.loadCell2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.loadCell2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(58)))), ((int)(((byte)(66)))));
-            this.loadCell2.Location = new System.Drawing.Point(233, 6);
-            this.loadCell2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.loadCell2.Location = new System.Drawing.Point(116, 3);
+            this.loadCell2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.loadCell2.Name = "loadCell2";
-            this.loadCell2.Size = new System.Drawing.Size(215, 76);
+            this.loadCell2.Size = new System.Drawing.Size(108, 38);
             this.loadCell2.TabIndex = 1;
             this.loadCell2.Text = "Load Cell: Disable.";
             // 
@@ -2177,10 +2235,10 @@ namespace OpenUI
             this.loadCell3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
             this.loadCell3.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.loadCell3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(58)))), ((int)(((byte)(66)))));
-            this.loadCell3.Location = new System.Drawing.Point(460, 6);
-            this.loadCell3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.loadCell3.Location = new System.Drawing.Point(230, 3);
+            this.loadCell3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.loadCell3.Name = "loadCell3";
-            this.loadCell3.Size = new System.Drawing.Size(215, 76);
+            this.loadCell3.Size = new System.Drawing.Size(108, 38);
             this.loadCell3.TabIndex = 2;
             this.loadCell3.Text = "Load Cell: 000.000";
             // 
@@ -2191,10 +2249,10 @@ namespace OpenUI
             this.loadCell4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
             this.loadCell4.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.loadCell4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(58)))), ((int)(((byte)(66)))));
-            this.loadCell4.Location = new System.Drawing.Point(6, 94);
-            this.loadCell4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.loadCell4.Location = new System.Drawing.Point(3, 47);
+            this.loadCell4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.loadCell4.Name = "loadCell4";
-            this.loadCell4.Size = new System.Drawing.Size(215, 76);
+            this.loadCell4.Size = new System.Drawing.Size(108, 38);
             this.loadCell4.TabIndex = 3;
             this.loadCell4.Text = "Load Cell: 000.000";
             // 
@@ -2205,11 +2263,11 @@ namespace OpenUI
             this.emergencyStop.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(15)))), ((int)(((byte)(42)))));
             this.emergencyStop.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.emergencyStop.ForeColor = System.Drawing.Color.White;
-            this.emergencyStop.Location = new System.Drawing.Point(691, 10);
-            this.emergencyStop.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.emergencyStop.Location = new System.Drawing.Point(346, 5);
+            this.emergencyStop.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.emergencyStop.Name = "emergencyStop";
             this.loadCellLayout.SetRowSpan(this.emergencyStop, 2);
-            this.emergencyStop.Size = new System.Drawing.Size(140, 156);
+            this.emergencyStop.Size = new System.Drawing.Size(70, 78);
             this.emergencyStop.TabIndex = 4;
             this.emergencyStop.Text = "STOP";
             // 
@@ -2219,10 +2277,10 @@ namespace OpenUI
             this.footerLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(164)))), ((int)(((byte)(231)))));
             this.footerLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.footerLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(70)))), ((int)(((byte)(107)))));
-            this.footerLabel.Location = new System.Drawing.Point(6, 1564);
-            this.footerLabel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.footerLabel.Location = new System.Drawing.Point(3, 782);
+            this.footerLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.footerLabel.Name = "footerLabel";
-            this.footerLabel.Size = new System.Drawing.Size(2898, 28);
+            this.footerLabel.Size = new System.Drawing.Size(1449, 14);
             this.footerLabel.TabIndex = 2;
             this.footerLabel.Text = "Copyright © 2024 Octopus Technology Ltd. All rights reserved";
             this.footerLabel.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2236,7 +2294,7 @@ namespace OpenUI
             this.stationBTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(65)))), ((int)(((byte)(112)))));
             this.stationBTitle.Location = new System.Drawing.Point(0, 0);
             this.stationBTitle.Name = "stationBTitle";
-            this.stationBTitle.Size = new System.Drawing.Size(111, 26);
+            this.stationBTitle.Size = new System.Drawing.Size(56, 13);
             this.stationBTitle.TabIndex = 0;
             this.stationBTitle.Text = "STATION B";
             this.stationBTitle.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2249,7 +2307,7 @@ namespace OpenUI
             this.stationBNote.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
             this.stationBNote.Location = new System.Drawing.Point(0, 0);
             this.stationBNote.Name = "stationBNote";
-            this.stationBNote.Size = new System.Drawing.Size(87, 26);
+            this.stationBNote.Size = new System.Drawing.Size(44, 13);
             this.stationBNote.TabIndex = 0;
             this.stationBNote.Text = "No iCSM";
             this.stationBNote.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2257,25 +2315,130 @@ namespace OpenUI
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(717, 3);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(358, 2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(183, 26);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(92, 13);
             this.guna2HtmlLabel1.TabIndex = 3;
             this.guna2HtmlLabel1.Text = "guna2HtmlLabel1";
             // 
             // UI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(2910, 1598);
+            this.ClientSize = new System.Drawing.Size(2260, 960);
             this.Controls.Add(this.rootLayout);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.MinimumSize = new System.Drawing.Size(2560, 1440);
+            this.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "UI";
             this.Text = "TopUs Nova AA-2 - Equipment Control";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.processSplit.Name = "processSplit";
+            this.processSplit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.processSplit.ColumnCount = 2;
+            this.processSplit.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46F));
+            this.processSplit.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54F));
+            this.processSplit.Controls.Add(this.processLeft, 0, 0);
+            this.processSplit.Controls.Add(this.processRight, 1, 0);
+            this.processLeft.Name = "processLeft";
+            this.processLeft.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.processLeft.Margin = new System.Windows.Forms.Padding(0);
+            this.processLeft.ColumnCount = 2;
+            this.processLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37F));
+            this.processLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63F));
+            this.processLeft.RowCount = 5;
+            this.processLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.processLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.processLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
+            this.processLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.processLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.processLeft.Controls.Add(this.processInfoTitle, 0, 0);
+            this.processLeft.SetColumnSpan(this.processInfoTitle, 2);
+            this.processLeft.Controls.Add(this.totalTimeLabel, 0, 1);
+            this.processLeft.Controls.Add(this.totalTimeValue, 1, 1);
+            this.totalTimeValue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.totalTimeValue.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.processLeft.Controls.Add(this.transportButtons, 0, 2);
+            this.processLeft.SetColumnSpan(this.transportButtons, 2);
+            this.transportButtons.Name = "transportButtons";
+            this.transportButtons.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.transportButtons.WrapContents = false;
+            this.transportButtons.Margin = new System.Windows.Forms.Padding(0);
+            this.transportButtons.Controls.Add(this.startButton);
+            this.transportButtons.Controls.Add(this.startCaption);
+            this.transportButtons.Controls.Add(this.stopButton);
+            this.transportButtons.Controls.Add(this.stopCaption);
+            this.transportButtons.Controls.Add(this.pauseButton);
+            this.transportButtons.Controls.Add(this.pauseCaption);
+            this.startCaption.Name = "startCaption";
+            this.startCaption.Text = "START";
+            this.stopCaption.Name = "stopCaption";
+            this.stopCaption.Text = "STOP";
+            this.pauseCaption.Name = "pauseCaption";
+            this.pauseCaption.Text = "PAUSE";
+            this.startCaption.Margin = new System.Windows.Forms.Padding(0, 12, 14, 0);
+            this.stopCaption.Margin = new System.Windows.Forms.Padding(0, 12, 14, 0);
+            this.pauseCaption.Margin = new System.Windows.Forms.Padding(0, 12, 0, 0);
+            this.startCaption.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.stopCaption.ForeColor = System.Drawing.Color.Gray;
+            this.pauseCaption.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.processLeft.Controls.Add(this.showMessageCheck, 0, 3);
+            this.processLeft.SetColumnSpan(this.showMessageCheck, 2);
+            this.showMessageCheck.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.showMessageCheck.Margin = new System.Windows.Forms.Padding(0);
+            this.processLeft.Controls.Add(this.feedButtons, 0, 4);
+            this.processLeft.SetColumnSpan(this.feedButtons, 2);
+            this.feedButtons.Name = "feedButtons";
+            this.feedButtons.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.feedButtons.WrapContents = false;
+            this.feedButtons.Margin = new System.Windows.Forms.Padding(0);
+            this.feedButtons.Controls.Add(this.stopFeedAButton);
+            this.feedButtons.Controls.Add(this.stopFeedBButton);
+            this.stopFeedAButton.Size = new System.Drawing.Size(190, 22);
+            this.stopFeedBButton.Size = new System.Drawing.Size(190, 22);
+            this.stopFeedAButton.Margin = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.stopFeedBButton.Margin = new System.Windows.Forms.Padding(0);
+            this.processRight.Name = "processRight";
+            this.processRight.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.processRight.ColumnCount = 2;
+            this.processRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.processRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
+            this.processRight.RowCount = 4;
+            this.processRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.processRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.processRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.processRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.processRight.Controls.Add(this.processInfoRightTitle, 0, 0);
+            this.processRight.SetColumnSpan(this.processInfoRightTitle, 2);
+            this.processRight.Controls.Add(this.rightTimeLabel, 0, 1);
+            this.processRight.Controls.Add(this.rightTimeValue, 1, 1);
+            this.rightTimeValue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rightTimeValue.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.processRight.Controls.Add(this.currentFlowLabel, 0, 2);
+            this.processRight.Controls.Add(this.currentFlowValue, 1, 2);
+            this.currentFlowValue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.currentFlowValue.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.processRight.Controls.Add(this.metricLabel, 0, 3);
+            this.processRight.SetColumnSpan(this.metricLabel, 2);
+            this.metricLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
+            this.centerBottomLayout.RowCount = 2;
+            this.centerBottomLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.centerBottomLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.calibrationHeader.Name = "calibrationHeader";
+            this.calibrationHeader.Text = "↕  Calibration                                  ⊙";
+            this.calibrationHeader.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.calibrationHeader.FillColor = System.Drawing.Color.White;
+            this.calibrationHeader.ForeColor = System.Drawing.Color.SteelBlue;
+            this.calibrationHeader.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.stationBProcessHeader.Name = "stationBProcessHeader";
+            this.stationBProcessHeader.Text = "↕  Station B Process [ATLAS L2 30-07-2026]";
+            this.stationBProcessHeader.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.stationBProcessHeader.FillColor = System.Drawing.Color.White;
+            this.stationBProcessHeader.ForeColor = System.Drawing.Color.SteelBlue;
+            this.stationBProcessHeader.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.centerBottomLayout.Controls.Add(this.calibrationHeader, 0, 0);
+            this.centerBottomLayout.Controls.Add(this.stationBProcessHeader, 1, 0);
             this.rootLayout.ResumeLayout(false);
             this.headerLayout.ResumeLayout(false);
             this.headerLayout.PerformLayout();
