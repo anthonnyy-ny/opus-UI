@@ -188,8 +188,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "e3aaf1591482439f",
+  "active": "747f4807f1d0f9ce",
   "lastOpenFiles": [
+    "Assets/Octopus Nova Main UI.mp4",
+    "README.md",
     "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/lib/netcoreapp3.1/Guna.UI2.dll",
     "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/lib/net7.0-windows7.0/Guna.UI2.dll",
     "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/lib/net6.0-windows7.0/Guna.UI2.dll",
@@ -200,12 +202,10 @@
     "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/lib/net40/Guna.UI2.dll",
     "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/lib/netcoreapp3.1",
     "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/lib/net7.0-windows7.0",
-    "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/lib/net6.0-windows7.0",
     "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/README.md",
     "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/icon.png",
     "docs/Guna-UI2-控件与布局参考.md",
     "Assets/1788400137062.png",
-    "Assets/WinForms_UI_完整不遮挡标记说明.png",
-    "README.md"
+    "Assets/WinForms_UI_完整不遮挡标记说明.png"
   ]
 }
