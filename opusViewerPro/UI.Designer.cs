@@ -135,19 +135,51 @@ namespace opusViewerPro
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.processSplit = new System.Windows.Forms.TableLayoutPanel();
-            this.processLeft = new System.Windows.Forms.TableLayoutPanel();
-            this.processRight = new System.Windows.Forms.TableLayoutPanel();
-            this.transportButtons = new System.Windows.Forms.FlowLayoutPanel();
-            this.feedButtons = new System.Windows.Forms.FlowLayoutPanel();
-            this.startCaption = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.stopCaption = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.pauseCaption = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.calibrationHeader = new Guna.UI2.WinForms.Guna2Button();
-            this.stationBProcessHeader = new Guna.UI2.WinForms.Guna2Button();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI));
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("#51 - Wet Active Align L1 L2");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("#52 - Shift on cure offset");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("#53 - UV Process Snap");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("#1 - Get PD Value [FINISH]");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("#2 - [Scan] L2 Line X");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("#3 - Get PD Value");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("#4 - [Scan] L2 Line Z");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("#5 - Get PD Value");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("#6 - [Scan] L2 Line Y");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("#7 - Get PD Value");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("#8 - Check line scan stop condition 1");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("#9 - Check line scan stop condition 2");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("#10 - [Scan] L2 Line X final");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("#11 - Get PD Value");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("#12 - [Scan] L2 Line Z final");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("#54 - Get PD Value After Curing", new System.Windows.Forms.TreeNode[] {
+            treeNode4,
+            treeNode5,
+            treeNode6,
+            treeNode7,
+            treeNode8,
+            treeNode9,
+            treeNode10,
+            treeNode11,
+            treeNode12,
+            treeNode13,
+            treeNode14,
+            treeNode15});
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("#55 - Release L1 and move rear PUT");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("#56 - Get PD Value After Release");
+            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("#57 - Move L2 lens to safe position");
+            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("#58 - Close SOA0 Config");
+            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("#59 - Pick Up SS_L1 On Top Tray");
+            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("#60 - All station Servo on");
+            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("#61 - Set SOA1 Config");
+            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("#62 - Vision Align SOA1 iCSM");
+            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("#63 - Vision Align-L1 Lens");
+            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("#64 - Active Align-L1 Lens");
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("#65 - Move L2 to teach position");
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("#66 - Active Align-L2 Lens");
+            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("#67 - Active Align concurrent-L1 L2");
+            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("#68 - Epoxy Dispense L1");
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("#69 - Wet Active Align L1 L2");
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -164,6 +196,48 @@ namespace opusViewerPro
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("#1 - Station A Needle Calibration");
+            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("#2 - Station B Needle Calibration");
+            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("#3 - Station A Dispensing Calibration");
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("#4 - Station B Dispensing Calibration");
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("#5 - Station A Laser and Jig");
+            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("#6 - Station B Laser and Jig");
+            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("#1 - [Station B] Start Process");
+            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("#2 - [Station B] Block pin height measurement");
+            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("#3 - [Station B] Servo on");
+            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("#4 - [Station B - Laser B] Reset AA Counter Global Variable");
+            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("#5 - [Station B - Laser B] Set Laser B Config");
+            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("#6 - [Station B] Vision Align Laser B iCSM");
+            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("#7 - [Station B] Skip channel");
+            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("#8 - [Station B] Pick Up L2 On Top Tray");
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI));
+            this.processSplit = new System.Windows.Forms.TableLayoutPanel();
+            this.processLeft = new System.Windows.Forms.TableLayoutPanel();
+            this.processInfoTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.totalTimeLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.totalTimeValue = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.transportButtons = new System.Windows.Forms.FlowLayoutPanel();
+            this.startButton = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.startCaption = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.stopButton = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.stopCaption = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pauseButton = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.pauseCaption = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.showMessageCheck = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.feedButtons = new System.Windows.Forms.FlowLayoutPanel();
+            this.stopFeedAButton = new Guna.UI2.WinForms.Guna2Button();
+            this.stopFeedBButton = new Guna.UI2.WinForms.Guna2Button();
+            this.processRight = new System.Windows.Forms.TableLayoutPanel();
+            this.processInfoRightTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.rightTimeLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.rightTimeValue = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.currentFlowLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.currentFlowValue = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.metricLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.calibrationHeader = new Guna.UI2.WinForms.Guna2Button();
+            this.stationBProcessHeader = new Guna.UI2.WinForms.Guna2Button();
             this.borderlessForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.closeControlBox = new Guna.UI2.WinForms.Guna2ControlBox();
             this.maximizeControlBox = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -252,6 +326,8 @@ namespace opusViewerPro
             this.topCameraHeader = new Guna.UI2.WinForms.Guna2Button();
             this.topCamera = new Guna.UI2.WinForms.Guna2Panel();
             this.measureItems = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bTrayLayout = new System.Windows.Forms.TableLayoutPanel();
             this.bTrayHeader = new Guna.UI2.WinForms.Guna2Button();
             this.bTrayTopLabel = new Guna.UI2.WinForms.Guna2Button();
@@ -279,21 +355,6 @@ namespace opusViewerPro
             this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.processInfoPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.processInfoTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.totalTimeLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.totalTimeValue = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.processInfoRightTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.rightTimeLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.rightTimeValue = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.currentFlowLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.currentFlowValue = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.metricLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.startButton = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.stopButton = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.pauseButton = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.showMessageCheck = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.stopFeedAButton = new Guna.UI2.WinForms.Guna2Button();
-            this.stopFeedBButton = new Guna.UI2.WinForms.Guna2Button();
             this.centerBottomLayout = new System.Windows.Forms.TableLayoutPanel();
             this.calibrationProcess = new System.Windows.Forms.TreeView();
             this.stationBProcess = new System.Windows.Forms.TreeView();
@@ -310,6 +371,12 @@ namespace opusViewerPro
             this.stationBTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.stationBNote = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            this.processSplit.SuspendLayout();
+            this.processLeft.SuspendLayout();
+            this.transportButtons.SuspendLayout();
+            this.feedButtons.SuspendLayout();
+            this.processRight.SuspendLayout();
             this.rootLayout.SuspendLayout();
             this.headerLayout.SuspendLayout();
             this.identityLayout.SuspendLayout();
@@ -332,6 +399,7 @@ namespace opusViewerPro
             ((System.ComponentModel.ISupportInitialize)(this.trayTop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trayBottom)).BeginInit();
             this.topCameraLayout.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.measureItems)).BeginInit();
             this.bTrayLayout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bTrayTop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bTrayBottom)).BeginInit();
@@ -341,6 +409,337 @@ namespace opusViewerPro
             this.stationBLayout.SuspendLayout();
             this.loadCellLayout.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // processSplit
+            // 
+            this.processSplit.ColumnCount = 2;
+            this.processSplit.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46F));
+            this.processSplit.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54F));
+            this.processSplit.Controls.Add(this.processLeft, 0, 0);
+            this.processSplit.Controls.Add(this.processRight, 1, 0);
+            this.processSplit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.processSplit.Location = new System.Drawing.Point(0, 0);
+            this.processSplit.Name = "processSplit";
+            this.processSplit.Size = new System.Drawing.Size(1014, 140);
+            this.processSplit.TabIndex = 0;
+            // 
+            // processLeft
+            // 
+            this.processLeft.ColumnCount = 2;
+            this.processLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37F));
+            this.processLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63F));
+            this.processLeft.Controls.Add(this.processInfoTitle, 0, 0);
+            this.processLeft.Controls.Add(this.totalTimeLabel, 0, 1);
+            this.processLeft.Controls.Add(this.totalTimeValue, 1, 1);
+            this.processLeft.Controls.Add(this.transportButtons, 0, 2);
+            this.processLeft.Controls.Add(this.showMessageCheck, 0, 3);
+            this.processLeft.Controls.Add(this.feedButtons, 0, 4);
+            this.processLeft.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.processLeft.Location = new System.Drawing.Point(0, 0);
+            this.processLeft.Margin = new System.Windows.Forms.Padding(0);
+            this.processLeft.Name = "processLeft";
+            this.processLeft.RowCount = 5;
+            this.processLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.processLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.processLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
+            this.processLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.processLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.processLeft.Size = new System.Drawing.Size(466, 140);
+            this.processLeft.TabIndex = 0;
+            // 
+            // processInfoTitle
+            // 
+            this.processInfoTitle.BackColor = System.Drawing.Color.Transparent;
+            this.processLeft.SetColumnSpan(this.processInfoTitle, 2);
+            this.processInfoTitle.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Italic);
+            this.processInfoTitle.Location = new System.Drawing.Point(3, 3);
+            this.processInfoTitle.Name = "processInfoTitle";
+            this.processInfoTitle.Size = new System.Drawing.Size(103, 18);
+            this.processInfoTitle.TabIndex = 0;
+            this.processInfoTitle.Text = "PROCESS INFO.";
+            // 
+            // totalTimeLabel
+            // 
+            this.totalTimeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.totalTimeLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
+            this.totalTimeLabel.Location = new System.Drawing.Point(3, 27);
+            this.totalTimeLabel.Name = "totalTimeLabel";
+            this.totalTimeLabel.Size = new System.Drawing.Size(108, 17);
+            this.totalTimeLabel.TabIndex = 1;
+            this.totalTimeLabel.Text = "Auto Run Proc. Time";
+            // 
+            // totalTimeValue
+            // 
+            this.totalTimeValue.AutoSize = false;
+            this.totalTimeValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(176)))), ((int)(((byte)(0)))));
+            this.totalTimeValue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.totalTimeValue.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
+            this.totalTimeValue.Location = new System.Drawing.Point(172, 26);
+            this.totalTimeValue.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.totalTimeValue.Name = "totalTimeValue";
+            this.totalTimeValue.Size = new System.Drawing.Size(294, 22);
+            this.totalTimeValue.TabIndex = 2;
+            this.totalTimeValue.Text = "000.00 sec.";
+            this.totalTimeValue.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // transportButtons
+            // 
+            this.processLeft.SetColumnSpan(this.transportButtons, 2);
+            this.transportButtons.Controls.Add(this.startButton);
+            this.transportButtons.Controls.Add(this.startCaption);
+            this.transportButtons.Controls.Add(this.stopButton);
+            this.transportButtons.Controls.Add(this.stopCaption);
+            this.transportButtons.Controls.Add(this.pauseButton);
+            this.transportButtons.Controls.Add(this.pauseCaption);
+            this.transportButtons.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.transportButtons.Location = new System.Drawing.Point(0, 50);
+            this.transportButtons.Margin = new System.Windows.Forms.Padding(0);
+            this.transportButtons.Name = "transportButtons";
+            this.transportButtons.Size = new System.Drawing.Size(466, 44);
+            this.transportButtons.TabIndex = 3;
+            this.transportButtons.WrapContents = false;
+            // 
+            // startButton
+            // 
+            this.startButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(165)))), ((int)(((byte)(230)))));
+            this.startButton.BorderThickness = 1;
+            this.startButton.FillColor = System.Drawing.Color.White;
+            this.startButton.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.startButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(165)))), ((int)(((byte)(230)))));
+            this.startButton.Location = new System.Drawing.Point(3, 3);
+            this.startButton.Name = "startButton";
+            this.startButton.Size = new System.Drawing.Size(36, 36);
+            this.startButton.TabIndex = 9;
+            this.startButton.Text = "▶";
+            // 
+            // startCaption
+            // 
+            this.startCaption.BackColor = System.Drawing.Color.Transparent;
+            this.startCaption.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.startCaption.Location = new System.Drawing.Point(42, 12);
+            this.startCaption.Margin = new System.Windows.Forms.Padding(0, 12, 14, 0);
+            this.startCaption.Name = "startCaption";
+            this.startCaption.Size = new System.Drawing.Size(39, 14);
+            this.startCaption.TabIndex = 10;
+            this.startCaption.Text = "START";
+            // 
+            // stopButton
+            // 
+            this.stopButton.BorderColor = System.Drawing.Color.Gray;
+            this.stopButton.BorderThickness = 1;
+            this.stopButton.FillColor = System.Drawing.Color.White;
+            this.stopButton.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.stopButton.ForeColor = System.Drawing.Color.Gray;
+            this.stopButton.Location = new System.Drawing.Point(98, 3);
+            this.stopButton.Name = "stopButton";
+            this.stopButton.Size = new System.Drawing.Size(36, 36);
+            this.stopButton.TabIndex = 10;
+            this.stopButton.Text = "■";
+            // 
+            // stopCaption
+            // 
+            this.stopCaption.BackColor = System.Drawing.Color.Transparent;
+            this.stopCaption.ForeColor = System.Drawing.Color.Gray;
+            this.stopCaption.Location = new System.Drawing.Point(137, 12);
+            this.stopCaption.Margin = new System.Windows.Forms.Padding(0, 12, 14, 0);
+            this.stopCaption.Name = "stopCaption";
+            this.stopCaption.Size = new System.Drawing.Size(30, 14);
+            this.stopCaption.TabIndex = 11;
+            this.stopCaption.Text = "STOP";
+            // 
+            // pauseButton
+            // 
+            this.pauseButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(165)))), ((int)(((byte)(230)))));
+            this.pauseButton.BorderThickness = 1;
+            this.pauseButton.FillColor = System.Drawing.Color.White;
+            this.pauseButton.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.pauseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(165)))), ((int)(((byte)(230)))));
+            this.pauseButton.Location = new System.Drawing.Point(184, 3);
+            this.pauseButton.Name = "pauseButton";
+            this.pauseButton.Size = new System.Drawing.Size(36, 36);
+            this.pauseButton.TabIndex = 11;
+            this.pauseButton.Text = "Ⅱ";
+            // 
+            // pauseCaption
+            // 
+            this.pauseCaption.BackColor = System.Drawing.Color.Transparent;
+            this.pauseCaption.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.pauseCaption.Location = new System.Drawing.Point(223, 12);
+            this.pauseCaption.Margin = new System.Windows.Forms.Padding(0, 12, 0, 0);
+            this.pauseCaption.Name = "pauseCaption";
+            this.pauseCaption.Size = new System.Drawing.Size(38, 14);
+            this.pauseCaption.TabIndex = 12;
+            this.pauseCaption.Text = "PAUSE";
+            // 
+            // showMessageCheck
+            // 
+            this.showMessageCheck.CheckedState.BorderRadius = 0;
+            this.showMessageCheck.CheckedState.BorderThickness = 0;
+            this.processLeft.SetColumnSpan(this.showMessageCheck, 2);
+            this.showMessageCheck.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.showMessageCheck.Font = new System.Drawing.Font("Segoe UI", 7F);
+            this.showMessageCheck.Location = new System.Drawing.Point(0, 94);
+            this.showMessageCheck.Margin = new System.Windows.Forms.Padding(0);
+            this.showMessageCheck.Name = "showMessageCheck";
+            this.showMessageCheck.Size = new System.Drawing.Size(466, 20);
+            this.showMessageCheck.TabIndex = 12;
+            this.showMessageCheck.Text = "Show Message When Start Station On Auto Run";
+            this.showMessageCheck.UncheckedState.BorderRadius = 0;
+            this.showMessageCheck.UncheckedState.BorderThickness = 0;
+            // 
+            // feedButtons
+            // 
+            this.processLeft.SetColumnSpan(this.feedButtons, 2);
+            this.feedButtons.Controls.Add(this.stopFeedAButton);
+            this.feedButtons.Controls.Add(this.stopFeedBButton);
+            this.feedButtons.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.feedButtons.Location = new System.Drawing.Point(0, 114);
+            this.feedButtons.Margin = new System.Windows.Forms.Padding(0);
+            this.feedButtons.Name = "feedButtons";
+            this.feedButtons.Size = new System.Drawing.Size(466, 26);
+            this.feedButtons.TabIndex = 13;
+            this.feedButtons.WrapContents = false;
+            // 
+            // stopFeedAButton
+            // 
+            this.stopFeedAButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.stopFeedAButton.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
+            this.stopFeedAButton.ForeColor = System.Drawing.Color.Gray;
+            this.stopFeedAButton.Location = new System.Drawing.Point(0, 0);
+            this.stopFeedAButton.Margin = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.stopFeedAButton.Name = "stopFeedAButton";
+            this.stopFeedAButton.Size = new System.Drawing.Size(190, 22);
+            this.stopFeedAButton.TabIndex = 13;
+            this.stopFeedAButton.Text = "STOP FEEDING STATION A";
+            // 
+            // stopFeedBButton
+            // 
+            this.stopFeedBButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.stopFeedBButton.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
+            this.stopFeedBButton.ForeColor = System.Drawing.Color.Gray;
+            this.stopFeedBButton.Location = new System.Drawing.Point(194, 0);
+            this.stopFeedBButton.Margin = new System.Windows.Forms.Padding(0);
+            this.stopFeedBButton.Name = "stopFeedBButton";
+            this.stopFeedBButton.Size = new System.Drawing.Size(190, 22);
+            this.stopFeedBButton.TabIndex = 14;
+            this.stopFeedBButton.Text = "STOP FEEDING STATION B";
+            // 
+            // processRight
+            // 
+            this.processRight.ColumnCount = 2;
+            this.processRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.processRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
+            this.processRight.Controls.Add(this.processInfoRightTitle, 0, 0);
+            this.processRight.Controls.Add(this.rightTimeLabel, 0, 1);
+            this.processRight.Controls.Add(this.rightTimeValue, 1, 1);
+            this.processRight.Controls.Add(this.currentFlowLabel, 0, 2);
+            this.processRight.Controls.Add(this.currentFlowValue, 1, 2);
+            this.processRight.Controls.Add(this.metricLabel, 0, 3);
+            this.processRight.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.processRight.Location = new System.Drawing.Point(469, 3);
+            this.processRight.Name = "processRight";
+            this.processRight.RowCount = 4;
+            this.processRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.processRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.processRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.processRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.processRight.Size = new System.Drawing.Size(542, 134);
+            this.processRight.TabIndex = 1;
+            // 
+            // processInfoRightTitle
+            // 
+            this.processInfoRightTitle.BackColor = System.Drawing.Color.Transparent;
+            this.processRight.SetColumnSpan(this.processInfoRightTitle, 2);
+            this.processInfoRightTitle.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Italic);
+            this.processInfoRightTitle.Location = new System.Drawing.Point(3, 3);
+            this.processInfoRightTitle.Name = "processInfoRightTitle";
+            this.processInfoRightTitle.Size = new System.Drawing.Size(103, 18);
+            this.processInfoRightTitle.TabIndex = 3;
+            this.processInfoRightTitle.Text = "PROCESS INFO.";
+            // 
+            // rightTimeLabel
+            // 
+            this.rightTimeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.rightTimeLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
+            this.rightTimeLabel.Location = new System.Drawing.Point(3, 27);
+            this.rightTimeLabel.Name = "rightTimeLabel";
+            this.rightTimeLabel.Size = new System.Drawing.Size(85, 17);
+            this.rightTimeLabel.TabIndex = 4;
+            this.rightTimeLabel.Text = "Total Proc. Time";
+            // 
+            // rightTimeValue
+            // 
+            this.rightTimeValue.AutoSize = false;
+            this.rightTimeValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(176)))), ((int)(((byte)(0)))));
+            this.rightTimeValue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rightTimeValue.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
+            this.rightTimeValue.Location = new System.Drawing.Point(135, 26);
+            this.rightTimeValue.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.rightTimeValue.Name = "rightTimeValue";
+            this.rightTimeValue.Size = new System.Drawing.Size(407, 22);
+            this.rightTimeValue.TabIndex = 5;
+            this.rightTimeValue.Text = "000.00 sec.";
+            this.rightTimeValue.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // currentFlowLabel
+            // 
+            this.currentFlowLabel.BackColor = System.Drawing.Color.Transparent;
+            this.currentFlowLabel.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Italic);
+            this.currentFlowLabel.Location = new System.Drawing.Point(3, 53);
+            this.currentFlowLabel.Name = "currentFlowLabel";
+            this.currentFlowLabel.Size = new System.Drawing.Size(47, 15);
+            this.currentFlowLabel.TabIndex = 6;
+            this.currentFlowLabel.Text = "Cur. Flow";
+            // 
+            // currentFlowValue
+            // 
+            this.currentFlowValue.AutoSize = false;
+            this.currentFlowValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.currentFlowValue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.currentFlowValue.Location = new System.Drawing.Point(135, 52);
+            this.currentFlowValue.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.currentFlowValue.Name = "currentFlowValue";
+            this.currentFlowValue.Size = new System.Drawing.Size(407, 22);
+            this.currentFlowValue.TabIndex = 7;
+            this.currentFlowValue.Text = "Process Name";
+            this.currentFlowValue.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // metricLabel
+            // 
+            this.metricLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.metricLabel.BackColor = System.Drawing.Color.Transparent;
+            this.processRight.SetColumnSpan(this.metricLabel, 2);
+            this.metricLabel.Font = new System.Drawing.Font("Segoe UI", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.metricLabel.ForeColor = System.Drawing.Color.Red;
+            this.metricLabel.Location = new System.Drawing.Point(3, 116);
+            this.metricLabel.Name = "metricLabel";
+            this.metricLabel.Size = new System.Drawing.Size(182, 15);
+            this.metricLabel.TabIndex = 8;
+            this.metricLabel.Text = "Socket :  0.00       SOA :  0.00       Laser :  0.00";
+            // 
+            // calibrationHeader
+            // 
+            this.calibrationHeader.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.calibrationHeader.FillColor = System.Drawing.Color.White;
+            this.calibrationHeader.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.calibrationHeader.ForeColor = System.Drawing.Color.SteelBlue;
+            this.calibrationHeader.Location = new System.Drawing.Point(3, 3);
+            this.calibrationHeader.Name = "calibrationHeader";
+            this.calibrationHeader.Size = new System.Drawing.Size(460, 22);
+            this.calibrationHeader.TabIndex = 2;
+            this.calibrationHeader.Text = "↕  Calibration                                  ⊙";
+            // 
+            // stationBProcessHeader
+            // 
+            this.stationBProcessHeader.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.stationBProcessHeader.FillColor = System.Drawing.Color.White;
+            this.stationBProcessHeader.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.stationBProcessHeader.ForeColor = System.Drawing.Color.SteelBlue;
+            this.stationBProcessHeader.Location = new System.Drawing.Point(469, 3);
+            this.stationBProcessHeader.Name = "stationBProcessHeader";
+            this.stationBProcessHeader.Size = new System.Drawing.Size(542, 22);
+            this.stationBProcessHeader.TabIndex = 3;
+            this.stationBProcessHeader.Text = "↕  Station B Process [ATLAS L2 30-07-2026]";
             // 
             // borderlessForm
             // 
@@ -386,6 +785,7 @@ namespace opusViewerPro
             // rootLayout
             // 
             this.rootLayout.ColumnCount = 1;
+            this.rootLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.rootLayout.Controls.Add(this.headerLayout, 0, 0);
             this.rootLayout.Controls.Add(this.bodyLayout, 0, 1);
             this.rootLayout.Controls.Add(this.footerLabel, 0, 2);
@@ -397,7 +797,7 @@ namespace opusViewerPro
             this.rootLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
             this.rootLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.rootLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.rootLayout.Size = new System.Drawing.Size(1455, 799);
+            this.rootLayout.Size = new System.Drawing.Size(2260, 960);
             this.rootLayout.TabIndex = 0;
             // 
             // headerLayout
@@ -414,13 +814,12 @@ namespace opusViewerPro
             this.headerLayout.Controls.Add(this.logTabsLayout, 2, 1);
             this.headerLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.headerLayout.Location = new System.Drawing.Point(3, 3);
-            this.headerLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.headerLayout.Name = "headerLayout";
             this.headerLayout.Padding = new System.Windows.Forms.Padding(8, 4, 8, 2);
             this.headerLayout.RowCount = 2;
             this.headerLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
             this.headerLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.headerLayout.Size = new System.Drawing.Size(1449, 56);
+            this.headerLayout.Size = new System.Drawing.Size(2254, 56);
             this.headerLayout.TabIndex = 0;
             // 
             // identityLayout
@@ -444,7 +843,7 @@ namespace opusViewerPro
             this.brandLabel.Location = new System.Drawing.Point(0, 1);
             this.brandLabel.Margin = new System.Windows.Forms.Padding(0, 1, 10, 0);
             this.brandLabel.Name = "brandLabel";
-            this.brandLabel.Size = new System.Drawing.Size(92, 35);
+            this.brandLabel.Size = new System.Drawing.Size(92, 37);
             this.brandLabel.TabIndex = 0;
             this.brandLabel.Text = "oToPUs";
             // 
@@ -455,7 +854,7 @@ namespace opusViewerPro
             this.modelLabel.Location = new System.Drawing.Point(112, 9);
             this.modelLabel.Margin = new System.Windows.Forms.Padding(10, 9, 12, 0);
             this.modelLabel.Name = "modelLabel";
-            this.modelLabel.Size = new System.Drawing.Size(72, 20);
+            this.modelLabel.Size = new System.Drawing.Size(69, 19);
             this.modelLabel.TabIndex = 1;
             this.modelLabel.Text = "Nova AA-2";
             // 
@@ -463,10 +862,10 @@ namespace opusViewerPro
             // 
             this.versionLabel.BackColor = System.Drawing.Color.Transparent;
             this.versionLabel.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
-            this.versionLabel.Location = new System.Drawing.Point(196, 4);
+            this.versionLabel.Location = new System.Drawing.Point(193, 4);
             this.versionLabel.Margin = new System.Windows.Forms.Padding(0, 4, 0, 0);
             this.versionLabel.Name = "versionLabel";
-            this.versionLabel.Size = new System.Drawing.Size(161, 14);
+            this.versionLabel.Size = new System.Drawing.Size(153, 14);
             this.versionLabel.TabIndex = 2;
             this.versionLabel.Text = "Ver. 1.1.0.7   Release Date: 2026/8/31";
             // 
@@ -477,9 +876,8 @@ namespace opusViewerPro
             this.loginLabel.Font = new System.Drawing.Font("Segoe UI", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.loginLabel.ForeColor = System.Drawing.Color.Maroon;
             this.loginLabel.Location = new System.Drawing.Point(486, 7);
-            this.loginLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.loginLabel.Name = "loginLabel";
-            this.loginLabel.Size = new System.Drawing.Size(382, 28);
+            this.loginLabel.Size = new System.Drawing.Size(1187, 28);
             this.loginLabel.TabIndex = 1;
             this.loginLabel.Text = "Login Level : Operator<br>License expiration date : 12/31/2026";
             this.loginLabel.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -494,7 +892,7 @@ namespace opusViewerPro
             this.headerActions.Controls.Add(this.clearDispButton);
             this.headerActions.Dock = System.Windows.Forms.DockStyle.Fill;
             this.headerActions.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.headerActions.Location = new System.Drawing.Point(871, 4);
+            this.headerActions.Location = new System.Drawing.Point(1676, 4);
             this.headerActions.Margin = new System.Windows.Forms.Padding(0);
             this.headerActions.Name = "headerActions";
             this.headerActions.Size = new System.Drawing.Size(570, 34);
@@ -575,9 +973,8 @@ namespace opusViewerPro
             this.systemLabel.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.systemLabel.ForeColor = System.Drawing.Color.Gray;
             this.systemLabel.Location = new System.Drawing.Point(486, 41);
-            this.systemLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.systemLabel.Name = "systemLabel";
-            this.systemLabel.Size = new System.Drawing.Size(382, 10);
+            this.systemLabel.Size = new System.Drawing.Size(1187, 10);
             this.systemLabel.TabIndex = 4;
             this.systemLabel.Text = "●  ●  ●      EMG       CDA       LEFT       RIGHT";
             this.systemLabel.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -590,8 +987,7 @@ namespace opusViewerPro
             this.logTabsLayout.Controls.Add(this.programLogTab, 0, 0);
             this.logTabsLayout.Controls.Add(this.otherInfoTab, 1, 0);
             this.logTabsLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.logTabsLayout.Location = new System.Drawing.Point(874, 41);
-            this.logTabsLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.logTabsLayout.Location = new System.Drawing.Point(1679, 41);
             this.logTabsLayout.Name = "logTabsLayout";
             this.logTabsLayout.Size = new System.Drawing.Size(564, 10);
             this.logTabsLayout.TabIndex = 5;
@@ -603,7 +999,6 @@ namespace opusViewerPro
             this.programLogTab.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.programLogTab.ForeColor = System.Drawing.Color.Black;
             this.programLogTab.Location = new System.Drawing.Point(3, 3);
-            this.programLogTab.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.programLogTab.Name = "programLogTab";
             this.programLogTab.Size = new System.Drawing.Size(276, 45);
             this.programLogTab.TabIndex = 0;
@@ -616,7 +1011,6 @@ namespace opusViewerPro
             this.otherInfoTab.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.otherInfoTab.ForeColor = System.Drawing.Color.Silver;
             this.otherInfoTab.Location = new System.Drawing.Point(285, 3);
-            this.otherInfoTab.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.otherInfoTab.Name = "otherInfoTab";
             this.otherInfoTab.Size = new System.Drawing.Size(276, 45);
             this.otherInfoTab.TabIndex = 1;
@@ -633,16 +1027,14 @@ namespace opusViewerPro
             this.bodyLayout.Controls.Add(this.stationBCard, 2, 0);
             this.bodyLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bodyLayout.Location = new System.Drawing.Point(3, 65);
-            this.bodyLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.bodyLayout.Name = "bodyLayout";
             this.bodyLayout.Padding = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.bodyLayout.Size = new System.Drawing.Size(1449, 711);
+            this.bodyLayout.Size = new System.Drawing.Size(2254, 872);
             this.bodyLayout.TabIndex = 1;
             // 
             // stationACard
             // 
             this.stationACard.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(207)))), ((int)(((byte)(215)))));
-            this.stationACard.BorderRadius = 0;
             this.stationACard.BorderThickness = 1;
             this.stationACard.Controls.Add(this.stationALayout);
             this.stationACard.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -650,8 +1042,8 @@ namespace opusViewerPro
             this.stationACard.Location = new System.Drawing.Point(8, 0);
             this.stationACard.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.stationACard.Name = "stationACard";
-            this.stationACard.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.stationACard.Size = new System.Drawing.Size(338, 711);
+            this.stationACard.Padding = new System.Windows.Forms.Padding(2);
+            this.stationACard.Size = new System.Drawing.Size(532, 872);
             this.stationACard.TabIndex = 0;
             // 
             // stationALayout
@@ -669,7 +1061,6 @@ namespace opusViewerPro
             this.stationALayout.Controls.Add(this.stationAProcess, 0, 5);
             this.stationALayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stationALayout.Location = new System.Drawing.Point(2, 2);
-            this.stationALayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.stationALayout.Name = "stationALayout";
             this.stationALayout.RowCount = 6;
             this.stationALayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
@@ -678,7 +1069,7 @@ namespace opusViewerPro
             this.stationALayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
             this.stationALayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.stationALayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.stationALayout.Size = new System.Drawing.Size(334, 707);
+            this.stationALayout.Size = new System.Drawing.Size(528, 868);
             this.stationALayout.TabIndex = 0;
             // 
             // stationATitle
@@ -688,9 +1079,8 @@ namespace opusViewerPro
             this.stationATitle.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Italic);
             this.stationATitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(65)))), ((int)(((byte)(112)))));
             this.stationATitle.Location = new System.Drawing.Point(3, 3);
-            this.stationATitle.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.stationATitle.Name = "stationATitle";
-            this.stationATitle.Size = new System.Drawing.Size(161, 22);
+            this.stationATitle.Size = new System.Drawing.Size(258, 22);
             this.stationATitle.TabIndex = 0;
             this.stationATitle.Text = "STATION A";
             // 
@@ -700,10 +1090,9 @@ namespace opusViewerPro
             this.stationANote.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.stationANote.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
             this.stationANote.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(55)))), ((int)(((byte)(65)))));
-            this.stationANote.Location = new System.Drawing.Point(170, 3);
-            this.stationANote.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.stationANote.Location = new System.Drawing.Point(267, 3);
             this.stationANote.Name = "stationANote";
-            this.stationANote.Size = new System.Drawing.Size(162, 22);
+            this.stationANote.Size = new System.Drawing.Size(258, 22);
             this.stationANote.TabIndex = 1;
             this.stationANote.Text = "No iCSM";
             // 
@@ -719,7 +1108,7 @@ namespace opusViewerPro
             this.stationAStatus.Location = new System.Drawing.Point(0, 28);
             this.stationAStatus.Margin = new System.Windows.Forms.Padding(0);
             this.stationAStatus.Name = "stationAStatus";
-            this.stationAStatus.Size = new System.Drawing.Size(334, 48);
+            this.stationAStatus.Size = new System.Drawing.Size(528, 48);
             this.stationAStatus.TabIndex = 2;
             // 
             // statusA1
@@ -729,9 +1118,8 @@ namespace opusViewerPro
             this.statusA1.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.statusA1.ForeColor = System.Drawing.Color.LimeGreen;
             this.statusA1.Location = new System.Drawing.Point(3, 3);
-            this.statusA1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.statusA1.Name = "statusA1";
-            this.statusA1.Size = new System.Drawing.Size(78, 18);
+            this.statusA1.Size = new System.Drawing.Size(91, 23);
             this.statusA1.TabIndex = 0;
             this.statusA1.Text = "●  SS L1_LS L1";
             // 
@@ -741,10 +1129,9 @@ namespace opusViewerPro
             this.statusA2.FillColor = System.Drawing.Color.Transparent;
             this.statusA2.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.statusA2.ForeColor = System.Drawing.Color.LimeGreen;
-            this.statusA2.Location = new System.Drawing.Point(87, 3);
-            this.statusA2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.statusA2.Location = new System.Drawing.Point(100, 3);
             this.statusA2.Name = "statusA2";
-            this.statusA2.Size = new System.Drawing.Size(84, 18);
+            this.statusA2.Size = new System.Drawing.Size(97, 23);
             this.statusA2.TabIndex = 1;
             this.statusA2.Text = "●  Left Vacuum";
             // 
@@ -754,10 +1141,9 @@ namespace opusViewerPro
             this.statusA3.FillColor = System.Drawing.Color.Transparent;
             this.statusA3.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.statusA3.ForeColor = System.Drawing.Color.LimeGreen;
-            this.statusA3.Location = new System.Drawing.Point(177, 3);
-            this.statusA3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.statusA3.Location = new System.Drawing.Point(203, 3);
             this.statusA3.Name = "statusA3";
-            this.statusA3.Size = new System.Drawing.Size(90, 18);
+            this.statusA3.Size = new System.Drawing.Size(103, 23);
             this.statusA3.TabIndex = 2;
             this.statusA3.Text = "●  Right Vacuum";
             // 
@@ -767,10 +1153,9 @@ namespace opusViewerPro
             this.statusA4.FillColor = System.Drawing.Color.Transparent;
             this.statusA4.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.statusA4.ForeColor = System.Drawing.Color.LimeGreen;
-            this.statusA4.Location = new System.Drawing.Point(3, 28);
-            this.statusA4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.statusA4.Location = new System.Drawing.Point(312, 3);
             this.statusA4.Name = "statusA4";
-            this.statusA4.Size = new System.Drawing.Size(84, 18);
+            this.statusA4.Size = new System.Drawing.Size(97, 23);
             this.statusA4.TabIndex = 3;
             this.statusA4.Text = "●  Front Curing";
             // 
@@ -780,10 +1165,9 @@ namespace opusViewerPro
             this.statusA5.FillColor = System.Drawing.Color.Transparent;
             this.statusA5.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.statusA5.ForeColor = System.Drawing.Color.LimeGreen;
-            this.statusA5.Location = new System.Drawing.Point(93, 28);
-            this.statusA5.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.statusA5.Location = new System.Drawing.Point(415, 3);
             this.statusA5.Name = "statusA5";
-            this.statusA5.Size = new System.Drawing.Size(80, 18);
+            this.statusA5.Size = new System.Drawing.Size(93, 23);
             this.statusA5.TabIndex = 4;
             this.statusA5.Text = "●  Rear Curing";
             // 
@@ -797,9 +1181,8 @@ namespace opusViewerPro
             this.pdChartButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.pdChartButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(75)))), ((int)(((byte)(90)))));
             this.pdChartButton.Location = new System.Drawing.Point(3, 79);
-            this.pdChartButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.pdChartButton.Name = "pdChartButton";
-            this.pdChartButton.Size = new System.Drawing.Size(161, 24);
+            this.pdChartButton.Size = new System.Drawing.Size(258, 24);
             this.pdChartButton.TabIndex = 3;
             this.pdChartButton.Text = "PD CHART       ▼";
             // 
@@ -812,10 +1195,9 @@ namespace opusViewerPro
             this.lensTrayButton.FillColor = System.Drawing.Color.White;
             this.lensTrayButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lensTrayButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(164)))), ((int)(((byte)(231)))));
-            this.lensTrayButton.Location = new System.Drawing.Point(170, 79);
-            this.lensTrayButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.lensTrayButton.Location = new System.Drawing.Point(267, 79);
             this.lensTrayButton.Name = "lensTrayButton";
-            this.lensTrayButton.Size = new System.Drawing.Size(162, 24);
+            this.lensTrayButton.Size = new System.Drawing.Size(258, 24);
             this.lensTrayButton.TabIndex = 4;
             this.lensTrayButton.Text = "A LENS TRAY       ↻";
             // 
@@ -829,9 +1211,8 @@ namespace opusViewerPro
             this.stationAPreviewLayout.Controls.Add(this.stationATrayPreview, 1, 0);
             this.stationAPreviewLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stationAPreviewLayout.Location = new System.Drawing.Point(3, 109);
-            this.stationAPreviewLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.stationAPreviewLayout.Name = "stationAPreviewLayout";
-            this.stationAPreviewLayout.Size = new System.Drawing.Size(328, 28);
+            this.stationAPreviewLayout.Size = new System.Drawing.Size(522, 28);
             this.stationAPreviewLayout.TabIndex = 5;
             // 
             // pdPreview
@@ -841,9 +1222,9 @@ namespace opusViewerPro
             this.pdPreview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pdPreview.FillColor = System.Drawing.Color.White;
             this.pdPreview.Location = new System.Drawing.Point(2, 2);
-            this.pdPreview.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pdPreview.Margin = new System.Windows.Forms.Padding(2);
             this.pdPreview.Name = "pdPreview";
-            this.pdPreview.Size = new System.Drawing.Size(160, 152);
+            this.pdPreview.Size = new System.Drawing.Size(257, 152);
             this.pdPreview.TabIndex = 0;
             // 
             // stationATrayPreview
@@ -878,54 +1259,59 @@ namespace opusViewerPro
             this.stationATrayPreview.DefaultCellStyle = dataGridViewCellStyle2;
             this.stationATrayPreview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stationATrayPreview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.stationATrayPreview.Location = new System.Drawing.Point(167, 3);
-            this.stationATrayPreview.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.stationATrayPreview.ReadOnly = true;
-            this.stationATrayPreview.AllowUserToAddRows = false;
-            this.stationATrayPreview.RowTemplate.Height = 18;
-            this.stationATrayPreview.RowCount = 1;
-            this.stationATrayPreview.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.stationATrayPreview.Location = new System.Drawing.Point(264, 3);
             this.stationATrayPreview.Name = "stationATrayPreview";
+            this.stationATrayPreview.ReadOnly = true;
             this.stationATrayPreview.RowHeadersVisible = false;
             this.stationATrayPreview.RowHeadersWidth = 82;
-            this.stationATrayPreview.Size = new System.Drawing.Size(158, 150);
+            this.stationATrayPreview.RowTemplate.Height = 18;
+            this.stationATrayPreview.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.stationATrayPreview.Size = new System.Drawing.Size(255, 150);
             this.stationATrayPreview.TabIndex = 1;
             this.stationATrayPreview.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
             this.stationATrayPreview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
             this.stationATrayPreview.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.stationATrayPreview.ThemeStyle.ReadOnly = true;
             this.stationATrayPreview.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
             this.stationATrayPreview.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.stationATrayPreview.ThemeStyle.RowsStyle.Height = 18;
             this.stationATrayPreview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
             // stationAProcessHeader
             // 
@@ -937,9 +1323,8 @@ namespace opusViewerPro
             this.stationAProcessHeader.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.stationAProcessHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(92)))), ((int)(((byte)(110)))));
             this.stationAProcessHeader.Location = new System.Drawing.Point(3, 143);
-            this.stationAProcessHeader.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.stationAProcessHeader.Name = "stationAProcessHeader";
-            this.stationAProcessHeader.Size = new System.Drawing.Size(328, 24);
+            this.stationAProcessHeader.Size = new System.Drawing.Size(522, 24);
             this.stationAProcessHeader.TabIndex = 6;
             this.stationAProcessHeader.Text = "↕   Station A Process  [Process Station A 20260713]";
             this.stationAProcessHeader.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -950,47 +1335,109 @@ namespace opusViewerPro
             this.stationAProcess.Cursor = System.Windows.Forms.Cursors.Default;
             this.stationAProcess.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stationAProcess.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.stationAProcess.Location = new System.Drawing.Point(3, 173);
-            this.stationAProcess.Margin = new System.Windows.Forms.Padding(2);
-            this.stationAProcess.ItemHeight = 22;
-            this.stationAProcess.ShowLines = false;
             this.stationAProcess.HideSelection = false;
-            this.stationAProcess.Nodes.AddRange(new System.Windows.Forms.TreeNode[] { new System.Windows.Forms.TreeNode("#51 - Wet Active Align L1 L2"),
-                new System.Windows.Forms.TreeNode("#52 - Shift on cure offset"),
-                new System.Windows.Forms.TreeNode("#53 - UV Process Snap"),
-                new System.Windows.Forms.TreeNode("#54 - Get PD Value After Curing", new System.Windows.Forms.TreeNode[] { new System.Windows.Forms.TreeNode("#1 - Get PD Value [FINISH]"), new System.Windows.Forms.TreeNode("#2 - [Scan] L2 Line X"), new System.Windows.Forms.TreeNode("#3 - Get PD Value"), new System.Windows.Forms.TreeNode("#4 - [Scan] L2 Line Z"), new System.Windows.Forms.TreeNode("#5 - Get PD Value"), new System.Windows.Forms.TreeNode("#6 - [Scan] L2 Line Y"), new System.Windows.Forms.TreeNode("#7 - Get PD Value"), new System.Windows.Forms.TreeNode("#8 - Check line scan stop condition 1"), new System.Windows.Forms.TreeNode("#9 - Check line scan stop condition 2"), new System.Windows.Forms.TreeNode("#10 - [Scan] L2 Line X final"), new System.Windows.Forms.TreeNode("#11 - Get PD Value"), new System.Windows.Forms.TreeNode("#12 - [Scan] L2 Line Z final") }),
-                new System.Windows.Forms.TreeNode("#55 - Release L1 and move rear PUT"),
-                new System.Windows.Forms.TreeNode("#56 - Get PD Value After Release"),
-                new System.Windows.Forms.TreeNode("#57 - Move L2 lens to safe position"),
-                new System.Windows.Forms.TreeNode("#58 - Close SOA0 Config"),
-                new System.Windows.Forms.TreeNode("#59 - Pick Up SS_L1 On Top Tray"),
-                new System.Windows.Forms.TreeNode("#60 - All station Servo on"),
-                new System.Windows.Forms.TreeNode("#61 - Set SOA1 Config"),
-                new System.Windows.Forms.TreeNode("#62 - Vision Align SOA1 iCSM"),
-                new System.Windows.Forms.TreeNode("#63 - Vision Align-L1 Lens"),
-                new System.Windows.Forms.TreeNode("#64 - Active Align-L1 Lens"),
-                new System.Windows.Forms.TreeNode("#65 - Move L2 to teach position"),
-                new System.Windows.Forms.TreeNode("#66 - Active Align-L2 Lens"),
-                new System.Windows.Forms.TreeNode("#67 - Active Align concurrent-L1 L2"),
-                new System.Windows.Forms.TreeNode("#68 - Epoxy Dispense L1"),
-                new System.Windows.Forms.TreeNode("#69 - Wet Active Align L1 L2") });
+            this.stationAProcess.ItemHeight = 22;
+            this.stationAProcess.Location = new System.Drawing.Point(2, 172);
+            this.stationAProcess.Margin = new System.Windows.Forms.Padding(2);
             this.stationAProcess.Name = "stationAProcess";
-            this.stationAProcess.Size = new System.Drawing.Size(328, 531);
+            treeNode1.Name = "";
+            treeNode1.Text = "#51 - Wet Active Align L1 L2";
+            treeNode2.Name = "";
+            treeNode2.Text = "#52 - Shift on cure offset";
+            treeNode3.Name = "";
+            treeNode3.Text = "#53 - UV Process Snap";
+            treeNode4.Name = "";
+            treeNode4.Text = "#1 - Get PD Value [FINISH]";
+            treeNode5.Name = "";
+            treeNode5.Text = "#2 - [Scan] L2 Line X";
+            treeNode6.Name = "";
+            treeNode6.Text = "#3 - Get PD Value";
+            treeNode7.Name = "";
+            treeNode7.Text = "#4 - [Scan] L2 Line Z";
+            treeNode8.Name = "";
+            treeNode8.Text = "#5 - Get PD Value";
+            treeNode9.Name = "";
+            treeNode9.Text = "#6 - [Scan] L2 Line Y";
+            treeNode10.Name = "";
+            treeNode10.Text = "#7 - Get PD Value";
+            treeNode11.Name = "";
+            treeNode11.Text = "#8 - Check line scan stop condition 1";
+            treeNode12.Name = "";
+            treeNode12.Text = "#9 - Check line scan stop condition 2";
+            treeNode13.Name = "";
+            treeNode13.Text = "#10 - [Scan] L2 Line X final";
+            treeNode14.Name = "";
+            treeNode14.Text = "#11 - Get PD Value";
+            treeNode15.Name = "";
+            treeNode15.Text = "#12 - [Scan] L2 Line Z final";
+            treeNode16.Name = "";
+            treeNode16.Text = "#54 - Get PD Value After Curing";
+            treeNode17.Name = "";
+            treeNode17.Text = "#55 - Release L1 and move rear PUT";
+            treeNode18.Name = "";
+            treeNode18.Text = "#56 - Get PD Value After Release";
+            treeNode19.Name = "";
+            treeNode19.Text = "#57 - Move L2 lens to safe position";
+            treeNode20.Name = "";
+            treeNode20.Text = "#58 - Close SOA0 Config";
+            treeNode21.Name = "";
+            treeNode21.Text = "#59 - Pick Up SS_L1 On Top Tray";
+            treeNode22.Name = "";
+            treeNode22.Text = "#60 - All station Servo on";
+            treeNode23.Name = "";
+            treeNode23.Text = "#61 - Set SOA1 Config";
+            treeNode24.Name = "";
+            treeNode24.Text = "#62 - Vision Align SOA1 iCSM";
+            treeNode25.Name = "";
+            treeNode25.Text = "#63 - Vision Align-L1 Lens";
+            treeNode26.Name = "";
+            treeNode26.Text = "#64 - Active Align-L1 Lens";
+            treeNode27.Name = "";
+            treeNode27.Text = "#65 - Move L2 to teach position";
+            treeNode28.Name = "";
+            treeNode28.Text = "#66 - Active Align-L2 Lens";
+            treeNode29.Name = "";
+            treeNode29.Text = "#67 - Active Align concurrent-L1 L2";
+            treeNode30.Name = "";
+            treeNode30.Text = "#68 - Epoxy Dispense L1";
+            treeNode31.Name = "";
+            treeNode31.Text = "#69 - Wet Active Align L1 L2";
+            this.stationAProcess.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode16,
+            treeNode17,
+            treeNode18,
+            treeNode19,
+            treeNode20,
+            treeNode21,
+            treeNode22,
+            treeNode23,
+            treeNode24,
+            treeNode25,
+            treeNode26,
+            treeNode27,
+            treeNode28,
+            treeNode29,
+            treeNode30,
+            treeNode31});
+            this.stationAProcess.ShowLines = false;
+            this.stationAProcess.Size = new System.Drawing.Size(524, 694);
             this.stationAProcess.TabIndex = 7;
             // 
             // centerCard
             // 
             this.centerCard.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(207)))), ((int)(((byte)(215)))));
-            this.centerCard.BorderRadius = 0;
             this.centerCard.BorderThickness = 1;
             this.centerCard.Controls.Add(this.centerLayout);
             this.centerCard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.centerCard.FillColor = System.Drawing.Color.White;
-            this.centerCard.Location = new System.Drawing.Point(352, 0);
+            this.centerCard.Location = new System.Drawing.Point(545, 0);
             this.centerCard.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.centerCard.Name = "centerCard";
-            this.centerCard.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.centerCard.Size = new System.Drawing.Size(654, 711);
+            this.centerCard.Padding = new System.Windows.Forms.Padding(2);
+            this.centerCard.Size = new System.Drawing.Size(1024, 872);
             this.centerCard.TabIndex = 1;
             // 
             // centerLayout
@@ -1011,7 +1458,6 @@ namespace opusViewerPro
             this.centerLayout.Controls.Add(this.centerBottomLayout, 0, 4);
             this.centerLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.centerLayout.Location = new System.Drawing.Point(2, 2);
-            this.centerLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.centerLayout.Name = "centerLayout";
             this.centerLayout.RowCount = 5;
             this.centerLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
@@ -1019,7 +1465,7 @@ namespace opusViewerPro
             this.centerLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 69F));
             this.centerLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 146F));
             this.centerLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31F));
-            this.centerLayout.Size = new System.Drawing.Size(650, 707);
+            this.centerLayout.Size = new System.Drawing.Size(1020, 868);
             this.centerLayout.TabIndex = 0;
             // 
             // centerTitle
@@ -1029,9 +1475,8 @@ namespace opusViewerPro
             this.centerTitle.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Italic);
             this.centerTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(65)))), ((int)(((byte)(112)))));
             this.centerTitle.Location = new System.Drawing.Point(3, 3);
-            this.centerTitle.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.centerTitle.Name = "centerTitle";
-            this.centerTitle.Size = new System.Drawing.Size(163, 22);
+            this.centerTitle.Size = new System.Drawing.Size(259, 22);
             this.centerTitle.TabIndex = 0;
             this.centerTitle.Text = "CENTER";
             // 
@@ -1041,10 +1486,9 @@ namespace opusViewerPro
             this.laserValue.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.laserValue.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.laserValue.ForeColor = System.Drawing.Color.Green;
-            this.laserValue.Location = new System.Drawing.Point(172, 3);
-            this.laserValue.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.laserValue.Location = new System.Drawing.Point(268, 3);
             this.laserValue.Name = "laserValue";
-            this.laserValue.Size = new System.Drawing.Size(111, 22);
+            this.laserValue.Size = new System.Drawing.Size(198, 22);
             this.laserValue.TabIndex = 1;
             this.laserValue.Text = "Laser : 0.0000";
             this.laserValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1055,10 +1499,9 @@ namespace opusViewerPro
             this.centerStationBTitle.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(164)))), ((int)(((byte)(231)))));
             this.centerStationBTitle.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Italic);
             this.centerStationBTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(65)))), ((int)(((byte)(112)))));
-            this.centerStationBTitle.Location = new System.Drawing.Point(289, 3);
-            this.centerStationBTitle.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.centerStationBTitle.Location = new System.Drawing.Point(472, 3);
             this.centerStationBTitle.Name = "centerStationBTitle";
-            this.centerStationBTitle.Size = new System.Drawing.Size(163, 22);
+            this.centerStationBTitle.Size = new System.Drawing.Size(259, 22);
             this.centerStationBTitle.TabIndex = 2;
             this.centerStationBTitle.Text = "STATION B";
             // 
@@ -1068,10 +1511,9 @@ namespace opusViewerPro
             this.centerStationBNote.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.centerStationBNote.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
             this.centerStationBNote.ForeColor = System.Drawing.Color.White;
-            this.centerStationBNote.Location = new System.Drawing.Point(458, 3);
-            this.centerStationBNote.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.centerStationBNote.Location = new System.Drawing.Point(737, 3);
             this.centerStationBNote.Name = "centerStationBNote";
-            this.centerStationBNote.Size = new System.Drawing.Size(189, 22);
+            this.centerStationBNote.Size = new System.Drawing.Size(280, 22);
             this.centerStationBNote.TabIndex = 3;
             this.centerStationBNote.Text = "No iCSM";
             // 
@@ -1086,7 +1528,7 @@ namespace opusViewerPro
             this.centerStatus.Location = new System.Drawing.Point(0, 28);
             this.centerStatus.Margin = new System.Windows.Forms.Padding(0);
             this.centerStatus.Name = "centerStatus";
-            this.centerStatus.Size = new System.Drawing.Size(286, 48);
+            this.centerStatus.Size = new System.Drawing.Size(469, 48);
             this.centerStatus.TabIndex = 4;
             // 
             // centerStatus1
@@ -1096,9 +1538,8 @@ namespace opusViewerPro
             this.centerStatus1.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.centerStatus1.ForeColor = System.Drawing.Color.LimeGreen;
             this.centerStatus1.Location = new System.Drawing.Point(3, 3);
-            this.centerStatus1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.centerStatus1.Name = "centerStatus1";
-            this.centerStatus1.Size = new System.Drawing.Size(90, 18);
+            this.centerStatus1.Size = new System.Drawing.Size(103, 23);
             this.centerStatus1.TabIndex = 0;
             this.centerStatus1.Text = "●  Gripper Down";
             // 
@@ -1108,10 +1549,9 @@ namespace opusViewerPro
             this.centerStatus2.FillColor = System.Drawing.Color.Transparent;
             this.centerStatus2.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.centerStatus2.ForeColor = System.Drawing.Color.LimeGreen;
-            this.centerStatus2.Location = new System.Drawing.Point(100, 3);
-            this.centerStatus2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.centerStatus2.Location = new System.Drawing.Point(112, 3);
             this.centerStatus2.Name = "centerStatus2";
-            this.centerStatus2.Size = new System.Drawing.Size(88, 18);
+            this.centerStatus2.Size = new System.Drawing.Size(101, 23);
             this.centerStatus2.TabIndex = 1;
             this.centerStatus2.Text = "●  Gripper Close";
             // 
@@ -1121,10 +1561,9 @@ namespace opusViewerPro
             this.centerStatus3.FillColor = System.Drawing.Color.Transparent;
             this.centerStatus3.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.centerStatus3.ForeColor = System.Drawing.Color.LimeGreen;
-            this.centerStatus3.Location = new System.Drawing.Point(3, 28);
-            this.centerStatus3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.centerStatus3.Location = new System.Drawing.Point(219, 3);
             this.centerStatus3.Name = "centerStatus3";
-            this.centerStatus3.Size = new System.Drawing.Size(101, 18);
+            this.centerStatus3.Size = new System.Drawing.Size(114, 23);
             this.centerStatus3.TabIndex = 2;
             this.centerStatus3.Text = "●  A Stage Vacuum";
             // 
@@ -1134,10 +1573,9 @@ namespace opusViewerPro
             this.centerStatus4.FillColor = System.Drawing.Color.Transparent;
             this.centerStatus4.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.centerStatus4.ForeColor = System.Drawing.Color.LimeGreen;
-            this.centerStatus4.Location = new System.Drawing.Point(110, 28);
-            this.centerStatus4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.centerStatus4.Location = new System.Drawing.Point(339, 3);
             this.centerStatus4.Name = "centerStatus4";
-            this.centerStatus4.Size = new System.Drawing.Size(100, 18);
+            this.centerStatus4.Size = new System.Drawing.Size(113, 23);
             this.centerStatus4.TabIndex = 3;
             this.centerStatus4.Text = "●  B Stage Vacuum";
             // 
@@ -1150,10 +1588,10 @@ namespace opusViewerPro
             this.stationBStatus.Controls.Add(this.statusB4);
             this.stationBStatus.Controls.Add(this.statusB5);
             this.stationBStatus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stationBStatus.Location = new System.Drawing.Point(286, 28);
+            this.stationBStatus.Location = new System.Drawing.Point(469, 28);
             this.stationBStatus.Margin = new System.Windows.Forms.Padding(0);
             this.stationBStatus.Name = "stationBStatus";
-            this.stationBStatus.Size = new System.Drawing.Size(364, 48);
+            this.stationBStatus.Size = new System.Drawing.Size(551, 48);
             this.stationBStatus.TabIndex = 5;
             // 
             // statusB1
@@ -1163,9 +1601,8 @@ namespace opusViewerPro
             this.statusB1.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.statusB1.ForeColor = System.Drawing.Color.LimeGreen;
             this.statusB1.Location = new System.Drawing.Point(3, 3);
-            this.statusB1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.statusB1.Name = "statusB1";
-            this.statusB1.Size = new System.Drawing.Size(52, 18);
+            this.statusB1.Size = new System.Drawing.Size(65, 23);
             this.statusB1.TabIndex = 0;
             this.statusB1.Text = "●  SS_L2";
             // 
@@ -1175,10 +1612,9 @@ namespace opusViewerPro
             this.statusB2.FillColor = System.Drawing.Color.Transparent;
             this.statusB2.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.statusB2.ForeColor = System.Drawing.Color.LimeGreen;
-            this.statusB2.Location = new System.Drawing.Point(61, 3);
-            this.statusB2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.statusB2.Location = new System.Drawing.Point(74, 3);
             this.statusB2.Name = "statusB2";
-            this.statusB2.Size = new System.Drawing.Size(52, 18);
+            this.statusB2.Size = new System.Drawing.Size(64, 23);
             this.statusB2.TabIndex = 1;
             this.statusB2.Text = "●  LS_L2";
             // 
@@ -1188,10 +1624,9 @@ namespace opusViewerPro
             this.statusB3.FillColor = System.Drawing.Color.Transparent;
             this.statusB3.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.statusB3.ForeColor = System.Drawing.Color.LimeGreen;
-            this.statusB3.Location = new System.Drawing.Point(118, 3);
-            this.statusB3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.statusB3.Location = new System.Drawing.Point(144, 3);
             this.statusB3.Name = "statusB3";
-            this.statusB3.Size = new System.Drawing.Size(84, 18);
+            this.statusB3.Size = new System.Drawing.Size(97, 23);
             this.statusB3.TabIndex = 2;
             this.statusB3.Text = "●  Left Vacuum";
             // 
@@ -1201,10 +1636,9 @@ namespace opusViewerPro
             this.statusB4.FillColor = System.Drawing.Color.Transparent;
             this.statusB4.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.statusB4.ForeColor = System.Drawing.Color.LimeGreen;
-            this.statusB4.Location = new System.Drawing.Point(208, 3);
-            this.statusB4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.statusB4.Location = new System.Drawing.Point(247, 3);
             this.statusB4.Name = "statusB4";
-            this.statusB4.Size = new System.Drawing.Size(90, 18);
+            this.statusB4.Size = new System.Drawing.Size(103, 23);
             this.statusB4.TabIndex = 3;
             this.statusB4.Text = "●  Right Vacuum";
             // 
@@ -1214,10 +1648,9 @@ namespace opusViewerPro
             this.statusB5.FillColor = System.Drawing.Color.Transparent;
             this.statusB5.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
             this.statusB5.ForeColor = System.Drawing.Color.LimeGreen;
-            this.statusB5.Location = new System.Drawing.Point(3, 28);
-            this.statusB5.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.statusB5.Location = new System.Drawing.Point(356, 3);
             this.statusB5.Name = "statusB5";
-            this.statusB5.Size = new System.Drawing.Size(84, 18);
+            this.statusB5.Size = new System.Drawing.Size(97, 23);
             this.statusB5.TabIndex = 4;
             this.statusB5.Text = "●  Front Curing";
             // 
@@ -1235,9 +1668,8 @@ namespace opusViewerPro
             this.visionLayout.Controls.Add(this.bTrayLayout, 3, 0);
             this.visionLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.visionLayout.Location = new System.Drawing.Point(3, 79);
-            this.visionLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.visionLayout.Name = "visionLayout";
-            this.visionLayout.Size = new System.Drawing.Size(644, 307);
+            this.visionLayout.Size = new System.Drawing.Size(1014, 439);
             this.visionLayout.TabIndex = 6;
             // 
             // centerCameraLayout
@@ -1246,13 +1678,12 @@ namespace opusViewerPro
             this.centerCameraLayout.Controls.Add(this.centerCamera, 0, 1);
             this.centerCameraLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.centerCameraLayout.Location = new System.Drawing.Point(3, 3);
-            this.centerCameraLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.centerCameraLayout.Name = "centerCameraLayout";
             this.centerCameraLayout.RowCount = 3;
             this.centerCameraLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.centerCameraLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.centerCameraLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.centerCameraLayout.Size = new System.Drawing.Size(161, 301);
+            this.centerCameraLayout.Size = new System.Drawing.Size(257, 433);
             this.centerCameraLayout.TabIndex = 0;
             // 
             // centerCameraHeader
@@ -1264,21 +1695,19 @@ namespace opusViewerPro
             this.centerCameraHeader.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.centerCameraHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(75)))), ((int)(((byte)(90)))));
             this.centerCameraHeader.Location = new System.Drawing.Point(3, 3);
-            this.centerCameraHeader.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.centerCameraHeader.Name = "centerCameraHeader";
-            this.centerCameraHeader.Size = new System.Drawing.Size(202, 29);
+            this.centerCameraHeader.Size = new System.Drawing.Size(251, 24);
             this.centerCameraHeader.TabIndex = 0;
             this.centerCameraHeader.Text = "CENTER CAMERA       ▼";
             // 
             // centerCamera
             // 
-            this.centerCamera.BorderRadius = 0;
             this.centerCamera.Dock = System.Windows.Forms.DockStyle.Fill;
             this.centerCamera.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
-            this.centerCamera.Location = new System.Drawing.Point(4, 39);
-            this.centerCamera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.centerCamera.Location = new System.Drawing.Point(4, 34);
+            this.centerCamera.Margin = new System.Windows.Forms.Padding(4);
             this.centerCamera.Name = "centerCamera";
-            this.centerCamera.Size = new System.Drawing.Size(200, 258);
+            this.centerCamera.Size = new System.Drawing.Size(249, 193);
             this.centerCamera.TabIndex = 1;
             // 
             // trayLayout
@@ -1289,8 +1718,7 @@ namespace opusViewerPro
             this.trayLayout.Controls.Add(this.trayBottomLabel, 0, 3);
             this.trayLayout.Controls.Add(this.trayBottom, 0, 4);
             this.trayLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trayLayout.Location = new System.Drawing.Point(170, 3);
-            this.trayLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.trayLayout.Location = new System.Drawing.Point(266, 3);
             this.trayLayout.Name = "trayLayout";
             this.trayLayout.RowCount = 5;
             this.trayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
@@ -1298,7 +1726,7 @@ namespace opusViewerPro
             this.trayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.trayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
             this.trayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.trayLayout.Size = new System.Drawing.Size(110, 301);
+            this.trayLayout.Size = new System.Drawing.Size(196, 433);
             this.trayLayout.TabIndex = 1;
             // 
             // trayHeader
@@ -1310,9 +1738,8 @@ namespace opusViewerPro
             this.trayHeader.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.trayHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(164)))), ((int)(((byte)(231)))));
             this.trayHeader.Location = new System.Drawing.Point(3, 3);
-            this.trayHeader.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.trayHeader.Name = "trayHeader";
-            this.trayHeader.Size = new System.Drawing.Size(240, 29);
+            this.trayHeader.Size = new System.Drawing.Size(240, 24);
             this.trayHeader.TabIndex = 0;
             this.trayHeader.Text = "iCSM TRAY       ↻";
             // 
@@ -1322,8 +1749,7 @@ namespace opusViewerPro
             this.trayTopLabel.FillColor = System.Drawing.Color.White;
             this.trayTopLabel.Font = new System.Drawing.Font("Segoe UI", 7F);
             this.trayTopLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.trayTopLabel.Location = new System.Drawing.Point(3, 38);
-            this.trayTopLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.trayTopLabel.Location = new System.Drawing.Point(3, 33);
             this.trayTopLabel.Name = "trayTopLabel";
             this.trayTopLabel.Size = new System.Drawing.Size(240, 12);
             this.trayTopLabel.TabIndex = 1;
@@ -1364,58 +1790,63 @@ namespace opusViewerPro
             this.trayTop.DefaultCellStyle = dataGridViewCellStyle5;
             this.trayTop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.trayTop.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(214)))), ((int)(((byte)(239)))));
-            this.trayTop.Location = new System.Drawing.Point(3, 56);
-            this.trayTop.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.trayTop.ReadOnly = true;
-            this.trayTop.AllowUserToAddRows = false;
-            this.trayTop.RowTemplate.Height = 42;
-            this.trayTop.RowCount = 4;
-            this.trayTop.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.trayTop.Location = new System.Drawing.Point(3, 51);
             this.trayTop.Name = "trayTop";
+            this.trayTop.ReadOnly = true;
             this.trayTop.RowHeadersVisible = false;
             this.trayTop.RowHeadersWidth = 82;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.trayTop.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.trayTop.Size = new System.Drawing.Size(240, 109);
+            this.trayTop.RowTemplate.Height = 42;
+            this.trayTop.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.trayTop.Size = new System.Drawing.Size(240, 177);
             this.trayTop.TabIndex = 2;
             this.trayTop.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.trayTop.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.trayTop.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(214)))), ((int)(((byte)(239)))));
             this.trayTop.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.trayTop.ThemeStyle.ReadOnly = true;
             this.trayTop.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.trayTop.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Single;
             this.trayTop.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.trayTop.ThemeStyle.RowsStyle.Height = 42;
             this.trayTop.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             // 
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn9
             // 
             this.dataGridViewTextBoxColumn9.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn10
             // 
             this.dataGridViewTextBoxColumn10.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn11
             // 
             this.dataGridViewTextBoxColumn11.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn12
             // 
             this.dataGridViewTextBoxColumn12.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
             // 
             // trayBottomLabel
             // 
@@ -1423,8 +1854,7 @@ namespace opusViewerPro
             this.trayBottomLabel.FillColor = System.Drawing.Color.White;
             this.trayBottomLabel.Font = new System.Drawing.Font("Segoe UI", 7F);
             this.trayBottomLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.trayBottomLabel.Location = new System.Drawing.Point(3, 171);
-            this.trayBottomLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.trayBottomLabel.Location = new System.Drawing.Point(3, 234);
             this.trayBottomLabel.Name = "trayBottomLabel";
             this.trayBottomLabel.Size = new System.Drawing.Size(240, 12);
             this.trayBottomLabel.TabIndex = 3;
@@ -1465,58 +1895,63 @@ namespace opusViewerPro
             this.trayBottom.DefaultCellStyle = dataGridViewCellStyle9;
             this.trayBottom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.trayBottom.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(214)))), ((int)(((byte)(239)))));
-            this.trayBottom.Location = new System.Drawing.Point(3, 189);
-            this.trayBottom.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.trayBottom.ReadOnly = true;
-            this.trayBottom.AllowUserToAddRows = false;
-            this.trayBottom.RowTemplate.Height = 42;
-            this.trayBottom.RowCount = 4;
-            this.trayBottom.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.trayBottom.Location = new System.Drawing.Point(3, 252);
             this.trayBottom.Name = "trayBottom";
+            this.trayBottom.ReadOnly = true;
             this.trayBottom.RowHeadersVisible = false;
             this.trayBottom.RowHeadersWidth = 82;
             dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.trayBottom.RowsDefaultCellStyle = dataGridViewCellStyle10;
-            this.trayBottom.Size = new System.Drawing.Size(240, 109);
+            this.trayBottom.RowTemplate.Height = 42;
+            this.trayBottom.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.trayBottom.Size = new System.Drawing.Size(240, 178);
             this.trayBottom.TabIndex = 4;
             this.trayBottom.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.trayBottom.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.trayBottom.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(214)))), ((int)(((byte)(239)))));
             this.trayBottom.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.trayBottom.ThemeStyle.ReadOnly = true;
             this.trayBottom.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.trayBottom.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Single;
             this.trayBottom.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.trayBottom.ThemeStyle.RowsStyle.Height = 42;
             this.trayBottom.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             // 
             // dataGridViewTextBoxColumn13
             // 
             this.dataGridViewTextBoxColumn13.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn14
             // 
             this.dataGridViewTextBoxColumn14.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn15
             // 
             this.dataGridViewTextBoxColumn15.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn16
             // 
             this.dataGridViewTextBoxColumn16.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn17
             // 
             this.dataGridViewTextBoxColumn17.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn18
             // 
             this.dataGridViewTextBoxColumn18.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.ReadOnly = true;
             // 
             // topCameraLayout
             // 
@@ -1524,14 +1959,13 @@ namespace opusViewerPro
             this.topCameraLayout.Controls.Add(this.topCamera, 0, 1);
             this.topCameraLayout.Controls.Add(this.measureItems, 0, 2);
             this.topCameraLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.topCameraLayout.Location = new System.Drawing.Point(286, 3);
-            this.topCameraLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.topCameraLayout.Location = new System.Drawing.Point(468, 3);
             this.topCameraLayout.Name = "topCameraLayout";
             this.topCameraLayout.RowCount = 3;
             this.topCameraLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.topCameraLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.topCameraLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.topCameraLayout.Size = new System.Drawing.Size(161, 301);
+            this.topCameraLayout.Size = new System.Drawing.Size(257, 433);
             this.topCameraLayout.TabIndex = 2;
             // 
             // topCameraHeader
@@ -1543,49 +1977,70 @@ namespace opusViewerPro
             this.topCameraHeader.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.topCameraHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(75)))), ((int)(((byte)(90)))));
             this.topCameraHeader.Location = new System.Drawing.Point(3, 3);
-            this.topCameraHeader.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.topCameraHeader.Name = "topCameraHeader";
-            this.topCameraHeader.Size = new System.Drawing.Size(318, 29);
+            this.topCameraHeader.Size = new System.Drawing.Size(318, 24);
             this.topCameraHeader.TabIndex = 0;
             this.topCameraHeader.Text = "TOP VISION CAMERA       ▼";
             // 
             // topCamera
             // 
-            this.topCamera.BorderRadius = 0;
             this.topCamera.Dock = System.Windows.Forms.DockStyle.Fill;
             this.topCamera.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
-            this.topCamera.Location = new System.Drawing.Point(4, 39);
-            this.topCamera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.topCamera.Location = new System.Drawing.Point(4, 34);
+            this.topCamera.Margin = new System.Windows.Forms.Padding(4);
             this.topCamera.Name = "topCamera";
-            this.topCamera.Size = new System.Drawing.Size(316, 146);
+            this.topCamera.Size = new System.Drawing.Size(316, 193);
             this.topCamera.TabIndex = 1;
             // 
             // measureItems
             // 
+            this.measureItems.AllowUserToAddRows = false;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 7.5F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.measureItems.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            this.measureItems.ColumnHeadersHeight = 20;
+            this.measureItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.measureItems.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn39,
+            this.dataGridViewTextBoxColumn40});
             this.measureItems.Cursor = System.Windows.Forms.Cursors.IBeam;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 7.5F);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.measureItems.DefaultCellStyle = dataGridViewCellStyle12;
             this.measureItems.Dock = System.Windows.Forms.DockStyle.Fill;
             this.measureItems.Font = new System.Drawing.Font("Segoe UI", 7.5F);
-            this.measureItems.Location = new System.Drawing.Point(2, 240);
-            this.measureItems.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.measureItems.ColumnCount = 2;
-            this.measureItems.Columns[0].HeaderText = "Measure Items";
-            this.measureItems.Columns[1].HeaderText = "Result";
-            this.measureItems.RowHeadersVisible = false;
-            this.measureItems.AllowUserToAddRows = false;
-            this.measureItems.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.measureItems.BackgroundColor = System.Drawing.Color.White;
-            this.measureItems.ColumnHeadersHeight = 20;
-            this.measureItems.RowTemplate.Height = 22;
-            this.measureItems.Rows.Add("Barcode", "");
-            this.measureItems.Rows.Add("Laser B Max", "");
-            this.measureItems.Rows.Add("Laser A Max", "");
-            this.measureItems.Rows.Add("SOA0 Max", "");
-            this.measureItems.Rows.Add("SOA1 Max", "");
-            this.measureItems.Rows.Add("SOA2 Max", "");
+            this.measureItems.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.measureItems.Location = new System.Drawing.Point(2, 233);
+            this.measureItems.Margin = new System.Windows.Forms.Padding(2);
             this.measureItems.Name = "measureItems";
             this.measureItems.ReadOnly = true;
-            this.measureItems.Size = new System.Drawing.Size(319, 59);
+            this.measureItems.RowHeadersVisible = false;
+            this.measureItems.Size = new System.Drawing.Size(320, 198);
             this.measureItems.TabIndex = 2;
+            this.measureItems.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 7.5F);
+            this.measureItems.ThemeStyle.HeaderStyle.Height = 20;
+            this.measureItems.ThemeStyle.ReadOnly = true;
+            this.measureItems.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 7.5F);
+            // 
+            // dataGridViewTextBoxColumn39
+            // 
+            this.dataGridViewTextBoxColumn39.Name = "dataGridViewTextBoxColumn39";
+            this.dataGridViewTextBoxColumn39.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn40
+            // 
+            this.dataGridViewTextBoxColumn40.Name = "dataGridViewTextBoxColumn40";
+            this.dataGridViewTextBoxColumn40.ReadOnly = true;
             // 
             // bTrayLayout
             // 
@@ -1595,8 +2050,7 @@ namespace opusViewerPro
             this.bTrayLayout.Controls.Add(this.bTrayBottomLabel, 0, 3);
             this.bTrayLayout.Controls.Add(this.bTrayBottom, 0, 4);
             this.bTrayLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bTrayLayout.Location = new System.Drawing.Point(452, 3);
-            this.bTrayLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bTrayLayout.Location = new System.Drawing.Point(731, 3);
             this.bTrayLayout.Name = "bTrayLayout";
             this.bTrayLayout.RowCount = 5;
             this.bTrayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
@@ -1604,7 +2058,7 @@ namespace opusViewerPro
             this.bTrayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.bTrayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
             this.bTrayLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.bTrayLayout.Size = new System.Drawing.Size(188, 301);
+            this.bTrayLayout.Size = new System.Drawing.Size(280, 433);
             this.bTrayLayout.TabIndex = 3;
             // 
             // bTrayHeader
@@ -1616,9 +2070,8 @@ namespace opusViewerPro
             this.bTrayHeader.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bTrayHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(164)))), ((int)(((byte)(231)))));
             this.bTrayHeader.Location = new System.Drawing.Point(3, 3);
-            this.bTrayHeader.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.bTrayHeader.Name = "bTrayHeader";
-            this.bTrayHeader.Size = new System.Drawing.Size(240, 29);
+            this.bTrayHeader.Size = new System.Drawing.Size(274, 24);
             this.bTrayHeader.TabIndex = 0;
             this.bTrayHeader.Text = "B LENS TRAY       ↻";
             // 
@@ -1628,28 +2081,27 @@ namespace opusViewerPro
             this.bTrayTopLabel.FillColor = System.Drawing.Color.White;
             this.bTrayTopLabel.Font = new System.Drawing.Font("Segoe UI", 7F);
             this.bTrayTopLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(85)))), ((int)(((byte)(45)))));
-            this.bTrayTopLabel.Location = new System.Drawing.Point(3, 38);
-            this.bTrayTopLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bTrayTopLabel.Location = new System.Drawing.Point(3, 33);
             this.bTrayTopLabel.Name = "bTrayTopLabel";
-            this.bTrayTopLabel.Size = new System.Drawing.Size(240, 12);
+            this.bTrayTopLabel.Size = new System.Drawing.Size(274, 12);
             this.bTrayTopLabel.TabIndex = 1;
             this.bTrayTopLabel.Text = "SS L2";
             // 
             // bTrayTop
             // 
             this.bTrayTop.AllowUserToAddRows = false;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
-            this.bTrayTop.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
+            this.bTrayTop.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.bTrayTop.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.bTrayTop.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Single;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bTrayTop.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bTrayTop.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.bTrayTop.ColumnHeadersHeight = 15;
             this.bTrayTop.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.bTrayTop.ColumnHeadersVisible = false;
@@ -1664,88 +2116,97 @@ namespace opusViewerPro
             this.dataGridViewTextBoxColumn26,
             this.dataGridViewTextBoxColumn27,
             this.dataGridViewTextBoxColumn28});
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bTrayTop.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bTrayTop.DefaultCellStyle = dataGridViewCellStyle15;
             this.bTrayTop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bTrayTop.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(214)))), ((int)(((byte)(239)))));
-            this.bTrayTop.Location = new System.Drawing.Point(3, 56);
-            this.bTrayTop.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.bTrayTop.ReadOnly = true;
-            this.bTrayTop.AllowUserToAddRows = false;
-            this.bTrayTop.RowTemplate.Height = 17;
-            this.bTrayTop.RowCount = 10;
-            this.bTrayTop.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.bTrayTop.Location = new System.Drawing.Point(3, 51);
             this.bTrayTop.Name = "bTrayTop";
+            this.bTrayTop.ReadOnly = true;
             this.bTrayTop.RowHeadersVisible = false;
             this.bTrayTop.RowHeadersWidth = 82;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
-            this.bTrayTop.RowsDefaultCellStyle = dataGridViewCellStyle14;
-            this.bTrayTop.Size = new System.Drawing.Size(240, 109);
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
+            this.bTrayTop.RowsDefaultCellStyle = dataGridViewCellStyle16;
+            this.bTrayTop.RowTemplate.Height = 17;
+            this.bTrayTop.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.bTrayTop.Size = new System.Drawing.Size(274, 177);
             this.bTrayTop.TabIndex = 2;
             this.bTrayTop.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.bTrayTop.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.bTrayTop.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(214)))), ((int)(((byte)(239)))));
             this.bTrayTop.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.bTrayTop.ThemeStyle.ReadOnly = true;
             this.bTrayTop.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.bTrayTop.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Single;
             this.bTrayTop.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.bTrayTop.ThemeStyle.RowsStyle.Height = 17;
             this.bTrayTop.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             // 
             // dataGridViewTextBoxColumn19
             // 
             this.dataGridViewTextBoxColumn19.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            this.dataGridViewTextBoxColumn19.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn20
             // 
             this.dataGridViewTextBoxColumn20.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            this.dataGridViewTextBoxColumn20.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn21
             // 
             this.dataGridViewTextBoxColumn21.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            this.dataGridViewTextBoxColumn21.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn22
             // 
             this.dataGridViewTextBoxColumn22.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            this.dataGridViewTextBoxColumn22.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn23
             // 
             this.dataGridViewTextBoxColumn23.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            this.dataGridViewTextBoxColumn23.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn24
             // 
             this.dataGridViewTextBoxColumn24.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            this.dataGridViewTextBoxColumn24.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn25
             // 
             this.dataGridViewTextBoxColumn25.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            this.dataGridViewTextBoxColumn25.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn26
             // 
             this.dataGridViewTextBoxColumn26.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            this.dataGridViewTextBoxColumn26.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn27
             // 
             this.dataGridViewTextBoxColumn27.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            this.dataGridViewTextBoxColumn27.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn28
             // 
             this.dataGridViewTextBoxColumn28.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            this.dataGridViewTextBoxColumn28.ReadOnly = true;
             // 
             // bTrayBottomLabel
             // 
@@ -1753,28 +2214,27 @@ namespace opusViewerPro
             this.bTrayBottomLabel.FillColor = System.Drawing.Color.White;
             this.bTrayBottomLabel.Font = new System.Drawing.Font("Segoe UI", 7F);
             this.bTrayBottomLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(85)))), ((int)(((byte)(45)))));
-            this.bTrayBottomLabel.Location = new System.Drawing.Point(3, 171);
-            this.bTrayBottomLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bTrayBottomLabel.Location = new System.Drawing.Point(3, 234);
             this.bTrayBottomLabel.Name = "bTrayBottomLabel";
-            this.bTrayBottomLabel.Size = new System.Drawing.Size(240, 12);
+            this.bTrayBottomLabel.Size = new System.Drawing.Size(274, 12);
             this.bTrayBottomLabel.TabIndex = 3;
             this.bTrayBottomLabel.Text = "LS L2";
             // 
             // bTrayBottom
             // 
             this.bTrayBottom.AllowUserToAddRows = false;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
-            this.bTrayBottom.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
+            this.bTrayBottom.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
             this.bTrayBottom.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.bTrayBottom.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Single;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bTrayBottom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bTrayBottom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.bTrayBottom.ColumnHeadersHeight = 15;
             this.bTrayBottom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.bTrayBottom.ColumnHeadersVisible = false;
@@ -1789,88 +2249,97 @@ namespace opusViewerPro
             this.dataGridViewTextBoxColumn36,
             this.dataGridViewTextBoxColumn37,
             this.dataGridViewTextBoxColumn38});
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bTrayBottom.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bTrayBottom.DefaultCellStyle = dataGridViewCellStyle19;
             this.bTrayBottom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bTrayBottom.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(214)))), ((int)(((byte)(239)))));
-            this.bTrayBottom.Location = new System.Drawing.Point(3, 189);
-            this.bTrayBottom.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.bTrayBottom.ReadOnly = true;
-            this.bTrayBottom.AllowUserToAddRows = false;
-            this.bTrayBottom.RowTemplate.Height = 17;
-            this.bTrayBottom.RowCount = 10;
-            this.bTrayBottom.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.bTrayBottom.Location = new System.Drawing.Point(3, 252);
             this.bTrayBottom.Name = "bTrayBottom";
+            this.bTrayBottom.ReadOnly = true;
             this.bTrayBottom.RowHeadersVisible = false;
             this.bTrayBottom.RowHeadersWidth = 82;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
-            this.bTrayBottom.RowsDefaultCellStyle = dataGridViewCellStyle18;
-            this.bTrayBottom.Size = new System.Drawing.Size(240, 109);
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
+            this.bTrayBottom.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            this.bTrayBottom.RowTemplate.Height = 17;
+            this.bTrayBottom.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.bTrayBottom.Size = new System.Drawing.Size(274, 178);
             this.bTrayBottom.TabIndex = 4;
             this.bTrayBottom.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.bTrayBottom.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.bTrayBottom.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(214)))), ((int)(((byte)(239)))));
             this.bTrayBottom.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.bTrayBottom.ThemeStyle.ReadOnly = true;
             this.bTrayBottom.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             this.bTrayBottom.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Single;
             this.bTrayBottom.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.bTrayBottom.ThemeStyle.RowsStyle.Height = 17;
             this.bTrayBottom.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(147)))), ((int)(((byte)(225)))));
             // 
             // dataGridViewTextBoxColumn29
             // 
             this.dataGridViewTextBoxColumn29.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
+            this.dataGridViewTextBoxColumn29.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn30
             // 
             this.dataGridViewTextBoxColumn30.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            this.dataGridViewTextBoxColumn30.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn31
             // 
             this.dataGridViewTextBoxColumn31.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
+            this.dataGridViewTextBoxColumn31.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn32
             // 
             this.dataGridViewTextBoxColumn32.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
+            this.dataGridViewTextBoxColumn32.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn33
             // 
             this.dataGridViewTextBoxColumn33.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
+            this.dataGridViewTextBoxColumn33.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn34
             // 
             this.dataGridViewTextBoxColumn34.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
+            this.dataGridViewTextBoxColumn34.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn35
             // 
             this.dataGridViewTextBoxColumn35.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
+            this.dataGridViewTextBoxColumn35.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn36
             // 
             this.dataGridViewTextBoxColumn36.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
+            this.dataGridViewTextBoxColumn36.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn37
             // 
             this.dataGridViewTextBoxColumn37.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
+            this.dataGridViewTextBoxColumn37.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn38
             // 
             this.dataGridViewTextBoxColumn38.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn38.Name = "dataGridViewTextBoxColumn38";
+            this.dataGridViewTextBoxColumn38.ReadOnly = true;
             // 
             // processInfoPanel
             // 
@@ -1880,196 +2349,10 @@ namespace opusViewerPro
             this.processInfoPanel.Controls.Add(this.processSplit);
             this.processInfoPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.processInfoPanel.FillColor = System.Drawing.Color.White;
-            this.processInfoPanel.Location = new System.Drawing.Point(3, 392);
-            this.processInfoPanel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.processInfoPanel.Location = new System.Drawing.Point(3, 524);
             this.processInfoPanel.Name = "processInfoPanel";
-            this.processInfoPanel.Size = new System.Drawing.Size(644, 120);
+            this.processInfoPanel.Size = new System.Drawing.Size(1014, 140);
             this.processInfoPanel.TabIndex = 7;
-            // 
-            // processInfoTitle
-            // 
-            this.processInfoTitle.BackColor = System.Drawing.Color.Transparent;
-            this.processInfoTitle.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Italic);
-            this.processInfoTitle.Location = new System.Drawing.Point(8, 0);
-            this.processInfoTitle.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.processInfoTitle.Name = "processInfoTitle";
-            this.processInfoTitle.Size = new System.Drawing.Size(100, 21);
-            this.processInfoTitle.TabIndex = 0;
-            this.processInfoTitle.Text = "PROCESS INFO.";
-            // 
-            // totalTimeLabel
-            // 
-            this.totalTimeLabel.BackColor = System.Drawing.Color.Transparent;
-            this.totalTimeLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
-            this.totalTimeLabel.Location = new System.Drawing.Point(8, 28);
-            this.totalTimeLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.totalTimeLabel.Name = "totalTimeLabel";
-            this.totalTimeLabel.Size = new System.Drawing.Size(108, 17);
-            this.totalTimeLabel.TabIndex = 1;
-            this.totalTimeLabel.Text = "Auto Run Proc. Time";
-            // 
-            // totalTimeValue
-            // 
-            this.totalTimeValue.AutoSize = false;
-            this.totalTimeValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(176)))), ((int)(((byte)(0)))));
-            this.totalTimeValue.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
-            this.totalTimeValue.Location = new System.Drawing.Point(170, 26);
-            this.totalTimeValue.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.totalTimeValue.Name = "totalTimeValue";
-            this.totalTimeValue.Size = new System.Drawing.Size(280, 22);
-            this.totalTimeValue.TabIndex = 2;
-            this.totalTimeValue.Text = "000.00 sec.";
-            this.totalTimeValue.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // processInfoRightTitle
-            // 
-            this.processInfoRightTitle.BackColor = System.Drawing.Color.Transparent;
-            this.processInfoRightTitle.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Italic);
-            this.processInfoRightTitle.Location = new System.Drawing.Point(475, 0);
-            this.processInfoRightTitle.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.processInfoRightTitle.Name = "processInfoRightTitle";
-            this.processInfoRightTitle.Size = new System.Drawing.Size(100, 21);
-            this.processInfoRightTitle.TabIndex = 3;
-            this.processInfoRightTitle.Text = "PROCESS INFO.";
-            // 
-            // rightTimeLabel
-            // 
-            this.rightTimeLabel.BackColor = System.Drawing.Color.Transparent;
-            this.rightTimeLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
-            this.rightTimeLabel.Location = new System.Drawing.Point(475, 28);
-            this.rightTimeLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.rightTimeLabel.Name = "rightTimeLabel";
-            this.rightTimeLabel.Size = new System.Drawing.Size(86, 17);
-            this.rightTimeLabel.TabIndex = 4;
-            this.rightTimeLabel.Text = "Total Proc. Time";
-            // 
-            // rightTimeValue
-            // 
-            this.rightTimeValue.AutoSize = false;
-            this.rightTimeValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(176)))), ((int)(((byte)(0)))));
-            this.rightTimeValue.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
-            this.rightTimeValue.Location = new System.Drawing.Point(610, 26);
-            this.rightTimeValue.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.rightTimeValue.Name = "rightTimeValue";
-            this.rightTimeValue.Size = new System.Drawing.Size(390, 22);
-            this.rightTimeValue.TabIndex = 5;
-            this.rightTimeValue.Text = "000.00 sec.";
-            this.rightTimeValue.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // currentFlowLabel
-            // 
-            this.currentFlowLabel.BackColor = System.Drawing.Color.Transparent;
-            this.currentFlowLabel.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Italic);
-            this.currentFlowLabel.Location = new System.Drawing.Point(475, 54);
-            this.currentFlowLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.currentFlowLabel.Name = "currentFlowLabel";
-            this.currentFlowLabel.Size = new System.Drawing.Size(44, 16);
-            this.currentFlowLabel.TabIndex = 6;
-            this.currentFlowLabel.Text = "Cur. Flow";
-            // 
-            // currentFlowValue
-            // 
-            this.currentFlowValue.AutoSize = false;
-            this.currentFlowValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.currentFlowValue.Location = new System.Drawing.Point(555, 52);
-            this.currentFlowValue.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.currentFlowValue.Name = "currentFlowValue";
-            this.currentFlowValue.Size = new System.Drawing.Size(445, 20);
-            this.currentFlowValue.TabIndex = 7;
-            this.currentFlowValue.Text = "Process Name";
-            this.currentFlowValue.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // metricLabel
-            // 
-            this.metricLabel.BackColor = System.Drawing.Color.Transparent;
-            this.metricLabel.Font = new System.Drawing.Font("Segoe UI", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.metricLabel.ForeColor = System.Drawing.Color.Red;
-            this.metricLabel.Location = new System.Drawing.Point(490, 112);
-            this.metricLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.metricLabel.Name = "metricLabel";
-            this.metricLabel.Size = new System.Drawing.Size(176, 16);
-            this.metricLabel.TabIndex = 8;
-            this.metricLabel.Text = "Socket :  0.00       SOA :  0.00       Laser :  0.00";
-            // 
-            // startButton
-            // 
-            this.startButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(165)))), ((int)(((byte)(230)))));
-            this.startButton.BorderThickness = 1;
-            this.startButton.FillColor = System.Drawing.Color.White;
-            this.startButton.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.startButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(165)))), ((int)(((byte)(230)))));
-            this.startButton.Location = new System.Drawing.Point(42, 62);
-            this.startButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(36, 36);
-            this.startButton.TabIndex = 9;
-            this.startButton.Text = "▶";
-            // 
-            // stopButton
-            // 
-            this.stopButton.BorderColor = System.Drawing.Color.Gray;
-            this.stopButton.BorderThickness = 1;
-            this.stopButton.FillColor = System.Drawing.Color.White;
-            this.stopButton.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.stopButton.ForeColor = System.Drawing.Color.Gray;
-            this.stopButton.Location = new System.Drawing.Point(192, 62);
-            this.stopButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.stopButton.Name = "stopButton";
-            this.stopButton.Size = new System.Drawing.Size(36, 36);
-            this.stopButton.TabIndex = 10;
-            this.stopButton.Text = "■";
-            // 
-            // pauseButton
-            // 
-            this.pauseButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(165)))), ((int)(((byte)(230)))));
-            this.pauseButton.BorderThickness = 1;
-            this.pauseButton.FillColor = System.Drawing.Color.White;
-            this.pauseButton.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.pauseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(165)))), ((int)(((byte)(230)))));
-            this.pauseButton.Location = new System.Drawing.Point(342, 62);
-            this.pauseButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.pauseButton.Name = "pauseButton";
-            this.pauseButton.Size = new System.Drawing.Size(36, 36);
-            this.pauseButton.TabIndex = 11;
-            this.pauseButton.Text = "Ⅱ";
-            // 
-            // showMessageCheck
-            // 
-            this.showMessageCheck.CheckedState.BorderRadius = 0;
-            this.showMessageCheck.CheckedState.BorderThickness = 0;
-            this.showMessageCheck.Font = new System.Drawing.Font("Segoe UI", 7F);
-            this.showMessageCheck.Location = new System.Drawing.Point(8, 104);
-            this.showMessageCheck.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.showMessageCheck.Name = "showMessageCheck";
-            this.showMessageCheck.Size = new System.Drawing.Size(450, 18);
-            this.showMessageCheck.TabIndex = 12;
-            this.showMessageCheck.Text = "Show Message When Start Station On Auto Run";
-            this.showMessageCheck.UncheckedState.BorderRadius = 0;
-            this.showMessageCheck.UncheckedState.BorderThickness = 0;
-            // 
-            // stopFeedAButton
-            // 
-            this.stopFeedAButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.stopFeedAButton.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
-            this.stopFeedAButton.ForeColor = System.Drawing.Color.Gray;
-            this.stopFeedAButton.Location = new System.Drawing.Point(8, 124);
-            this.stopFeedAButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.stopFeedAButton.Name = "stopFeedAButton";
-            this.stopFeedAButton.Size = new System.Drawing.Size(220, 22);
-            this.stopFeedAButton.TabIndex = 13;
-            this.stopFeedAButton.Text = "STOP FEEDING STATION A";
-            // 
-            // stopFeedBButton
-            // 
-            this.stopFeedBButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.stopFeedBButton.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
-            this.stopFeedBButton.ForeColor = System.Drawing.Color.Gray;
-            this.stopFeedBButton.Location = new System.Drawing.Point(238, 124);
-            this.stopFeedBButton.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.stopFeedBButton.Name = "stopFeedBButton";
-            this.stopFeedBButton.Size = new System.Drawing.Size(220, 22);
-            this.stopFeedBButton.TabIndex = 14;
-            this.stopFeedBButton.Text = "STOP FEEDING STATION B";
             // 
             // centerBottomLayout
             // 
@@ -2079,11 +2362,15 @@ namespace opusViewerPro
             this.centerBottomLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54F));
             this.centerBottomLayout.Controls.Add(this.calibrationProcess, 0, 1);
             this.centerBottomLayout.Controls.Add(this.stationBProcess, 1, 1);
+            this.centerBottomLayout.Controls.Add(this.calibrationHeader, 0, 0);
+            this.centerBottomLayout.Controls.Add(this.stationBProcessHeader, 1, 0);
             this.centerBottomLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.centerBottomLayout.Location = new System.Drawing.Point(3, 518);
-            this.centerBottomLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.centerBottomLayout.Location = new System.Drawing.Point(3, 670);
             this.centerBottomLayout.Name = "centerBottomLayout";
-            this.centerBottomLayout.Size = new System.Drawing.Size(644, 186);
+            this.centerBottomLayout.RowCount = 2;
+            this.centerBottomLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.centerBottomLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.centerBottomLayout.Size = new System.Drawing.Size(1014, 195);
             this.centerBottomLayout.TabIndex = 8;
             // 
             // calibrationProcess
@@ -2091,19 +2378,32 @@ namespace opusViewerPro
             this.calibrationProcess.Cursor = System.Windows.Forms.Cursors.Default;
             this.calibrationProcess.Dock = System.Windows.Forms.DockStyle.Fill;
             this.calibrationProcess.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.calibrationProcess.Location = new System.Drawing.Point(6, 6);
-            this.calibrationProcess.Margin = new System.Windows.Forms.Padding(2);
-            this.calibrationProcess.ItemHeight = 22;
-            this.calibrationProcess.ShowLines = false;
             this.calibrationProcess.HideSelection = false;
-            this.calibrationProcess.Nodes.AddRange(new System.Windows.Forms.TreeNode[] { new System.Windows.Forms.TreeNode("#1 - Station A Needle Calibration"),
-                new System.Windows.Forms.TreeNode("#2 - Station B Needle Calibration"),
-                new System.Windows.Forms.TreeNode("#3 - Station A Dispensing Calibration"),
-                new System.Windows.Forms.TreeNode("#4 - Station B Dispensing Calibration"),
-                new System.Windows.Forms.TreeNode("#5 - Station A Laser and Jig"),
-                new System.Windows.Forms.TreeNode("#6 - Station B Laser and Jig") });
+            this.calibrationProcess.ItemHeight = 22;
+            this.calibrationProcess.Location = new System.Drawing.Point(2, 30);
+            this.calibrationProcess.Margin = new System.Windows.Forms.Padding(2);
             this.calibrationProcess.Name = "calibrationProcess";
-            this.calibrationProcess.Size = new System.Drawing.Size(284, 174);
+            treeNode32.Name = "";
+            treeNode32.Text = "#1 - Station A Needle Calibration";
+            treeNode33.Name = "";
+            treeNode33.Text = "#2 - Station B Needle Calibration";
+            treeNode34.Name = "";
+            treeNode34.Text = "#3 - Station A Dispensing Calibration";
+            treeNode35.Name = "";
+            treeNode35.Text = "#4 - Station B Dispensing Calibration";
+            treeNode36.Name = "";
+            treeNode36.Text = "#5 - Station A Laser and Jig";
+            treeNode37.Name = "";
+            treeNode37.Text = "#6 - Station B Laser and Jig";
+            this.calibrationProcess.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode32,
+            treeNode33,
+            treeNode34,
+            treeNode35,
+            treeNode36,
+            treeNode37});
+            this.calibrationProcess.ShowLines = false;
+            this.calibrationProcess.Size = new System.Drawing.Size(462, 163);
             this.calibrationProcess.TabIndex = 0;
             // 
             // stationBProcess
@@ -2111,36 +2411,52 @@ namespace opusViewerPro
             this.stationBProcess.Cursor = System.Windows.Forms.Cursors.Default;
             this.stationBProcess.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stationBProcess.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.stationBProcess.Location = new System.Drawing.Point(302, 6);
-            this.stationBProcess.Margin = new System.Windows.Forms.Padding(2);
-            this.stationBProcess.ItemHeight = 22;
-            this.stationBProcess.ShowLines = false;
             this.stationBProcess.HideSelection = false;
-            this.stationBProcess.Nodes.AddRange(new System.Windows.Forms.TreeNode[] { new System.Windows.Forms.TreeNode("#1 - [Station B] Start Process"),
-                new System.Windows.Forms.TreeNode("#2 - [Station B] Block pin height measurement"),
-                new System.Windows.Forms.TreeNode("#3 - [Station B] Servo on"),
-                new System.Windows.Forms.TreeNode("#4 - [Station B - Laser B] Reset AA Counter Global Variable"),
-                new System.Windows.Forms.TreeNode("#5 - [Station B - Laser B] Set Laser B Config"),
-                new System.Windows.Forms.TreeNode("#6 - [Station B] Vision Align Laser B iCSM"),
-                new System.Windows.Forms.TreeNode("#7 - [Station B] Skip channel"),
-                new System.Windows.Forms.TreeNode("#8 - [Station B] Pick Up L2 On Top Tray") });
+            this.stationBProcess.ItemHeight = 22;
+            this.stationBProcess.Location = new System.Drawing.Point(468, 30);
+            this.stationBProcess.Margin = new System.Windows.Forms.Padding(2);
             this.stationBProcess.Name = "stationBProcess";
-            this.stationBProcess.Size = new System.Drawing.Size(336, 174);
+            treeNode38.Name = "";
+            treeNode38.Text = "#1 - [Station B] Start Process";
+            treeNode39.Name = "";
+            treeNode39.Text = "#2 - [Station B] Block pin height measurement";
+            treeNode40.Name = "";
+            treeNode40.Text = "#3 - [Station B] Servo on";
+            treeNode41.Name = "";
+            treeNode41.Text = "#4 - [Station B - Laser B] Reset AA Counter Global Variable";
+            treeNode42.Name = "";
+            treeNode42.Text = "#5 - [Station B - Laser B] Set Laser B Config";
+            treeNode43.Name = "";
+            treeNode43.Text = "#6 - [Station B] Vision Align Laser B iCSM";
+            treeNode44.Name = "";
+            treeNode44.Text = "#7 - [Station B] Skip channel";
+            treeNode45.Name = "";
+            treeNode45.Text = "#8 - [Station B] Pick Up L2 On Top Tray";
+            this.stationBProcess.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode38,
+            treeNode39,
+            treeNode40,
+            treeNode41,
+            treeNode42,
+            treeNode43,
+            treeNode44,
+            treeNode45});
+            this.stationBProcess.ShowLines = false;
+            this.stationBProcess.Size = new System.Drawing.Size(544, 163);
             this.stationBProcess.TabIndex = 1;
             // 
             // stationBCard
             // 
             this.stationBCard.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(207)))), ((int)(((byte)(215)))));
-            this.stationBCard.BorderRadius = 0;
             this.stationBCard.BorderThickness = 1;
             this.stationBCard.Controls.Add(this.stationBLayout);
             this.stationBCard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stationBCard.FillColor = System.Drawing.Color.White;
-            this.stationBCard.Location = new System.Drawing.Point(1010, 0);
+            this.stationBCard.Location = new System.Drawing.Point(1574, 0);
             this.stationBCard.Margin = new System.Windows.Forms.Padding(0);
             this.stationBCard.Name = "stationBCard";
-            this.stationBCard.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.stationBCard.Size = new System.Drawing.Size(430, 711);
+            this.stationBCard.Padding = new System.Windows.Forms.Padding(2);
+            this.stationBCard.Size = new System.Drawing.Size(672, 872);
             this.stationBCard.TabIndex = 2;
             // 
             // stationBLayout
@@ -2150,18 +2466,16 @@ namespace opusViewerPro
             this.stationBLayout.Controls.Add(this.loadCellLayout, 0, 1);
             this.stationBLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stationBLayout.Location = new System.Drawing.Point(2, 2);
-            this.stationBLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.stationBLayout.Name = "stationBLayout";
             this.stationBLayout.RowCount = 2;
             this.stationBLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.stationBLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.stationBLayout.Size = new System.Drawing.Size(426, 707);
+            this.stationBLayout.Size = new System.Drawing.Size(668, 868);
             this.stationBLayout.TabIndex = 0;
             // 
             // programLog
             // 
             this.programLog.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(188)))), ((int)(((byte)(200)))));
-            this.programLog.BorderRadius = 0;
             this.programLog.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.programLog.DefaultText = resources.GetString("programLog.DefaultText");
             this.programLog.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -2175,7 +2489,7 @@ namespace opusViewerPro
             this.programLog.ReadOnly = true;
             this.programLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.programLog.SelectedText = "";
-            this.programLog.Size = new System.Drawing.Size(422, 609);
+            this.programLog.Size = new System.Drawing.Size(664, 770);
             this.programLog.TabIndex = 0;
             // 
             // loadCellLayout
@@ -2191,13 +2505,12 @@ namespace opusViewerPro
             this.loadCellLayout.Controls.Add(this.loadCell4, 0, 1);
             this.loadCellLayout.Controls.Add(this.emergencyStop, 3, 0);
             this.loadCellLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.loadCellLayout.Location = new System.Drawing.Point(3, 616);
-            this.loadCellLayout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.loadCellLayout.Location = new System.Drawing.Point(3, 777);
             this.loadCellLayout.Name = "loadCellLayout";
             this.loadCellLayout.RowCount = 2;
             this.loadCellLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.loadCellLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.loadCellLayout.Size = new System.Drawing.Size(420, 88);
+            this.loadCellLayout.Size = new System.Drawing.Size(662, 88);
             this.loadCellLayout.TabIndex = 1;
             // 
             // loadCell1
@@ -2208,9 +2521,8 @@ namespace opusViewerPro
             this.loadCell1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.loadCell1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(58)))), ((int)(((byte)(66)))));
             this.loadCell1.Location = new System.Drawing.Point(3, 3);
-            this.loadCell1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.loadCell1.Name = "loadCell1";
-            this.loadCell1.Size = new System.Drawing.Size(108, 38);
+            this.loadCell1.Size = new System.Drawing.Size(172, 38);
             this.loadCell1.TabIndex = 0;
             this.loadCell1.Text = "Load Cell: 000.000";
             // 
@@ -2221,10 +2533,9 @@ namespace opusViewerPro
             this.loadCell2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
             this.loadCell2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.loadCell2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(58)))), ((int)(((byte)(66)))));
-            this.loadCell2.Location = new System.Drawing.Point(116, 3);
-            this.loadCell2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.loadCell2.Location = new System.Drawing.Point(181, 3);
             this.loadCell2.Name = "loadCell2";
-            this.loadCell2.Size = new System.Drawing.Size(108, 38);
+            this.loadCell2.Size = new System.Drawing.Size(172, 38);
             this.loadCell2.TabIndex = 1;
             this.loadCell2.Text = "Load Cell: Disable.";
             // 
@@ -2235,10 +2546,9 @@ namespace opusViewerPro
             this.loadCell3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
             this.loadCell3.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.loadCell3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(58)))), ((int)(((byte)(66)))));
-            this.loadCell3.Location = new System.Drawing.Point(230, 3);
-            this.loadCell3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.loadCell3.Location = new System.Drawing.Point(359, 3);
             this.loadCell3.Name = "loadCell3";
-            this.loadCell3.Size = new System.Drawing.Size(108, 38);
+            this.loadCell3.Size = new System.Drawing.Size(172, 38);
             this.loadCell3.TabIndex = 2;
             this.loadCell3.Text = "Load Cell: 000.000";
             // 
@@ -2250,9 +2560,8 @@ namespace opusViewerPro
             this.loadCell4.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.loadCell4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(58)))), ((int)(((byte)(66)))));
             this.loadCell4.Location = new System.Drawing.Point(3, 47);
-            this.loadCell4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.loadCell4.Name = "loadCell4";
-            this.loadCell4.Size = new System.Drawing.Size(108, 38);
+            this.loadCell4.Size = new System.Drawing.Size(172, 38);
             this.loadCell4.TabIndex = 3;
             this.loadCell4.Text = "Load Cell: 000.000";
             // 
@@ -2263,11 +2572,11 @@ namespace opusViewerPro
             this.emergencyStop.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(15)))), ((int)(((byte)(42)))));
             this.emergencyStop.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.emergencyStop.ForeColor = System.Drawing.Color.White;
-            this.emergencyStop.Location = new System.Drawing.Point(346, 5);
-            this.emergencyStop.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.emergencyStop.Location = new System.Drawing.Point(539, 5);
+            this.emergencyStop.Margin = new System.Windows.Forms.Padding(5);
             this.emergencyStop.Name = "emergencyStop";
             this.loadCellLayout.SetRowSpan(this.emergencyStop, 2);
-            this.emergencyStop.Size = new System.Drawing.Size(70, 78);
+            this.emergencyStop.Size = new System.Drawing.Size(118, 78);
             this.emergencyStop.TabIndex = 4;
             this.emergencyStop.Text = "STOP";
             // 
@@ -2277,10 +2586,9 @@ namespace opusViewerPro
             this.footerLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(164)))), ((int)(((byte)(231)))));
             this.footerLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.footerLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(70)))), ((int)(((byte)(107)))));
-            this.footerLabel.Location = new System.Drawing.Point(3, 782);
-            this.footerLabel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.footerLabel.Location = new System.Drawing.Point(3, 943);
             this.footerLabel.Name = "footerLabel";
-            this.footerLabel.Size = new System.Drawing.Size(1449, 14);
+            this.footerLabel.Size = new System.Drawing.Size(2254, 14);
             this.footerLabel.TabIndex = 2;
             this.footerLabel.Text = "Copyright © 2024 Octopus Technology Ltd. All rights reserved";
             this.footerLabel.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2317,7 +2625,7 @@ namespace opusViewerPro
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(358, 2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(92, 13);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(87, 14);
             this.guna2HtmlLabel1.TabIndex = 3;
             this.guna2HtmlLabel1.Text = "guna2HtmlLabel1";
             // 
@@ -2329,116 +2637,18 @@ namespace opusViewerPro
             this.ClientSize = new System.Drawing.Size(2260, 960);
             this.Controls.Add(this.rootLayout);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "UI";
             this.Text = "TopUs Nova AA-2 - Equipment Control";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.processSplit.Name = "processSplit";
-            this.processSplit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.processSplit.ColumnCount = 2;
-            this.processSplit.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46F));
-            this.processSplit.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54F));
-            this.processSplit.Controls.Add(this.processLeft, 0, 0);
-            this.processSplit.Controls.Add(this.processRight, 1, 0);
-            this.processLeft.Name = "processLeft";
-            this.processLeft.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.processLeft.Margin = new System.Windows.Forms.Padding(0);
-            this.processLeft.ColumnCount = 2;
-            this.processLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37F));
-            this.processLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63F));
-            this.processLeft.RowCount = 5;
-            this.processLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
-            this.processLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.processLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
-            this.processLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.processLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.processLeft.Controls.Add(this.processInfoTitle, 0, 0);
-            this.processLeft.SetColumnSpan(this.processInfoTitle, 2);
-            this.processLeft.Controls.Add(this.totalTimeLabel, 0, 1);
-            this.processLeft.Controls.Add(this.totalTimeValue, 1, 1);
-            this.totalTimeValue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.totalTimeValue.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.processLeft.Controls.Add(this.transportButtons, 0, 2);
-            this.processLeft.SetColumnSpan(this.transportButtons, 2);
-            this.transportButtons.Name = "transportButtons";
-            this.transportButtons.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.transportButtons.WrapContents = false;
-            this.transportButtons.Margin = new System.Windows.Forms.Padding(0);
-            this.transportButtons.Controls.Add(this.startButton);
-            this.transportButtons.Controls.Add(this.startCaption);
-            this.transportButtons.Controls.Add(this.stopButton);
-            this.transportButtons.Controls.Add(this.stopCaption);
-            this.transportButtons.Controls.Add(this.pauseButton);
-            this.transportButtons.Controls.Add(this.pauseCaption);
-            this.startCaption.Name = "startCaption";
-            this.startCaption.Text = "START";
-            this.stopCaption.Name = "stopCaption";
-            this.stopCaption.Text = "STOP";
-            this.pauseCaption.Name = "pauseCaption";
-            this.pauseCaption.Text = "PAUSE";
-            this.startCaption.Margin = new System.Windows.Forms.Padding(0, 12, 14, 0);
-            this.stopCaption.Margin = new System.Windows.Forms.Padding(0, 12, 14, 0);
-            this.pauseCaption.Margin = new System.Windows.Forms.Padding(0, 12, 0, 0);
-            this.startCaption.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.stopCaption.ForeColor = System.Drawing.Color.Gray;
-            this.pauseCaption.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.processLeft.Controls.Add(this.showMessageCheck, 0, 3);
-            this.processLeft.SetColumnSpan(this.showMessageCheck, 2);
-            this.showMessageCheck.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.showMessageCheck.Margin = new System.Windows.Forms.Padding(0);
-            this.processLeft.Controls.Add(this.feedButtons, 0, 4);
-            this.processLeft.SetColumnSpan(this.feedButtons, 2);
-            this.feedButtons.Name = "feedButtons";
-            this.feedButtons.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.feedButtons.WrapContents = false;
-            this.feedButtons.Margin = new System.Windows.Forms.Padding(0);
-            this.feedButtons.Controls.Add(this.stopFeedAButton);
-            this.feedButtons.Controls.Add(this.stopFeedBButton);
-            this.stopFeedAButton.Size = new System.Drawing.Size(190, 22);
-            this.stopFeedBButton.Size = new System.Drawing.Size(190, 22);
-            this.stopFeedAButton.Margin = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this.stopFeedBButton.Margin = new System.Windows.Forms.Padding(0);
-            this.processRight.Name = "processRight";
-            this.processRight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.processRight.ColumnCount = 2;
-            this.processRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.processRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.processRight.RowCount = 4;
-            this.processRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
-            this.processRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.processRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.processRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.processRight.Controls.Add(this.processInfoRightTitle, 0, 0);
-            this.processRight.SetColumnSpan(this.processInfoRightTitle, 2);
-            this.processRight.Controls.Add(this.rightTimeLabel, 0, 1);
-            this.processRight.Controls.Add(this.rightTimeValue, 1, 1);
-            this.rightTimeValue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rightTimeValue.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.processRight.Controls.Add(this.currentFlowLabel, 0, 2);
-            this.processRight.Controls.Add(this.currentFlowValue, 1, 2);
-            this.currentFlowValue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.currentFlowValue.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.processRight.Controls.Add(this.metricLabel, 0, 3);
-            this.processRight.SetColumnSpan(this.metricLabel, 2);
-            this.metricLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
-            this.centerBottomLayout.RowCount = 2;
-            this.centerBottomLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.centerBottomLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.calibrationHeader.Name = "calibrationHeader";
-            this.calibrationHeader.Text = "↕  Calibration                                  ⊙";
-            this.calibrationHeader.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.calibrationHeader.FillColor = System.Drawing.Color.White;
-            this.calibrationHeader.ForeColor = System.Drawing.Color.SteelBlue;
-            this.calibrationHeader.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.stationBProcessHeader.Name = "stationBProcessHeader";
-            this.stationBProcessHeader.Text = "↕  Station B Process [ATLAS L2 30-07-2026]";
-            this.stationBProcessHeader.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stationBProcessHeader.FillColor = System.Drawing.Color.White;
-            this.stationBProcessHeader.ForeColor = System.Drawing.Color.SteelBlue;
-            this.stationBProcessHeader.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.centerBottomLayout.Controls.Add(this.calibrationHeader, 0, 0);
-            this.centerBottomLayout.Controls.Add(this.stationBProcessHeader, 1, 0);
+            this.processSplit.ResumeLayout(false);
+            this.processLeft.ResumeLayout(false);
+            this.processLeft.PerformLayout();
+            this.transportButtons.ResumeLayout(false);
+            this.transportButtons.PerformLayout();
+            this.feedButtons.ResumeLayout(false);
+            this.processRight.ResumeLayout(false);
+            this.processRight.PerformLayout();
             this.rootLayout.ResumeLayout(false);
             this.headerLayout.ResumeLayout(false);
             this.headerLayout.PerformLayout();
@@ -2467,11 +2677,11 @@ namespace opusViewerPro
             ((System.ComponentModel.ISupportInitialize)(this.trayTop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trayBottom)).EndInit();
             this.topCameraLayout.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.measureItems)).EndInit();
             this.bTrayLayout.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bTrayTop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bTrayBottom)).EndInit();
             this.processInfoPanel.ResumeLayout(false);
-            this.processInfoPanel.PerformLayout();
             this.centerBottomLayout.ResumeLayout(false);
             this.stationBCard.ResumeLayout(false);
             this.stationBLayout.ResumeLayout(false);
@@ -2519,5 +2729,8 @@ namespace opusViewerPro
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn37;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn38;
         private Guna2HtmlLabel guna2HtmlLabel1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn39;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn40;
+        private Guna2AnimateWindow guna2AnimateWindow1;
     }
 }

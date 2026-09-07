@@ -17,6 +17,7 @@ namespace opusViewerPro
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
+            Application.Run(new UI());
             // 原有 UI 表單仍保留，可改回 new UI()。
         }
     }
