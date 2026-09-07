@@ -7,7 +7,7 @@
     <ProjectGuid>{A57D50D1-B9C8-4EDF-9899-CEA6998C16AF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>opusViewerPro</RootNamespace>
-    <AssemblyName>OpenUI</AssemblyName>
+    <AssemblyName>opusViewerPro</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -61,13 +61,6 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="Camera\ICamera.cs" />
-    <Compile Include="Camera\FrameReceivedEventArgs.cs" />
-    <Compile Include="Camera\SimulatedCamera.cs" />
-    <Compile Include="Vision\BrightnessInspector.cs" />
-    <Compile Include="Vision\InspectionResult.cs" />
-    <Compile Include="Config\InspectionConfig.cs" />
-    <Compile Include="Config\ConfigStore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI.cs">
       <SubType>Form</SubType>

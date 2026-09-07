@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "opus-Tips.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "opus-Tips"
             }
           }
         ]
@@ -190,17 +190,19 @@
   },
   "active": "747f4807f1d0f9ce",
   "lastOpenFiles": [
+    "opusViewerPro/bin/Debug/opusViewerPro.pdb",
+    "opusViewerPro/bin/Debug/opusViewerPro.exe",
+    "opusViewerPro/bin/Debug/opusViewerPro.exe.config",
+    "opusViewerPro/obj/Debug/opusViewerPro.pdb",
+    "opusViewerPro/obj/Debug/opusViewerPro.exe",
+    "opusViewerPro/bin/Release",
     "README.md",
-    "Assets/Octopus Nova Main UI.mp4",
-    "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/lib/netcoreapp3.1/Guna.UI2.dll",
-    "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/lib/net7.0-windows7.0/Guna.UI2.dll",
-    "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/lib/net6.0-windows7.0/Guna.UI2.dll",
-    "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/lib/net472/Guna.UI2.dll",
-    "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/lib/net461/Guna.UI2.dll",
-    "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/lib/net48/Guna.UI2.dll",
-    "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/lib/net45/Guna.UI2.dll",
-    "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/lib/net40/Guna.UI2.dll",
-    "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/lib/netcoreapp3.1",
+    "opus-Tips.md",
+    "opusViewerPro/obj/Debug/opusViewerPro.csproj.FileListAbsolute.txt",
+    "opusViewerPro/bin/Debug/OpenUI.pdb",
+    "opusViewerPro/bin/Debug/OpenUI.exe",
+    "opusViewerPro/bin/Debug/OpenUI.exe.config",
+    "opusViewerPro/obj/Debug/opusView.000735BC.Up2Date",
     "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/README.md",
     "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/icon.png",
     "docs/Guna-UI2-控件与布局参考.md",
