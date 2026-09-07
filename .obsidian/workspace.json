@@ -11,14 +11,12 @@
             "id": "747f4807f1d0f9ce",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "video",
               "state": {
-                "file": "opus-Tips.md",
-                "mode": "source",
-                "source": false
+                "file": "Assets/Octopus Nova Main UI.mp4"
               },
               "icon": "lucide-file",
-              "title": "opus-Tips"
+              "title": "Octopus Nova Main UI"
             }
           }
         ]
@@ -190,23 +188,31 @@
   },
   "active": "747f4807f1d0f9ce",
   "lastOpenFiles": [
+    "Docs/opus-Winform.md",
+    "Docs/Unconfirmed 261242.crdownload",
+    "Docs/opus-Mind.canvas",
+    "Docs/Unconfirmed 924961.crdownload",
+    "Docs/opus-Improvement.md",
+    "Docs/Unconfirmed 835319.crdownload",
+    "Docs/opus-Evision.md",
+    "Docs/Unconfirmed 711552.crdownload",
+    "Docs/opus-Config.md",
+    "Docs/Unconfirmed 864729.crdownload",
+    "Docs/opus-Camera.md",
+    "Docs/Unconfirmed 110177.crdownload",
+    "Docs/opus-Bugs.md",
+    "Docs/Unconfirmed 196333.crdownload",
+    "Docs/opus-Tips.md",
+    "Docs",
+    "New folder",
+    "Assets/WinForms_UI_完整不遮挡标记说明.png",
+    "Assets/1788400137062.png",
+    "opus-Tips.md",
     "docs/MainForm-OOP-demo.md",
     "docs/Guna-UI2-控件与布局参考.md",
-    "opus-Tips.md",
     "opusViewerPro/bin/Debug/opusViewerPro.pdb",
-    "opusViewerPro/bin/Debug/opusViewerPro.exe",
-    "opusViewerPro/bin/Debug/opusViewerPro.exe.config",
-    "opusViewerPro/obj/Debug/opusViewerPro.pdb",
-    "opusViewerPro/obj/Debug/opusViewerPro.exe",
-    "opusViewerPro/bin/Release",
     "README.md",
-    "opusViewerPro/obj/Debug/opusViewerPro.csproj.FileListAbsolute.txt",
-    "opusViewerPro/bin/Debug/OpenUI.pdb",
-    "opusViewerPro/bin/Debug/OpenUI.exe",
-    "opusViewerPro/bin/Debug/OpenUI.exe.config",
     "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/README.md",
-    "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/icon.png",
-    "Assets/1788400137062.png",
-    "Assets/WinForms_UI_完整不遮挡标记说明.png"
+    "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/icon.png"
   ]
 }
