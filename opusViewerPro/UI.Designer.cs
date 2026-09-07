@@ -785,7 +785,7 @@ namespace opusViewerPro
             // rootLayout
             // 
             this.rootLayout.ColumnCount = 1;
-            this.rootLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.rootLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 2260F));
             this.rootLayout.Controls.Add(this.headerLayout, 0, 0);
             this.rootLayout.Controls.Add(this.bodyLayout, 0, 1);
             this.rootLayout.Controls.Add(this.footerLabel, 0, 2);
@@ -1029,6 +1029,7 @@ namespace opusViewerPro
             this.bodyLayout.Location = new System.Drawing.Point(3, 65);
             this.bodyLayout.Name = "bodyLayout";
             this.bodyLayout.Padding = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.bodyLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.bodyLayout.Size = new System.Drawing.Size(2254, 872);
             this.bodyLayout.TabIndex = 1;
             // 
