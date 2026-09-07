@@ -10,11 +10,13 @@
           {
             "id": "747f4807f1d0f9ce",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "video",
               "state": {
                 "file": "Assets/Octopus Nova Main UI.mp4"
               },
+              "pinned": true,
               "icon": "lucide-file",
               "title": "Octopus Nova Main UI"
             }
@@ -186,7 +188,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "747f4807f1d0f9ce",
+  "active": "e3aaf1591482439f",
   "lastOpenFiles": [
     "Docs/opus-Winform.md",
     "Docs/Unconfirmed 261242.crdownload",
