@@ -19,29 +19,29 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.TreeNode treeNode71 = new System.Windows.Forms.TreeNode("Node0");
-            System.Windows.Forms.TreeNode treeNode72 = new System.Windows.Forms.TreeNode("Node1");
-            System.Windows.Forms.TreeNode treeNode73 = new System.Windows.Forms.TreeNode("Node2");
-            System.Windows.Forms.TreeNode treeNode74 = new System.Windows.Forms.TreeNode("Node11");
-            System.Windows.Forms.TreeNode treeNode75 = new System.Windows.Forms.TreeNode("Node12");
-            System.Windows.Forms.TreeNode treeNode76 = new System.Windows.Forms.TreeNode("Node13");
-            System.Windows.Forms.TreeNode treeNode77 = new System.Windows.Forms.TreeNode("Node3", new System.Windows.Forms.TreeNode[] {
-            treeNode74,
-            treeNode75,
-            treeNode76});
-            System.Windows.Forms.TreeNode treeNode78 = new System.Windows.Forms.TreeNode("Node4");
-            System.Windows.Forms.TreeNode treeNode79 = new System.Windows.Forms.TreeNode("Node5");
-            System.Windows.Forms.TreeNode treeNode80 = new System.Windows.Forms.TreeNode("Node6");
-            System.Windows.Forms.TreeNode treeNode81 = new System.Windows.Forms.TreeNode("Node7");
-            System.Windows.Forms.TreeNode treeNode82 = new System.Windows.Forms.TreeNode("Node8");
-            System.Windows.Forms.TreeNode treeNode83 = new System.Windows.Forms.TreeNode("Node9");
-            System.Windows.Forms.TreeNode treeNode84 = new System.Windows.Forms.TreeNode("Node10");
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Node0");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Node1");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Node2");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Node11");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Node12");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Node13");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Node3", new System.Windows.Forms.TreeNode[] {
+            treeNode4,
+            treeNode5,
+            treeNode6});
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Node4");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Node5");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Node6");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Node7");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Node8");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Node9");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Node10");
             this.brandLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.modelLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.versionLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -427,16 +427,16 @@
             // 
             // chart2
             // 
-            chartArea11.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea11);
-            legend11.Name = "Legend1";
-            this.chart2.Legends.Add(legend11);
+            chartArea1.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart2.Legends.Add(legend1);
             this.chart2.Location = new System.Drawing.Point(238, 234);
             this.chart2.Name = "chart2";
-            series11.ChartArea = "ChartArea1";
-            series11.Legend = "Legend1";
-            series11.Name = "Series1";
-            this.chart2.Series.Add(series11);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart2.Series.Add(series1);
             this.chart2.Size = new System.Drawing.Size(180, 84);
             this.chart2.TabIndex = 11;
             this.chart2.Text = "chart2";
@@ -452,16 +452,16 @@
             // 
             // chart1
             // 
-            chartArea12.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea12);
-            legend12.Name = "Legend1";
-            this.chart1.Legends.Add(legend12);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(245, 121);
             this.chart1.Name = "chart1";
-            series12.ChartArea = "ChartArea1";
-            series12.Legend = "Legend1";
-            series12.Name = "Series1";
-            this.chart1.Series.Add(series12);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(180, 107);
             this.chart1.TabIndex = 9;
             this.chart1.Text = "chart1";
@@ -509,46 +509,46 @@
             // 
             this.treeView1.Location = new System.Drawing.Point(3, 448);
             this.treeView1.Name = "treeView1";
-            treeNode71.Name = "Node0";
-            treeNode71.Text = "Node0";
-            treeNode72.Name = "Node1";
-            treeNode72.Text = "Node1";
-            treeNode73.Name = "Node2";
-            treeNode73.Text = "Node2";
-            treeNode74.Name = "Node11";
-            treeNode74.Text = "Node11";
-            treeNode75.Name = "Node12";
-            treeNode75.Text = "Node12";
-            treeNode76.Name = "Node13";
-            treeNode76.Text = "Node13";
-            treeNode77.Name = "Node3";
-            treeNode77.Text = "Node3";
-            treeNode78.Name = "Node4";
-            treeNode78.Text = "Node4";
-            treeNode79.Name = "Node5";
-            treeNode79.Text = "Node5";
-            treeNode80.Name = "Node6";
-            treeNode80.Text = "Node6";
-            treeNode81.Name = "Node7";
-            treeNode81.Text = "Node7";
-            treeNode82.Name = "Node8";
-            treeNode82.Text = "Node8";
-            treeNode83.Name = "Node9";
-            treeNode83.Text = "Node9";
-            treeNode84.Name = "Node10";
-            treeNode84.Text = "Node10";
+            treeNode1.Name = "Node0";
+            treeNode1.Text = "Node0";
+            treeNode2.Name = "Node1";
+            treeNode2.Text = "Node1";
+            treeNode3.Name = "Node2";
+            treeNode3.Text = "Node2";
+            treeNode4.Name = "Node11";
+            treeNode4.Text = "Node11";
+            treeNode5.Name = "Node12";
+            treeNode5.Text = "Node12";
+            treeNode6.Name = "Node13";
+            treeNode6.Text = "Node13";
+            treeNode7.Name = "Node3";
+            treeNode7.Text = "Node3";
+            treeNode8.Name = "Node4";
+            treeNode8.Text = "Node4";
+            treeNode9.Name = "Node5";
+            treeNode9.Text = "Node5";
+            treeNode10.Name = "Node6";
+            treeNode10.Text = "Node6";
+            treeNode11.Name = "Node7";
+            treeNode11.Text = "Node7";
+            treeNode12.Name = "Node8";
+            treeNode12.Text = "Node8";
+            treeNode13.Name = "Node9";
+            treeNode13.Text = "Node9";
+            treeNode14.Name = "Node10";
+            treeNode14.Text = "Node10";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode71,
-            treeNode72,
-            treeNode73,
-            treeNode77,
-            treeNode78,
-            treeNode79,
-            treeNode80,
-            treeNode81,
-            treeNode82,
-            treeNode83,
-            treeNode84});
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode7,
+            treeNode8,
+            treeNode9,
+            treeNode10,
+            treeNode11,
+            treeNode12,
+            treeNode13,
+            treeNode14});
             this.treeView1.Size = new System.Drawing.Size(443, 154);
             this.treeView1.TabIndex = 5;
             // 
@@ -775,6 +775,7 @@
             // guna2DragControl1
             // 
             this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.guna2Panel1;
             this.guna2DragControl1.UseTransparentDrag = true;
             // 
             // MainForm
