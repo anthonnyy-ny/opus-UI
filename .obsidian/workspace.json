@@ -188,11 +188,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "e3aaf1591482439f",
+  "active": "747f4807f1d0f9ce",
   "lastOpenFiles": [
+    "Docs/opus-Bugs.md",
     "Docs/opus-Winform.md",
-    "Docs/Unconfirmed 261242.crdownload",
+    "Docs/opus-Tips.md",
+    "Assets/Octopus Nova Main UI.mp4",
     "Docs/opus-Mind.canvas",
+    "Docs/Unconfirmed 261242.crdownload",
     "Docs/Unconfirmed 924961.crdownload",
     "Docs/opus-Improvement.md",
     "Docs/Unconfirmed 835319.crdownload",
@@ -202,9 +205,7 @@
     "Docs/Unconfirmed 864729.crdownload",
     "Docs/opus-Camera.md",
     "Docs/Unconfirmed 110177.crdownload",
-    "Docs/opus-Bugs.md",
     "Docs/Unconfirmed 196333.crdownload",
-    "Docs/opus-Tips.md",
     "Docs",
     "New folder",
     "Assets/WinForms_UI_完整不遮挡标记说明.png",
@@ -212,7 +213,6 @@
     "opus-Tips.md",
     "docs/MainForm-OOP-demo.md",
     "docs/Guna-UI2-控件与布局参考.md",
-    "opusViewerPro/bin/Debug/opusViewerPro.pdb",
     "README.md",
     "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/README.md",
     "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/icon.png"
