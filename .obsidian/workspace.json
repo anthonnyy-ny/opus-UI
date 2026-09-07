@@ -190,6 +190,9 @@
   },
   "active": "747f4807f1d0f9ce",
   "lastOpenFiles": [
+    "docs/MainForm-OOP-demo.md",
+    "docs/Guna-UI2-控件与布局参考.md",
+    "opus-Tips.md",
     "opusViewerPro/bin/Debug/opusViewerPro.pdb",
     "opusViewerPro/bin/Debug/opusViewerPro.exe",
     "opusViewerPro/bin/Debug/opusViewerPro.exe.config",
@@ -197,15 +200,12 @@
     "opusViewerPro/obj/Debug/opusViewerPro.exe",
     "opusViewerPro/bin/Release",
     "README.md",
-    "opus-Tips.md",
     "opusViewerPro/obj/Debug/opusViewerPro.csproj.FileListAbsolute.txt",
     "opusViewerPro/bin/Debug/OpenUI.pdb",
     "opusViewerPro/bin/Debug/OpenUI.exe",
     "opusViewerPro/bin/Debug/OpenUI.exe.config",
-    "opusViewerPro/obj/Debug/opusView.000735BC.Up2Date",
     "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/README.md",
     "opusViewerPro/packages/Guna.UI2.WinForms.2.0.4.8/icon.png",
-    "docs/Guna-UI2-控件与布局参考.md",
     "Assets/1788400137062.png",
     "Assets/WinForms_UI_完整不遮挡标记说明.png"
   ]
